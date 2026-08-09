@@ -148,7 +148,7 @@
       <div>
         <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
           <sc-if value="{{ vFlipIdle }}" hint-placeholder-val="{{ true }}">
-            <video src="uploads/video_fix_flip_eos.mp4#t=1.5" preload="metadata" muted="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+            <img loading="lazy" decoding="async" src="uploads/poster-fix-flip.jpg" alt="Renovation project — Fix &amp; Flip film" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover">
             <button type="button" onClick="{{ playVFlip }}" aria-label="Play the Fix &amp; Flip film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
               <span style="width:72px;height:72px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
                 <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
@@ -156,7 +156,7 @@
             </button>
           </sc-if>
           <sc-if value="{{ vFlipPlaying }}" hint-placeholder-val="{{ false }}">
-            <video src="uploads/video_fix_flip_eos.mp4" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+            <video src="uploads/video_fix_flip_eos.mp4" preload="auto" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
           </sc-if>
         </div>
         <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
@@ -167,7 +167,7 @@
       <div>
         <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
           <sc-if value="{{ vHoldIdle }}" hint-placeholder-val="{{ true }}">
-            <video src="uploads/video_fix_hold.mp4#t=1.5" preload="metadata" muted="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+            <img loading="lazy" decoding="async" src="uploads/poster-fix-hold.jpg" alt="House at golden hour — Fix &amp; Hold film" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover">
             <button type="button" onClick="{{ playVHold }}" aria-label="Play the Fix &amp; Hold film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
               <span style="width:72px;height:72px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
                 <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
@@ -175,7 +175,7 @@
             </button>
           </sc-if>
           <sc-if value="{{ vHoldPlaying }}" hint-placeholder-val="{{ false }}">
-            <video src="uploads/video_fix_hold.mp4" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+            <video src="uploads/video_fix_hold.mp4" preload="auto" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
           </sc-if>
         </div>
         <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
