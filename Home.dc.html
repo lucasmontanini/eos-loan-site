@@ -69,26 +69,8 @@
       </div>
     </div>
     <div data-r="herovis" style="position:relative;height:530px;animation:rev 1s ease both">
-      <div style="position:absolute;right:0;top:228px;transform:rotate(-3deg);z-index:1">
-        <div style="width:340px;height:214px;background:var(--eos-charcoal);border-radius:18px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;animation:float 7s ease-in-out infinite alternate">
-          <div style="display:flex;justify-content:space-between;align-items:flex-start">
-            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="sign" size="{{ szCardSign }}" on-dark="{{ yes }}" hint-size="54px,24px"></x-import>
-            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szCardSun }}" color="bone" hint-size="26px,26px"></x-import>
-          </div>
-          <div>
-            <div style="width:38px;height:26px;background:var(--eos-bone);border-radius:6px;display:grid;grid-template-columns:1fr 1fr;opacity:.92">
-              <div style="border-right:1.5px solid rgba(23,18,14,.35);border-bottom:1.5px solid rgba(23,18,14,.35)"></div>
-              <div style="border-bottom:1.5px solid rgba(23,18,14,.35)"></div>
-            </div>
-            <div style="margin-top:12px;font-family:var(--font-mono);font-size:16px;letter-spacing:.14em;color:var(--eos-bone)">5310 &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 0424</div>
-          </div>
-          <div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:rgba(247,242,234,.62)">
-            <span>EOS MEMBER</span>
-            <span>VALID 08/30</span>
-          </div>
-        </div>
-      </div>
-      <div style="position:absolute;left:0;top:0;z-index:2;width:224px;background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:20px;animation:floatB 6s ease-in-out infinite alternate">
+      <img src="uploads/cardeos.png" alt="Eos credit card tapping a payment terminal" style="position:absolute;inset:0;width:100%;height:530px;object-fit:cover;object-position:center 42%;border-radius:18px;border:1px solid var(--line)">
+      <div style="position:absolute;left:-18px;top:26px;z-index:2;width:224px;background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:20px;animation:floatB 6s ease-in-out infinite alternate">
         <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--text-2)">PRE-APPROVED</div>
         <div style="margin-top:10px;font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:-.01em">$48,000</div>
         <div style="margin-top:6px;font-family:var(--font-mono);font-size:12px;color:var(--text-2)">9.90% APR &#183; 60 mo</div>
@@ -106,9 +88,12 @@
 </section>
 
 <section style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--eos-white)">
-  <div style="max-width:1240px;margin:0 auto;padding:26px 28px;display:flex;align-items:center;gap:36px">
-    <span style="flex:none;font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)">Proudly accelerated by</span>
-    <div style="flex:1;overflow:hidden">
+  <div style="max-width:1240px;margin:0 auto;padding:30px 28px 34px">
+    <div style="display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:20px">
+      <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+      <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Trusted by</span>
+    </div>
+    <div style="overflow:hidden">
       <div style="display:flex;gap:56px;width:max-content;animation:marquee 32s linear infinite">
         <span style="white-space:nowrap;font-weight:800;font-size:15px;color:var(--text-3)">Microsoft for Startups</span>
         <span style="white-space:nowrap;font-weight:800;font-size:15px;color:var(--text-3)">Google Cloud for Startups</span>
@@ -600,6 +585,23 @@
   </div>
 </section>
 
+<section style="background:var(--eos-bone);border-top:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 28px 88px">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Eos credit</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:19ch">Approved in minutes. <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">Accepted everywhere.</span></h2>
+    </div>
+    <img src="uploads/creditcard3_john_marz.png" alt="Eos credit card being used on a payment terminal" style="margin-top:40px;width:100%;height:clamp(320px,44vw,560px);object-fit:cover;object-position:center 38%;border-radius:18px;border:1px solid var(--line);display:block;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
+    <div style="margin-top:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">
+      <span>Eos credit &#183; issued to approved borrowers</span>
+      <span>Illustrative</span>
+    </div>
+  </div>
+</section>
+
 <section style="background:var(--eos-white);border-top:1px solid var(--line)">
   <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
     <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
@@ -631,6 +633,25 @@
         <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">A real team available on every application, every step of the way.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section style="background:var(--eos-bone);border-top:1px solid var(--line)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:96px 28px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">More than money</span>
+      </div>
+      <h2 style="margin-top:20px;font-size:clamp(36px,4.2vw,58px);line-height:1.06;letter-spacing:-.015em;max-width:14ch">Credit, done right, is <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">freedom</span>.</h2>
+      <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:48ch">Freedom to own the house instead of renting it. To drive to work in your own truck. To grow the business without waiting another year. That's what we finance — one essential project at a time.</p>
+      <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html" hint-size="170px,48px">Check your rate</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" href="Contact.dc.html" hint-size="150px,48px">Talk to us</x-import>
+      </div>
+      <p style="margin:18px 0 0;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">Soft credit pull — no score impact</p>
+    </div>
+    <img src="uploads/personhappy7.jpg" alt="Woman smiling outdoors" style="width:100%;height:560px;object-fit:cover;object-position:center 25%;border-radius:18px;border:1px solid var(--line);display:block;animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
   </div>
 </section>
 
