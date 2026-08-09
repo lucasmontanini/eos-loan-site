@@ -28,7 +28,7 @@
 <div style="background:var(--eos-white);border-bottom:1px solid var(--line);position:relative" onMouseLeave="{{ closeMenus }}">
   <div style="max-width:1240px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;gap:16px;flex-wrap:nowrap">
     <a href="/" onMouseEnter="{{ closeMenus }}" style="text-decoration:none;display:flex;align-items:center;gap:7px;flex:none" aria-label="Eos Loan home">
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" color="charcoal" hint-size="17px,17px"></x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" micro="{{ no }}" color="charcoal" hint-size="17px,17px"></x-import>
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ logoSize }}" hint-size="118px,26px"></x-import>
     </a>
     <nav data-r="desknav" style="flex:1;min-width:0;display:flex;justify-content:center;gap:2px;flex-wrap:nowrap;white-space:nowrap">
@@ -171,7 +171,7 @@
     <div style="position:fixed;inset:0;z-index:600;background:var(--eos-bone);display:flex;flex-direction:column;padding:0 24px 24px;overflow:auto;animation:overlayIn .25s ease both">
       <div style="height:64px;display:flex;align-items:center;justify-content:space-between;flex:none">
         <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:7px" aria-label="Eos Loan home">
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" color="charcoal" hint-size="17px,17px"></x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" micro="{{ no }}" color="charcoal" hint-size="17px,17px"></x-import>
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ logoSize }}" hint-size="118px,26px"></x-import>
         </a>
         <button type="button" onClick="{{ closeMobile }}" aria-label="Close menu" style="width:42px;height:42px;border:1px solid var(--line-strong);border-radius:999px;background:none;cursor:pointer;font-size:22px;line-height:1;color:var(--text-1);display:flex;align-items:center;justify-content:center;font-family:var(--font-ui)">&#215;</button>
@@ -218,6 +218,7 @@ class Component extends DCLogic {
     const on = { ...base, color: "var(--eos-ember)" };
     const open = { ...base, background: "var(--eos-bone)", color: "var(--eos-ember)" };
     return {
+      no: false,
       logoSize: 22,
       szIcon: 17,
       sNavA: m === "products" ? open : base,

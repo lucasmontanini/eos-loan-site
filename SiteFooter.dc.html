@@ -21,7 +21,7 @@
     <div style="display:flex;justify-content:space-between;gap:56px;flex-wrap:wrap">
       <div style="max-width:360px">
         <div style="display:flex;align-items:center;gap:8px">
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" color="bone" hint-size="19px,19px"></x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" micro="{{ no }}" color="bone" hint-size="19px,19px"></x-import>
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ szLogo }}" on-dark="{{ yes }}" hint-size="130px,30px"></x-import>
         </div>
         <p style="margin:18px 0 0;font-size:15px;line-height:1.7;color:var(--text-2-inverse)">More approvals. More sales. More growth. Eos Loan turns your leads into customers with intelligent financing for essential projects.</p>
@@ -101,7 +101,7 @@
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:720}}">
 class Component extends DCLogic {
   renderVals() {
-    return { szLogo: 26, szIcon: 19, szSun: 88, yes: true };
+    return { no: false, szLogo: 26, szIcon: 19, szSun: 88, yes: true };
   }
 }
 </script>
