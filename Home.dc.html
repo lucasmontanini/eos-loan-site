@@ -35,6 +35,9 @@
     @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
     @keyframes revL{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:translateX(0)}}
     @keyframes imgIn{from{opacity:0;transform:scale(1.06)}to{opacity:1;transform:scale(1)}}
+    @keyframes scrimIn{from{opacity:0}to{opacity:1}}
+    @keyframes videoIn{from{opacity:0;transform:translateY(16px) scale(.965)}to{opacity:1;transform:translateY(0) scale(1)}}
+    @keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(232,64,31,.45)}70%{box-shadow:0 0 0 22px rgba(232,64,31,0)}100%{box-shadow:0 0 0 0 rgba(232,64,31,0)}}
     html{scroll-behavior:smooth}body{background:var(--eos-white)}
     summary{list-style:none}
     summary::-webkit-details-marker{display:none}
@@ -503,7 +506,15 @@
       <div style="position:relative;min-height:360px;height:100%;overflow:hidden">
         <div key="{{ reTab }}" role="img" aria-label="{{ reBadge }}" style="position:absolute;inset:0;background-color:var(--eos-bone);background-image:url({{ reImg }});background-size:cover;background-position:center;animation:imgIn .65s ease both"></div>
         <span style="position:absolute;inset:0;background:rgba(23,18,14,.34);pointer-events:none"></span>
-        <span style="position:absolute;left:20px;bottom:20px;background:rgba(247,242,234,.94);border-radius:999px;padding:8px 16px;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:var(--text-1)">{{ reBadge }} &#183; {{ reTerm }}</span>
+        <sc-if value="{{ isFlip }}" hint-placeholder-val="{{ true }}">
+          <button type="button" onClick="{{ openVideo }}" aria-label="Watch the Fix &amp; Flip film" style="position:absolute;inset:0;width:100%;height:100%;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
+            <span style="width:84px;height:84px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
+              <svg width="26" height="30" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
+            </span>
+            <span style="background:rgba(23,18,14,.72);border-radius:999px;padding:9px 18px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--eos-bone)">WATCH THE FIX &amp; FLIP FILM &#183; 30S</span>
+          </button>
+        </sc-if>
+        <span style="position:absolute;left:20px;bottom:20px;background:rgba(247,242,234,.94);border-radius:999px;padding:8px 16px;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:var(--text-1);pointer-events:none">{{ reBadge }} &#183; {{ reTerm }}</span>
       </div>
     </div>
     <p style="margin:16px 0 0;font-family:var(--font-mono);font-size:12px;color:var(--text-3)">Eos can accept real estate in Brazil, Mexico, Colombia, Argentina, Peru, Ecuador, Paraguay or Chile as collateral. <a href="RealEstate.dc.html" style="font-size:12px">Learn how &#8594;</a></p>
@@ -750,10 +761,23 @@
 </section>
 
 <dc-import name="SiteFooter" hint-size="100%,720px"></dc-import>
+
+<sc-if value="{{ videoOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeVideo }}" style="position:fixed;inset:0;z-index:700;background:rgba(23,18,14,.78);display:flex;align-items:center;justify-content:center;padding:28px;animation:scrimIn .3s ease both">
+    <div onClick="{{ stopClick }}" style="position:relative;width:min(960px,100%);animation:videoIn .42s cubic-bezier(.22,.8,.3,1) both">
+      <video src="uploads/video_fix_flip_eos.mp4" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;border-radius:18px;background:var(--eos-charcoal);box-shadow:var(--shadow-overlay)"></video>
+      <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <span style="font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:rgba(247,242,234,.62)">FIX &amp; FLIP &#183; BUY, RENOVATE, SELL &#8804; 12 MO</span>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="sm" href="GetStarted.dc.html?interest=realestate" hint-size="150px,38px">Check my rate</x-import>
+      </div>
+      <button type="button" onClick="{{ closeVideo }}" aria-label="Close video" style="position:absolute;top:-16px;right:-16px;width:42px;height:42px;border-radius:999px;background:var(--eos-bone);border:none;cursor:pointer;font-size:21px;line-height:1;color:var(--eos-charcoal);display:flex;align-items:center;justify-content:center;font-family:var(--font-ui);transition:transform .15s ease" style-hover="transform:scale(1.08)">&#215;</button>
+    </div>
+  </div>
+</sc-if>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Real estate showcase&quot;},&quot;ctaTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;ember&quot;,&quot;charcoal&quot;],&quot;default&quot;:&quot;ember&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact band&quot;}}">
 class Component extends DCLogic {
-  state = { reTab: null, sol: 0 };
+  state = { reTab: null, sol: 0, videoOpen: false };
   reBtn(on) {
     return (on
       ? "background:var(--eos-charcoal);border:1px solid var(--eos-charcoal);color:var(--eos-bone)"
@@ -843,6 +867,11 @@ class Component extends DCLogic {
       rePoints: re.points,
       reTerm: re.term,
       reImg: re.img,
+      isFlip: tab === "flip",
+      videoOpen: this.state.videoOpen,
+      openVideo: () => this.setState({ videoOpen: true }),
+      closeVideo: () => this.setState({ videoOpen: false }),
+      stopClick: (e) => e.stopPropagation(),
       ctaSectionStyle: ctaTheme === "charcoal" ? "background:var(--surface-dark)" : "background:var(--eos-ember)",
       ctaBtnVariant: ctaTheme === "charcoal" ? "primary" : "secondary",
       ctaSun: 170,
