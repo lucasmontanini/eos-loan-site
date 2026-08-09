@@ -43,7 +43,9 @@
     summary::-webkit-details-marker{display:none}
     img{max-width:100%}
     section{scroll-margin-top:72px}
-    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="herocard-m"]{display:flex !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{min-height:64px !important}[data-vert]{display:none !important}}
+    @media (max-width:1199px){[data-r="sol"]>div{height:570px !important}}
+    @media (max-width:1023px){[data-r="sol"]>div{height:630px !important}}
+    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="herocard-m"]{display:flex !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{height:auto !important;flex-grow:0 !important;background:var(--surface-card) !important}[data-panel]{position:static !important;width:auto !important;opacity:1 !important;transform:none !important;pointer-events:auto !important;padding-top:22px}[data-grid]{grid-template-columns:1fr !important;height:auto !important}[data-grid]>*{min-width:0}[data-grid]>*:nth-child(2){padding:18px !important}[data-sign]{display:none !important}[data-vert]{display:none !important}}
   </style>
 </helmet>
 
@@ -298,15 +300,15 @@
       <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:22ch">Your brand. Our credit rails.</h2>
       <p style="margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:62ch">Solutions put Eos inside your product — B2B2B or B2B2C. Offer financing at your point of sale while we handle underwriting, compliance and servicing. You close more sales.</p>
     </div>
-    <div data-r="sol" style="margin-top:44px;display:flex;gap:14px;align-items:stretch;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
+    <div data-r="sol" style="margin-top:44px;display:flex;gap:14px;align-items:stretch;container-type:inline-size;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
       <div style="{{ solCard0 }}" onClick="{{ setSol0 }}">
         <div style="display:flex;justify-content:space-between;align-items:center">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">01</span>
-          <span style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign0 }}</span>
+          <span data-sign="1" style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign0 }}</span>
         </div>
         <span data-vert="1" style="{{ solVert0 }}">Credit button</span>
-        <div style="{{ solOpen0 }}">
-          <div style="width:100%;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;padding-top:24px;min-height:370px;box-sizing:border-box">
+        <div data-panel="1" style="{{ solOpen0 }}">
+          <div data-grid="1" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;height:100%;box-sizing:border-box">
             <div style="display:flex;flex-direction:column">
               <h3 style="font-family:var(--font-ui);font-weight:800;font-size:26px;line-height:1.15;max-width:16ch">A credit button in your platform</h3>
               <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:38ch">A water-filtration company adds one button to its quote flow — the customer gets an Eos decision without leaving the page.</p>
@@ -358,11 +360,11 @@
       <div style="{{ solCard1 }}" onClick="{{ setSol1 }}">
         <div style="display:flex;justify-content:space-between;align-items:center">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">02</span>
-          <span style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign1 }}</span>
+          <span data-sign="1" style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign1 }}</span>
         </div>
         <span data-vert="1" style="{{ solVert1 }}">Financing links</span>
-        <div style="{{ solOpen1 }}">
-          <div style="width:100%;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;padding-top:24px;min-height:370px;box-sizing:border-box">
+        <div data-panel="1" style="{{ solOpen1 }}">
+          <div data-grid="1" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;height:100%;box-sizing:border-box">
             <div style="display:flex;flex-direction:column">
               <h3 style="font-family:var(--font-ui);font-weight:800;font-size:26px;line-height:1.15;max-width:16ch">Financing links, zero code</h3>
               <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:38ch">A furniture store drops a link at checkout — the customer finances the purchase, the store gets paid in full.</p>
@@ -407,11 +409,11 @@
       <div style="{{ solCard2 }}" onClick="{{ setSol2 }}">
         <div style="display:flex;justify-content:space-between;align-items:center">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">03</span>
-          <span style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign2 }}</span>
+          <span data-sign="1" style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign2 }}</span>
         </div>
         <span data-vert="1" style="{{ solVert2 }}">Cross-border money</span>
-        <div style="{{ solOpen2 }}">
-          <div style="width:100%;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;padding-top:24px;min-height:370px;box-sizing:border-box">
+        <div data-panel="1" style="{{ solOpen2 }}">
+          <div data-grid="1" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;height:100%;box-sizing:border-box">
             <div style="display:flex;flex-direction:column">
               <h3 style="font-family:var(--font-ui);font-weight:800;font-size:26px;line-height:1.15;max-width:16ch">Cross-border money, embedded</h3>
               <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:38ch">Your customers send and receive between their home country and the US — without leaving your product.</p>
@@ -841,10 +843,10 @@ class Component extends DCLogic {
     return "font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;" + (on ? "color:rgba(247,242,234,.6)" : "color:var(--text-3)");
   }
   solCard(on) {
-    return (on ? "flex:3.2 1 0%;background:var(--surface-card)" : "flex:0.55 1 0%;background:var(--eos-bone)") + ";border-radius:18px;padding:26px 24px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;min-width:72px;min-height:470px;box-sizing:border-box;position:relative;transition:flex .6s cubic-bezier(.25,.8,.25,1),background .5s ease";
+    return (on ? "flex-grow:3.2;background:var(--surface-card)" : "flex-grow:.55;background:var(--eos-bone)") + ";flex-shrink:1;flex-basis:0%;border-radius:18px;padding:26px 24px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;min-width:72px;height:510px;box-sizing:border-box;position:relative;transition:flex-grow .55s cubic-bezier(.4,0,.2,1),background .4s ease";
   }
   solOpen(on) {
-    return on ? "opacity:1;transition:opacity .45s ease .2s" : "opacity:0;transition:opacity .2s ease;pointer-events:none;height:0;overflow:hidden";
+    return "position:absolute;left:24px;right:24px;top:74px;bottom:26px;overflow:hidden;width:calc((100cqw - 172px) * 0.744186);" + (on ? "opacity:1;transform:translateY(0);transition:opacity .38s ease .16s,transform .5s cubic-bezier(.25,.8,.25,1) .16s" : "opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .16s ease,transform .16s ease");
   }
   solVert(on) {
     return "position:absolute;left:50%;bottom:30px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font-weight:800;font-size:15px;white-space:nowrap;color:var(--text-1);" + (on ? "opacity:0;transition:opacity .15s ease" : "opacity:1;transition:opacity .4s ease .25s");
