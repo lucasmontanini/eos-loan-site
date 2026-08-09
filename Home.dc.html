@@ -43,7 +43,7 @@
     summary::-webkit-details-marker{display:none}
     img{max-width:100%}
     section{scroll-margin-top:72px}
-    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{min-height:64px !important}[data-vert]{display:none !important}}
+    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="herocard-m"]{display:flex !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{min-height:64px !important}[data-vert]{display:none !important}}
   </style>
 </helmet>
 
@@ -69,6 +69,25 @@
         <span>Soft credit pull — no score impact</span>
         <span>Licensed lender · NMLS #2744537</span>
         <span>Texas &amp; Florida</span>
+      </div>
+      <div data-r="herocard-m" style="display:none;margin-top:40px;justify-content:center">
+        <div style="width:min(340px,100%);height:214px;background:var(--eos-charcoal);border-radius:18px;padding:22px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-2deg);animation:float 7s ease-in-out infinite alternate">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="sign" size="{{ szCardSign }}" on-dark="{{ yes }}" hint-size="54px,24px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szCardSun }}" color="bone" hint-size="26px,26px"></x-import>
+          </div>
+          <div>
+            <div style="width:38px;height:26px;background:var(--eos-bone);border-radius:6px;display:grid;grid-template-columns:1fr 1fr;opacity:.92">
+              <div style="border-right:1.5px solid rgba(23,18,14,.35);border-bottom:1.5px solid rgba(23,18,14,.35)"></div>
+              <div style="border-bottom:1.5px solid rgba(23,18,14,.35)"></div>
+            </div>
+            <div style="margin-top:12px;font-family:var(--font-mono);font-size:16px;letter-spacing:.14em;color:var(--eos-bone)">5310 &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 0424</div>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:rgba(247,242,234,.62)">
+            <span>EOS MEMBER</span>
+            <span>VALID 08/30</span>
+          </div>
+        </div>
       </div>
     </div>
     <div data-r="herovis" style="position:relative;height:530px;animation:rev 1s ease both">
