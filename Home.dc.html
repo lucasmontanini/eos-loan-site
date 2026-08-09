@@ -540,6 +540,40 @@
   </div>
 </section>
 
+<section style="background:var(--surface-dark)">
+  <div style="max-width:1240px;margin:0 auto;padding:104px 28px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">Fix &amp; Hold &#183; The film</span>
+        </div>
+        <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;color:var(--eos-bone);max-width:16ch">Build wealth in dollars. Live on the rent.</h2>
+        <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:54ch">Buy, renovate and lease long-term with financing of 48 to 72 months — a US rental portfolio that pays you every month. Thirty seconds tell the story better than we can.</p>
+      </div>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html?interest=realestate" hint-size="170px,48px">Check my rate</x-import>
+    </div>
+    <div style="position:relative;margin-top:44px;border-radius:18px;overflow:hidden;border:1px solid var(--line-inverse);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
+      <sc-if value="{{ holdIdle }}" hint-placeholder-val="{{ true }}">
+        <video src="uploads/video_fix_hold.mp4#t=1.5" preload="metadata" muted="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+        <button type="button" onClick="{{ playHold }}" aria-label="Play the Fix &amp; Hold film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
+          <span style="width:92px;height:92px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
+            <svg width="28" height="32" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
+          </span>
+          <span style="background:rgba(23,18,14,.72);border-radius:999px;padding:9px 18px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--eos-bone)">WATCH &#183; 30S</span>
+        </button>
+      </sc-if>
+      <sc-if value="{{ holdPlaying }}" hint-placeholder-val="{{ false }}">
+        <video src="uploads/video_fix_hold.mp4" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+      </sc-if>
+    </div>
+    <div style="margin-top:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:rgba(247,242,234,.45)">
+      <span>FIX &amp; HOLD &#183; RENT LONG-TERM &#183; 48&#8211;72 MO</span>
+      <span>Property in your home country can be collateral</span>
+    </div>
+  </div>
+</section>
+
 <section style="background:var(--eos-white)">
   <div style="max-width:1240px;margin:0 auto;padding:0 28px 104px;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
     <a href="Contact.dc.html?interest=equipment" style="position:relative;border-radius:18px;overflow:hidden;min-height:420px;display:flex;text-decoration:none;background:var(--eos-charcoal)">
@@ -796,7 +830,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Real estate showcase&quot;},&quot;ctaTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;ember&quot;,&quot;charcoal&quot;],&quot;default&quot;:&quot;ember&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact band&quot;}}">
 class Component extends DCLogic {
-  state = { reTab: null, sol: 0, videoOpen: false };
+  state = { reTab: null, sol: 0, videoOpen: false, holdPlaying: false };
   reBtn(on) {
     return (on
       ? "background:var(--eos-charcoal);border:1px solid var(--eos-charcoal);color:var(--eos-bone)"
@@ -891,6 +925,9 @@ class Component extends DCLogic {
       openVideo: () => this.setState({ videoOpen: true }),
       closeVideo: () => this.setState({ videoOpen: false }),
       stopClick: (e) => e.stopPropagation(),
+      holdIdle: !this.state.holdPlaying,
+      holdPlaying: this.state.holdPlaying,
+      playHold: () => this.setState({ holdPlaying: true }),
       ctaSectionStyle: ctaTheme === "charcoal" ? "background:var(--surface-dark)" : "background:var(--eos-ember)",
       ctaBtnVariant: ctaTheme === "charcoal" ? "primary" : "secondary",
       ctaSun: 170,

@@ -32,6 +32,7 @@
     @keyframes rev{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
     @keyframes float{from{transform:translateY(-8px)}to{transform:translateY(10px)}}
     @keyframes floatB{from{transform:translateY(7px)}to{transform:translateY(-8px)}}
+    @keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(232,64,31,.45)}70%{box-shadow:0 0 0 22px rgba(232,64,31,0)}100%{box-shadow:0 0 0 0 rgba(232,64,31,0)}}
     html{scroll-behavior:smooth}body{background:var(--eos-white)}
     summary{list-style:none}
     summary::-webkit-details-marker{display:none}
@@ -128,6 +129,58 @@
             <span style="border:1px solid var(--line-strong);border-radius:999px;padding:9px 16px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em">{{ reTerm }}</span>
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="GetStarted.dc.html?interest=realestate" hint-size="150px,44px">Check my rate</x-import>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--eos-white);border-top:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">The films</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">Two strategies. Thirty seconds each.</h2>
+    </div>
+    <div data-r="cols2" style="margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:16px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
+      <div>
+        <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
+          <sc-if value="{{ vFlipIdle }}" hint-placeholder-val="{{ true }}">
+            <video src="uploads/video_fix_flip_eos.mp4#t=1.5" preload="metadata" muted="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+            <button type="button" onClick="{{ playVFlip }}" aria-label="Play the Fix &amp; Flip film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
+              <span style="width:72px;height:72px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
+                <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
+              </span>
+            </button>
+          </sc-if>
+          <sc-if value="{{ vFlipPlaying }}" hint-placeholder-val="{{ false }}">
+            <video src="uploads/video_fix_flip_eos.mp4" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+          </sc-if>
+        </div>
+        <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <span style="font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--text-2)">FIX &amp; FLIP &#183; BUY, RENOVATE, SELL &#8804; 12 MO</span>
+          <a href="GetStarted.dc.html?interest=realestate" style="font-size:13.5px">Check my rate &#8594;</a>
+        </div>
+      </div>
+      <div>
+        <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
+          <sc-if value="{{ vHoldIdle }}" hint-placeholder-val="{{ true }}">
+            <video src="uploads/video_fix_hold.mp4#t=1.5" preload="metadata" muted="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+            <button type="button" onClick="{{ playVHold }}" aria-label="Play the Fix &amp; Hold film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
+              <span style="width:72px;height:72px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
+                <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
+              </span>
+            </button>
+          </sc-if>
+          <sc-if value="{{ vHoldPlaying }}" hint-placeholder-val="{{ false }}">
+            <video src="uploads/video_fix_hold.mp4" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+          </sc-if>
+        </div>
+        <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <span style="font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--text-2)">FIX &amp; HOLD &#183; RENT LONG-TERM &#183; 48&#8211;72 MO</span>
+          <a href="GetStarted.dc.html?interest=realestate" style="font-size:13.5px">Check my rate &#8594;</a>
         </div>
       </div>
     </div>
@@ -312,7 +365,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Strategies&quot;}}">
 class Component extends DCLogic {
-  state = { reTab: null };
+  state = { reTab: null, vFlip: false, vHold: false };
   segStyle(w, kind) {
     const base = `flex:0 0 ${w}%;display:flex;align-items:center;padding:0 10px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;white-space:nowrap;overflow:hidden;`;
     if (kind === "buy") return base + "background:var(--eos-charcoal);color:var(--eos-bone)";
@@ -370,6 +423,12 @@ class Component extends DCLogic {
     const re = this.RE[tab] || this.RE.flip;
     return {
       yes: true,
+      vFlipIdle: !this.state.vFlip,
+      vFlipPlaying: this.state.vFlip,
+      playVFlip: () => this.setState({ vFlip: true }),
+      vHoldIdle: !this.state.vHold,
+      vHoldPlaying: this.state.vHold,
+      playVHold: () => this.setState({ vHold: true }),
       reTab: tab,
       reTabItems: [
         { value: "flip", label: "Fix & Flip" },
