@@ -27,7 +27,7 @@
 </helmet>
 <div style="background:var(--eos-white);border-bottom:1px solid var(--line);position:relative" onMouseLeave="{{ closeMenus }}">
   <div style="max-width:1240px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;gap:16px;flex-wrap:nowrap">
-    <a href="Home.dc.html" onMouseEnter="{{ closeMenus }}" style="text-decoration:none;display:flex;align-items:center;gap:7px;flex:none" aria-label="Eos Loan home">
+    <a href="/" onMouseEnter="{{ closeMenus }}" style="text-decoration:none;display:flex;align-items:center;gap:7px;flex:none" aria-label="Eos Loan home">
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" color="charcoal" hint-size="17px,17px"></x-import>
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ logoSize }}" hint-size="118px,26px"></x-import>
     </a>
@@ -170,7 +170,7 @@
   <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
     <div style="position:fixed;inset:0;z-index:600;background:var(--eos-bone);display:flex;flex-direction:column;padding:0 24px 24px;overflow:auto;animation:overlayIn .25s ease both">
       <div style="height:64px;display:flex;align-items:center;justify-content:space-between;flex:none">
-        <a href="Home.dc.html" style="text-decoration:none;display:flex;align-items:center;gap:7px" aria-label="Eos Loan home">
+        <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:7px" aria-label="Eos Loan home">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" color="charcoal" hint-size="17px,17px"></x-import>
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ logoSize }}" hint-size="118px,26px"></x-import>
         </a>
