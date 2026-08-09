@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Contact — Eos Loan</title>
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/base.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/styles.css">
+  <script src="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/_ds_bundle.js"></script>
+  <style>
+    @keyframes rev{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+    html{scroll-behavior:smooth}body{background:var(--eos-white)}
+    @media (max-width:920px){[data-r="cols2"],[data-r="row2"]{grid-template-columns:1fr !important}}
+  </style>
+</helmet>
+
+<dc-import name="SiteHeader" active="contact" style="position:fixed;top:0;left:0;right:0;z-index:120" hint-size="100%,64px"></dc-import>
+<div style="height:64px"></div>
+
+<section style="background:var(--eos-white)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:80px 28px 104px;display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:start">
+    <div style="animation:rev .8s ease both">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Contact</span>
+      </div>
+      <h1 style="margin-top:20px;font-size:clamp(36px,4vw,54px);line-height:1.06;max-width:12ch">Talk to our team.</h1>
+      <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:44ch">Tell us about the project or the partnership. A human answers within one business day.</p>
+      <div style="margin-top:36px;display:flex;flex-direction:column;gap:22px">
+        <div>
+          <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)">Phone &#183; WhatsApp</div>
+          <a href="tel:+18339893737" style="display:inline-block;margin-top:6px;font-weight:800;font-size:16px;color:var(--text-1);text-decoration:none" style-hover="color:var(--eos-ember)">+1 833-989-3737</a>
+        </div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)">Email</div>
+          <a href="mailto:contact@eosloan.com" style="display:inline-block;margin-top:6px;font-weight:800;font-size:16px;color:var(--text-1);text-decoration:none" style-hover="color:var(--eos-ember)">contact@eosloan.com</a>
+        </div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)">Office</div>
+          <div style="margin-top:6px;font-weight:600;font-size:15px">1401 Lake Plaza Drive, Spring, TX 77389</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3)">Hours</div>
+          <div style="margin-top:6px;font-weight:600;font-size:15px">Mon to Fri, 8am to 6pm CST</div>
+        </div>
+      </div>
+      <p style="margin:36px 0 0;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">Eos Loan &#183; NMLS #2744537</p>
+    </div>
+
+    <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:36px;animation:rev .9s ease both">
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:16px">
+          <div data-r="row2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Name" name="name" required="{{ yes }}" placeholder="Your full name" value="{{ fName }}" onChange="{{ setName }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Company" name="company" placeholder="Optional" value="{{ fCompany }}" onChange="{{ setCompany }}" hint-size="100%,72px"></x-import>
+          </div>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Email" type="email" name="email" required="{{ yes }}" placeholder="you@example.com" value="{{ fEmail }}" onChange="{{ setEmail }}" hint-size="100%,72px"></x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="I am interested in" options="{{ interestOptions }}" value="{{ fInterest }}" onChange="{{ setInterest }}" hint-size="100%,72px"></x-import>
+          <div>
+            <label for="msg" style="display:block;font-size:13px;font-weight:800;margin-bottom:6px">Message <span style="color:var(--text-3);font-weight:600">(optional)</span></label>
+            <textarea id="msg" name="message" placeholder="Tell us a little about the project…" style="width:100%;box-sizing:border-box;min-height:110px;border:1px solid var(--line-strong);border-radius:12px;padding:12px 14px;font-family:var(--font-ui);font-size:15px;color:var(--text-1);background:var(--surface-card);resize:vertical"></textarea>
+          </div>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="100%,48px">Send message</x-import>
+          <p style="margin:0;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">We only use this information to reply to your request.</p>
+        </form>
+      </sc-if>
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:18px;padding:12px 4px">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szSun }}" color="ember" hint-size="44px,44px"></x-import>
+          <h3 style="font-size:30px">Received.</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:46ch">Thanks{{ thanksName }} — our team will reach out at <b>{{ fEmail }}</b> within one business day about <b>{{ fInterestLabel }}</b>.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="GetStarted.dc.html" hint-size="160px,44px">Check your rate</x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Home.dc.html" hint-size="140px,44px">Back to home</x-import>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,720px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSuccess&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Preview&quot;}}">
+class Component extends DCLogic {
+  state = (() => {
+    const q = new URLSearchParams(location.search);
+    const map = {
+      realestate: "Real estate credit",
+      vehicle: "Vehicle credit",
+      equipment: "Equipment financing",
+      partner: "Offer credit to my clients",
+      business: "Business credit",
+    };
+    return {
+      submitted: false,
+      fName: "",
+      fCompany: "",
+      fEmail: q.get("email") || "",
+      fInterest: map[q.get("interest")] || "Real estate credit",
+    };
+  })();
+  renderVals() {
+    const submitted = this.state.submitted || !!this.props.showSuccess;
+    return {
+      yes: true,
+      notSubmitted: !submitted,
+      submitted,
+      fName: this.state.fName,
+      fCompany: this.state.fCompany,
+      fEmail: this.state.fEmail,
+      fInterest: this.state.fInterest,
+      fInterestLabel: this.state.fInterest.toLowerCase(),
+      thanksName: this.state.fName ? ", " + this.state.fName.split(" ")[0] : "",
+      interestOptions: ["Real estate credit", "Vehicle credit", "Equipment financing", "Offer credit to my clients", "Business credit"],
+      setName: (e) => this.setState({ fName: e.target.value }),
+      setCompany: (e) => this.setState({ fCompany: e.target.value }),
+      setEmail: (e) => this.setState({ fEmail: e.target.value }),
+      setInterest: (v) => this.setState({ fInterest: v && v.target ? v.target.value : v }),
+      submit: (e) => { e.preventDefault(); this.setState({ submitted: true }); },
+      szSun: 44,
+    };
+  }
+}
+</script>
+</body>
+</html>

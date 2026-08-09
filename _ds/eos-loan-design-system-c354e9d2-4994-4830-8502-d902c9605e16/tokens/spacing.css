@@ -1,0 +1,15 @@
+:root{
+  /* 8pt system */
+  --sp-1:8px;--sp-2:16px;--sp-3:24px;--sp-4:32px;--sp-5:40px;--sp-6:48px;--sp-8:64px;--sp-10:80px;--sp-12:96px;
+  /* radii: 12 buttons+inputs, 18 cards, 999 pills */
+  --radius-control:12px;
+  --radius-card:18px;
+  --radius-pill:999px;
+  /* elevation by border + contrast; shadows minimal or none (overlays only) */
+  --shadow-none:none;
+  --shadow-overlay:0 32px 80px -32px rgba(23,18,14,.40);
+  /* controls */
+  --control-h:48px;
+  --control-h-sm:38px;
+  --control-h-lg:56px;
+}

@@ -1,0 +1,33 @@
+/* Eos Loan · Ember direction. Flat color, zero gradients, light-first. 1 brand color + ink + paper — never two strong colors competing. */
+:root{
+  /* base */
+  --eos-charcoal:#17120E; /* ink, dark sections */
+  --eos-bone:#F7F2EA;     /* default background of everything */
+  --eos-ember:#E8401F;    /* the brand's color: CTAs, wordmark dot, icon, achievement. Rare on purpose (~8%). */
+  --eos-white:#FFFFFF;    /* cards over Bone */
+  --eos-ember-tint:#FBDCD4; /* Ember 12% — pills and chips only */
+  /* interaction (system decisions, not in brief) */
+  --eos-ember-hover:#CF3819;
+  --eos-charcoal-hover:#2A221C;
+  /* text */
+  --text-1:var(--eos-charcoal);
+  --text-2:rgba(23,18,14,.62);
+  --text-3:rgba(23,18,14,.40);
+  --text-inverse:var(--eos-bone);
+  --text-2-inverse:rgba(247,242,234,.62);
+  /* lines */
+  --line:rgba(23,18,14,.10);
+  --line-strong:rgba(23,18,14,.22);
+  --line-inverse:rgba(247,242,234,.16);
+  /* surfaces */
+  --surface-page:var(--eos-bone);
+  --surface-card:var(--eos-white);
+  --surface-dark:var(--eos-charcoal);
+  --surface-tint:var(--eos-ember-tint);
+  /* semantic accent */
+  --accent:var(--eos-ember);
+  --accent-hover:var(--eos-ember-hover);
+  --on-accent:var(--eos-bone);
+  --on-dark:var(--eos-bone);
+  --focus-ring:rgba(232,64,31,.45);
+}

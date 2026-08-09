@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Check your rate — Eos Loan</title>
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/base.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/styles.css">
+  <script src="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/_ds_bundle.js"></script>
+  <style>
+    @keyframes rev{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}body{background:var(--eos-white)}
+    @media (max-width:920px){[data-r="row2"]{grid-template-columns:1fr !important}}
+  </style>
+</helmet>
+
+<div style="background:var(--eos-white);border-bottom:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="Home.dc.html" style="text-decoration:none;display:flex;align-items:center;gap:7px" aria-label="Eos Loan home">
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ szIcon }}" color="charcoal" hint-size="17px,17px"></x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ szLogo }}" hint-size="118px,26px"></x-import>
+    </a>
+    <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" size="sm" href="Home.dc.html" hint-size="120px,36px">&#8592; Back to site</x-import>
+  </div>
+</div>
+
+<section style="background:var(--eos-white);min-height:78vh">
+  <div style="max-width:660px;margin:0 auto;padding:64px 28px 96px;animation:rev .7s ease both">
+    <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+      <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-3)">STEP 1 OF 2 &#183; SOFT CREDIT CHECK</div>
+      <h1 style="margin-top:14px;font-size:clamp(34px,3.8vw,46px)">Check your rate.</h1>
+      <p style="margin:14px 0 0;font-size:16px;line-height:1.6;color:var(--text-2)">Two minutes. Soft credit pull — your score is not affected.</p>
+      <div style="margin-top:28px;background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:32px">
+        <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:16px">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Email" type="email" name="email" required="{{ yes }}" placeholder="you@example.com" value="{{ fEmail }}" onChange="{{ setEmail }}" hint-size="100%,72px"></x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Full name" name="name" required="{{ yes }}" placeholder="As it appears on your ID" hint-size="100%,72px"></x-import>
+          <div data-r="row2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="State" options="{{ stateOptions }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="Financing for" options="{{ finOptions }}" value="{{ fFin }}" onChange="{{ setFin }}" hint-size="100%,72px"></x-import>
+          </div>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="How much do you need?" name="amount" inputMode="numeric" placeholder="$25,000" hint="An estimate is fine — you can adjust later." hint-size="100%,92px"></x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="100%,48px">See my rate</x-import>
+          <p style="margin:0;font-family:var(--font-mono);font-size:11px;line-height:1.7;color:var(--text-3)">Checking your rate uses a soft credit inquiry and does not affect your credit score. SSN or ITIN accepted. Eos Loan &#183; NMLS #2744537.</p>
+        </form>
+      </div>
+    </sc-if>
+    <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:40px;display:flex;flex-direction:column;gap:18px">
+        <div>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="ember" hint-size="110px,26px">Pre-qualified</x-import>
+        </div>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Stat" value="9.90%" label="Your APR from" detail="Illustrative — final terms confirmed by a specialist" size="lg" accent="{{ yes }}" hint-size="240px,130px"></x-import>
+        <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:46ch">Based on a soft pull — your score wasn't touched. We sent next steps to <b>{{ fEmailShown }}</b>. A loan specialist confirms final terms; no obligation.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="Home.dc.html" hint-size="140px,44px">Back to home</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html" hint-size="150px,44px">Talk to our team</x-import>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+<div style="background:var(--eos-white);border-top:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:20px 28px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">
+    <span>Eos Loan &#183; NMLS #2744537</span>
+    <a href="https://eosloan.com/legal" style="color:var(--text-3);font-size:11px">Privacy &amp; Legal</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSuccess&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Preview&quot;}}">
+class Component extends DCLogic {
+  state = (() => {
+    const q = new URLSearchParams(location.search);
+    const map = {
+      realestate: "Real estate investment",
+      vehicle: "Vehicle",
+      equipment: "Equipment",
+      business: "Working capital",
+      partner: "Working capital",
+    };
+    return {
+      submitted: false,
+      fEmail: q.get("email") || "",
+      fFin: map[q.get("interest")] || "Real estate investment",
+    };
+  })();
+  renderVals() {
+    const submitted = this.state.submitted || !!this.props.showSuccess;
+    return {
+      yes: true,
+      notSubmitted: !submitted,
+      submitted,
+      fEmail: this.state.fEmail,
+      fEmailShown: this.state.fEmail || "your email",
+      fFin: this.state.fFin,
+      stateOptions: ["Texas", "Florida"],
+      finOptions: ["Real estate investment", "Home renovation", "Vehicle", "Equipment", "Working capital", "Energy & water upgrade"],
+      setEmail: (e) => this.setState({ fEmail: e.target.value }),
+      setFin: (v) => this.setState({ fFin: v && v.target ? v.target.value : v }),
+      submit: (e) => { e.preventDefault(); this.setState({ submitted: true }); },
+      szLogo: 22,
+      szIcon: 17,
+    };
+  }
+}
+</script>
+</body>
+</html>

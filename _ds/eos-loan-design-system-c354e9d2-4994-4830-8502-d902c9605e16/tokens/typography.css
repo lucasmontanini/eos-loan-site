@@ -1,0 +1,19 @@
+:root{
+  --font-brand:'Archivo',sans-serif;            /* wordmark only, weight var(--wm-weight) (stand-in for custom drawing) */
+  --wm-weight:700;                              /* was Archivo Black (~900); 700 reads cleaner small */
+  --font-display:'Inter',system-ui,sans-serif;  /* headlines 600, big numbers 700 */
+  --font-ui:'Inter',system-ui,sans-serif;       /* UI + body, 400–800 */
+  --font-mono:'JetBrains Mono',monospace;       /* numbers, data, code */
+  --track-wordmark:-.045em;
+  /* scale — hero desktop 56px+, mobile 36px+ */
+  --fs-hero:clamp(36px,4.8vw,64px);/* @kind font */
+  --fs-display:clamp(28px,3.4vw,44px);/* @kind font */
+  --fs-h2:clamp(24px,2.6vw,32px);/* @kind font */
+  --fs-h3:20px;
+  --fs-body:16px;
+  --fs-small:13.5px;
+  --fs-eyebrow:12px;
+  --lh-tight:1.05;/* @kind font */
+  --lh-heading:1.15;/* @kind font */
+  --lh-body:1.6;/* @kind font */
+}

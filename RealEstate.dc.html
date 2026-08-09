@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Real estate credit — Eos Loan</title>
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/tokens/base.css">
+  <link rel="stylesheet" href="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/styles.css">
+  <script src="_ds/eos-loan-design-system-c354e9d2-4994-4830-8502-d902c9605e16/_ds_bundle.js"></script>
+  <script src="image-slot.js"></script>
+  <style>
+    @keyframes rev{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes float{from{transform:translateY(-8px)}to{transform:translateY(10px)}}
+    @keyframes floatB{from{transform:translateY(7px)}to{transform:translateY(-8px)}}
+    html{scroll-behavior:smooth}body{background:var(--eos-white)}
+    summary{list-style:none}
+    summary::-webkit-details-marker{display:none}
+    img{max-width:100%}
+    section{scroll-margin-top:72px}
+    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="quote"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important}}
+  </style>
+</helmet>
+
+<dc-import name="SiteHeader" active="realestate" style="position:fixed;top:0;left:0;right:0;z-index:120" hint-size="100%,64px"></dc-import>
+<div style="height:64px"></div>
+
+<section style="background:var(--eos-white)">
+  <div data-r="hero" style="max-width:1240px;margin:0 auto;padding:80px 28px 88px;display:grid;grid-template-columns:1.02fr 0.98fr;gap:56px;align-items:center">
+    <div style="animation:rev .8s ease both">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Real estate &#183; Texas &amp; Florida</span>
+      </div>
+      <h1 style="margin-top:22px;font-size:clamp(40px,4.6vw,66px);line-height:1.05;letter-spacing:-.015em;max-width:15ch">Build wealth in <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">dollars</span>, one property at a time.</h1>
+      <p style="margin:22px 0 0;font-size:17px;line-height:1.6;color:var(--text-2);max-width:52ch">Purchase and renovation in one loan, with draws released as the work gets done. For investors and homeowners — apply with your SSN or ITIN.</p>
+      <form action="GetStarted.dc.html" method="get" style="margin-top:30px;display:flex;gap:10px;max-width:520px;flex-wrap:wrap">
+        <input type="hidden" name="interest" value="realestate">
+        <div style="flex:1;min-width:240px">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" type="email" name="email" required="{{ yes }}" placeholder="Your email" hint-size="100%,48px"></x-import>
+        </div>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="170px,48px">Check your rate</x-import>
+      </form>
+      <div style="margin-top:18px;display:flex;gap:22px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">
+        <span>Soft credit pull — no score impact</span>
+        <span>Collateral accepted from 8 countries</span>
+      </div>
+    </div>
+    <div style="position:relative;animation:rev 1s ease both">
+      <img src="uploads/family_beatiful.jpg" alt="Family in the backyard of their home" style="width:100%;height:460px;object-fit:cover;border-radius:18px">
+      <div style="position:absolute;left:-24px;bottom:32px;width:224px;background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:20px;animation:floatB 6s ease-in-out infinite alternate">
+        <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--text-2)">RENOVATION DRAW</div>
+        <div style="margin-top:8px;font-family:var(--font-display);font-weight:700;font-size:32px">$32,000</div>
+        <div style="margin-top:6px;font-family:var(--font-mono);font-size:12px;color:var(--text-2)">Stage 2 of 4 &#183; Released</div>
+      </div>
+      <div style="position:absolute;right:-10px;bottom:32px;background:var(--eos-ember-tint);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:12px;animation:float 7s ease-in-out infinite alternate">
+        <span style="width:8px;height:8px;border-radius:999px;background:var(--eos-ember)"></span>
+        <span style="font-family:var(--font-mono);font-size:12.5px">Rented &#183; $2,350/mo</span>
+      </div>
+      <div style="position:absolute;right:6px;bottom:6px;font-family:var(--font-mono);font-size:10.5px;color:rgba(247,242,234,.85)">Illustrative</div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--eos-bone);border-top:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Strategies</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">Three ways to play the same asset.</h2>
+      <p style="margin:14px 0 0;font-size:16px;color:var(--text-2);max-width:58ch">Same property, different horizons. Pick the exit first — the financing follows.</p>
+    </div>
+    <div style="margin-top:32px">
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Tabs" items="{{ reTabItems }}" value="{{ reTab }}" onChange="{{ setReTab }}" hint-size="360px,44px"></x-import>
+    </div>
+    <div key="{{ reTab }}" style="margin-top:20px;background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:40px;animation:rev .45s ease both">
+      <div data-r="cols2" style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:start">
+        <div>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="tint" hint-size="90px,24px">{{ reBadge }}</x-import>
+          <h3 style="margin-top:16px;font-size:28px;max-width:20ch">{{ reTitle }}</h3>
+          <p style="margin:12px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:52ch">{{ reDesc }}</p>
+          <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ rePoints }}" as="pt" hint-placeholder-count="3">
+              <div style="display:flex;align-items:baseline;gap:10px;font-size:14.5px;font-weight:600">
+                <span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span>
+                <span>{{ pt }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-3)">TIMELINE</div>
+          <div style="margin-top:12px;display:flex;gap:3px;height:38px;border-radius:8px;overflow:hidden">
+            <sc-for list="{{ rePhases }}" as="ph" hint-placeholder-count="3">
+              <div style="{{ ph.style }}">{{ ph.label }}</div>
+            </sc-for>
+          </div>
+          <div style="margin-top:8px;display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:10.5px;color:var(--text-3)">
+            <span>MO 0</span>
+            <span>{{ reScale }}</span>
+          </div>
+          <div style="margin-top:24px;border-top:1px solid var(--line);padding-top:18px">
+            <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-3)">BEST FOR</div>
+            <p style="margin:8px 0 0;font-size:14.5px;line-height:1.6;font-weight:600">{{ reBest }}</p>
+          </div>
+          <div style="margin-top:22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+            <span style="border:1px solid var(--line-strong);border-radius:999px;padding:9px 16px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em">{{ reTerm }}</span>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="GetStarted.dc.html?interest=realestate" hint-size="150px,44px">Check my rate</x-import>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface-dark)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:104px 28px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:center">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">The Eos difference</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:20ch">Your property back home counts here.</h2>
+      <p style="margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:56ch">Built for international investors: Eos can accept real estate you own in your home country as collateral for your US investment — unlocking terms without selling what you already built.</p>
+      <div style="margin-top:26px">
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="Contact.dc.html?interest=realestate" hint-size="270px,48px">Ask about cross-border collateral</x-import>
+      </div>
+      <p style="margin:18px 0 0;font-family:var(--font-mono);font-size:11px;color:rgba(247,242,234,.45)">Subject to valuation and credit approval.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Brazil</span>
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Mexico</span>
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Colombia</span>
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Argentina</span>
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Peru</span>
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Ecuador</span>
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Paraguay</span>
+      <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:12px 20px;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">Chile</span>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--eos-white)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Also under real estate</span>
+        </div>
+        <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">For the home you already have.</h2>
+      </div>
+    </div>
+    <div style="margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <div style="background:var(--surface-tint);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Rent advance</h3>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Turn future rent payments into cash today.</p>
+        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Renovations</h3>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Kitchens, bathrooms, additions — staged draws as work completes.</p>
+        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Windows &amp; roofing</h3>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">The upgrades that protect everything else.</p>
+        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">HVAC &amp; water</h3>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Heating, cooling and whole-home water filtration.</p>
+        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+      </div>
+      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Solar, battery &amp; landscaping</h3>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Energy independence and curb appeal, financed together.</p>
+        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--eos-white);border-top:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">How it works</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:var(--fs-display)">From rate check to keys.</h2>
+    </div>
+    <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">01</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Check your rate</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Two minutes, soft credit pull. See real numbers before anyone calls you.</p>
+      </div>
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">02</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Get your term sheet</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Pick the strategy; we structure purchase, renovation and exit in one plan — total cost in dollars.</p>
+      </div>
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">03</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Close and fund</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Average funding turnaround of 48 hours after approval.</p>
+      </div>
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">04</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Draw as you build</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Renovation funds released stage by stage, so the project keeps its own pace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--eos-white);border-top:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:88px 28px">
+    <div data-r="quote" style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:44px;display:grid;grid-template-columns:72px 1fr;gap:28px;align-items:start;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <image-slot id="av-ailton" src="avatars/av-ailton.png" shape="circle" style="width:72px;height:72px" placeholder="Photo"></image-slot>
+      <div>
+        <p style="margin:0;font-family:var(--font-display);font-weight:600;font-size:23px;line-height:1.45;max-width:44ch">&#8220;I bought and renovated in Florida with my apartment in S&#227;o Paulo as part of the collateral. Eos understood both sides of the border.&#8221;</p>
+        <div style="margin-top:18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+          <span style="font-weight:800;font-size:14.5px">Ailton Fabri</span>
+          <span style="font-family:var(--font-mono);font-size:11.5px;color:var(--text-2)">Real estate investment financing</span>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="tint" hint-size="110px,24px">Fix &amp; Hold investor</x-import>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--eos-white)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:8px 28px 96px;display:grid;grid-template-columns:0.8fr 1.2fr;gap:64px;align-items:start">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Real estate FAQ</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:var(--fs-display)">The fine print, out loud.</h2>
+    </div>
+    <div>
+      <details style="border-bottom:1px solid var(--line);padding:20px 0">
+        <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
+          <span style="font-weight:700;font-size:16.5px">How does cross-border collateral work?</span>
+          <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
+        </summary>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">You pledge real estate you own in Brazil, Mexico, Colombia, Argentina, Peru, Ecuador, Paraguay or Chile. We run a valuation with local counsel and count it toward your collateral package — subject to credit approval.</p>
+      </details>
+      <details style="border-bottom:1px solid var(--line);padding:20px 0">
+        <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
+          <span style="font-weight:700;font-size:16.5px">Do I need a US credit history?</span>
+          <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
+        </summary>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">You can apply with an SSN or an ITIN. We look at the project — purchase price, renovation budget, exit — not just the file.</p>
+      </details>
+      <details style="border-bottom:1px solid var(--line);padding:20px 0">
+        <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
+          <span style="font-weight:700;font-size:16.5px">How do renovation draws work?</span>
+          <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
+        </summary>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">The renovation budget is split into stages. As each stage is completed and verified, the next draw is released — you don't pay interest on money you haven't used yet.</p>
+      </details>
+      <details style="padding:20px 0">
+        <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
+          <span style="font-weight:700;font-size:16.5px">Where does Eos finance properties?</span>
+          <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
+        </summary>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Investment and residential properties in Texas and Florida. The collateral can come from further away — see above.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface-dark)">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 28px;display:flex;justify-content:space-between;align-items:center;gap:48px;flex-wrap:wrap">
+    <div>
+      <h2 style="font-size:clamp(34px,3.8vw,52px);color:var(--eos-bone);max-width:18ch">Ready to run the numbers?</h2>
+      <p style="margin:14px 0 0;font-size:16px;color:var(--text-2-inverse);max-width:48ch">Two minutes, soft credit pull. See your terms before anyone calls you.</p>
+      <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html?interest=realestate" hint-size="170px,48px">Check my rate</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="Contact.dc.html?interest=realestate" hint-size="170px,48px">Talk to our team</x-import>
+      </div>
+    </div>
+    <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ ctaSun }}" color="bone" hint-size="150px,150px"></x-import>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,720px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Strategies&quot;}}">
+class Component extends DCLogic {
+  state = { reTab: null };
+  segStyle(w, kind) {
+    const base = `flex:0 0 ${w}%;display:flex;align-items:center;padding:0 10px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;white-space:nowrap;overflow:hidden;`;
+    if (kind === "buy") return base + "background:var(--eos-charcoal);color:var(--eos-bone)";
+    if (kind === "work") return base + "background:var(--eos-ember-tint);color:var(--text-1)";
+    if (kind === "rent") return base + "background:var(--surface-card);border:1px solid var(--line-strong);color:var(--text-2)";
+    return base + "background:var(--eos-ember);color:var(--eos-bone)"; // exit
+  }
+  RE = {
+    flip: {
+      badge: "FIX & FLIP",
+      title: "Buy, renovate, sell — inside 12 months.",
+      desc: "The investor buys below market, renovates with staged draws, and sells within a short window of up to 12 months. Capital comes back fast and goes again.",
+      points: ["Purchase and renovation in one loan", "Draws released as work completes", "Short horizon: capital recycles quickly"],
+      term: "UP TO 12 MONTHS",
+      best: "Investors recycling capital fast and compounding deal by deal.",
+      scale: "MO 12",
+      phases: [
+        { label: "BUY", w: 14, kind: "buy" },
+        { label: "RENOVATE", w: 38, kind: "work" },
+        { label: "SELL", w: 48, kind: "exit" },
+      ],
+    },
+    keep: {
+      badge: "FIX & KEEP",
+      title: "Rent it out. Sell when the market says so.",
+      desc: "Buy and renovate, lease the property, and sell between 12 and 60 months — rent carries the loan while you wait for a stronger appreciation window.",
+      points: ["Rental income while you hold", "Exit any time from 12 to 60 months", "Positioned for market recovery and upside"],
+      term: "12–60 MONTHS",
+      best: "Investors who can wait for the market and want rent covering the ride.",
+      scale: "MO 60",
+      phases: [
+        { label: "BUY", w: 10, kind: "buy" },
+        { label: "RENOVATE", w: 20, kind: "work" },
+        { label: "RENT", w: 46, kind: "rent" },
+        { label: "SELL", w: 24, kind: "exit" },
+      ],
+    },
+    hold: {
+      badge: "FIX & HOLD",
+      title: "Build wealth in dollars. Live on the rent.",
+      desc: "Buy, renovate and lease long-term with financing of 48 to 72 months. For investors building a US portfolio and living off rental yield.",
+      points: ["Long-term rental portfolio in USD", "Financing terms of 48–72 months", "Property in your home country can be collateral"],
+      term: "48–72 MONTHS",
+      best: "Investors building patrimony in dollars and living on rental yield.",
+      scale: "MO 72",
+      phases: [
+        { label: "BUY", w: 10, kind: "buy" },
+        { label: "RENOVATE", w: 18, kind: "work" },
+        { label: "RENT & HOLD", w: 72, kind: "rent" },
+      ],
+    },
+  };
+  renderVals() {
+    const tab = this.state.reTab || this.props.defaultStrategy || "flip";
+    const re = this.RE[tab] || this.RE.flip;
+    return {
+      yes: true,
+      reTab: tab,
+      reTabItems: [
+        { value: "flip", label: "Fix & Flip" },
+        { value: "keep", label: "Fix & Keep" },
+        { value: "hold", label: "Fix & Hold" },
+      ],
+      setReTab: (v) => this.setState({ reTab: v }),
+      reBadge: re.badge,
+      reTitle: re.title,
+      reDesc: re.desc,
+      rePoints: re.points,
+      reTerm: re.term,
+      reBest: re.best,
+      reScale: re.scale,
+      rePhases: re.phases.map((p) => ({ label: p.label, style: this.segStyle(p.w, p.kind) })),
+      ctaSun: 150,
+    };
+  }
+}
+</script>
+</body>
+</html>
