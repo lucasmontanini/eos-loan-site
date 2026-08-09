@@ -477,6 +477,62 @@
   </div>
 </section>
 
+<section style="background:var(--eos-bone);border-top:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto;padding:104px 28px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Embedded finance &#183; B2B2C &#183; The film</span>
+        </div>
+        <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:18ch">Let your customers say <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">yes</span>.</h2>
+        <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:56ch">Offer Eos financing where the decision happens &mdash; in your store, your quote, your checkout. The customer pays over time, you get paid upfront, and the sale closes today.</p>
+      </div>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="Contact.dc.html?interest=partner" hint-size="180px,48px">Partner with Eos</x-import>
+    </div>
+    <div style="position:relative;margin-top:44px;border-radius:18px;overflow:hidden;border:1px solid var(--line);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
+      <sc-if value="{{ b2bIdle }}" hint-placeholder-val="{{ true }}">
+        <video src="uploads/video_businesB2B2C.mp4#t=1.5" preload="metadata" muted="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+        <button type="button" onClick="{{ playB2b }}" aria-label="Play the embedded finance film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
+          <span style="width:92px;height:92px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
+            <svg width="28" height="32" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
+          </span>
+          <span style="background:rgba(23,18,14,.72);border-radius:999px;padding:9px 18px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--eos-bone)">WATCH &#183; 30S</span>
+        </button>
+      </sc-if>
+      <sc-if value="{{ b2bPlaying }}" hint-placeholder-val="{{ false }}">
+        <video src="uploads/video_businesB2B2C.mp4" autoPlay="{{ yes }}" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+      </sc-if>
+    </div>
+    <div style="margin-top:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">
+      <span>B2B2C &#183; FINANCING AT YOUR POINT OF SALE</span>
+      <span>SSN or ITIN &#183; decision in minutes</span>
+    </div>
+    <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">01</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Close more sales</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">An approval at the moment of decision turns quotes into signed contracts.</p>
+      </div>
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">02</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">You get paid upfront</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Eos funds the full amount to you. Your customer pays over time.</p>
+      </div>
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">03</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Your brand in front</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">We underwrite, service and stay compliant behind the scenes.</p>
+      </div>
+      <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
+        <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">04</span>
+        <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Live in days</h3>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Send a financing link or add a button. API optional, no code required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section style="background:var(--eos-white)">
   <div style="max-width:1240px;margin:0 auto;padding:104px 28px">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
@@ -832,7 +888,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Real estate showcase&quot;},&quot;ctaTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;ember&quot;,&quot;charcoal&quot;],&quot;default&quot;:&quot;ember&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact band&quot;}}">
 class Component extends DCLogic {
-  state = { reTab: null, sol: 0, videoOpen: false, holdPlaying: false };
+  state = { reTab: null, sol: 0, videoOpen: false, holdPlaying: false, b2bPlaying: false };
   reBtn(on) {
     return (on
       ? "background:var(--eos-charcoal);border:1px solid var(--eos-charcoal);color:var(--eos-bone)"
@@ -930,6 +986,9 @@ class Component extends DCLogic {
       holdIdle: !this.state.holdPlaying,
       holdPlaying: this.state.holdPlaying,
       playHold: () => this.setState({ holdPlaying: true }),
+      b2bIdle: !this.state.b2bPlaying,
+      b2bPlaying: this.state.b2bPlaying,
+      playB2b: () => this.setState({ b2bPlaying: true }),
       ctaSectionStyle: ctaTheme === "charcoal" ? "background:var(--surface-dark)" : "background:var(--eos-ember)",
       ctaBtnVariant: ctaTheme === "charcoal" ? "primary" : "secondary",
       ctaSun: 170,
