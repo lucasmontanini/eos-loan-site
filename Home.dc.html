@@ -496,7 +496,7 @@
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="Contact.dc.html?interest=partner" hint-size="180px,48px">Partner with Eos</x-import>
     </div>
     <div style="position:relative;margin-top:44px;border-radius:18px;overflow:hidden;border:1px solid var(--line);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
-      <video id="film-b2b" src="uploads/video_businesB2B2C.mp4" poster="uploads/poster-b2b2c.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+      <video id="film-b2b" src="uploads/film-b2b2c.mp4" poster="uploads/film-b2b2c-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
       <sc-if value="{{ b2bIdle }}" hint-placeholder-val="{{ true }}">
         <button type="button" onClick="{{ playB2b }}" aria-label="Play the embedded finance film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
           <span style="width:92px;height:92px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
@@ -614,7 +614,7 @@
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html?interest=realestate" hint-size="170px,48px">Check my rate</x-import>
     </div>
     <div style="position:relative;margin-top:44px;border-radius:18px;overflow:hidden;border:1px solid var(--line-inverse);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
-      <video id="film-hold" src="uploads/video_fix_hold.mp4" poster="uploads/poster-fix-hold.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+      <video id="film-hold" src="uploads/film-fixhold.mp4" poster="uploads/film-fixhold-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
       <sc-if value="{{ holdIdle }}" hint-placeholder-val="{{ true }}">
         <button type="button" onClick="{{ playHold }}" aria-label="Play the Fix &amp; Hold film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
           <span style="width:92px;height:92px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
@@ -875,7 +875,7 @@
 <sc-if value="{{ videoOpen }}" hint-placeholder-val="{{ false }}">
   <div onClick="{{ closeVideo }}" style="position:fixed;inset:0;z-index:700;background:rgba(23,18,14,.78);display:flex;align-items:center;justify-content:center;padding:28px;animation:scrimIn .3s ease both">
     <div onClick="{{ stopClick }}" style="position:relative;width:min(960px,100%);animation:videoIn .42s cubic-bezier(.22,.8,.3,1) both">
-      <video id="film-flip-modal" src="uploads/video_fix_flip_eos.mp4" poster="uploads/poster-fix-flip.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;border-radius:18px;background:var(--eos-charcoal);box-shadow:var(--shadow-overlay)"></video>
+      <video id="film-flip-modal" src="uploads/film-fixflip.mp4" poster="uploads/film-fixflip-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;border-radius:18px;background:var(--eos-charcoal);box-shadow:var(--shadow-overlay)"></video>
       <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
         <span style="font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:rgba(247,242,234,.62)">FIX &amp; FLIP &#183; BUY, RENOVATE, SELL &#8804; 12 MO</span>
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="sm" href="GetStarted.dc.html?interest=realestate" hint-size="150px,38px">Check my rate</x-import>

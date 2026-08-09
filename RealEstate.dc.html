@@ -152,7 +152,7 @@
     <div data-r="cols2" style="margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:16px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
       <div>
         <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
-          <video id="film-re-flip" src="uploads/video_fix_flip_eos.mp4" poster="uploads/poster-fix-flip.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+          <video id="film-re-flip" src="uploads/film-fixflip.mp4" poster="uploads/film-fixflip-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
           <sc-if value="{{ vFlipIdle }}" hint-placeholder-val="{{ true }}">
             <button type="button" onClick="{{ playVFlip }}" aria-label="Play the Fix &amp; Flip film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
               <span style="width:72px;height:72px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
@@ -168,7 +168,7 @@
       </div>
       <div>
         <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
-          <video id="film-re-hold" src="uploads/video_fix_hold.mp4" poster="uploads/poster-fix-hold.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
+          <video id="film-re-hold" src="uploads/film-fixhold.mp4" poster="uploads/film-fixhold-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
           <sc-if value="{{ vHoldIdle }}" hint-placeholder-val="{{ true }}">
             <button type="button" onClick="{{ playVHold }}" aria-label="Play the Fix &amp; Hold film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
               <span style="width:72px;height:72px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
