@@ -50,7 +50,7 @@
     section{scroll-margin-top:72px}
     @media (max-width:1199px){[data-r="sol"]>div{height:570px !important}}
     @media (max-width:1023px){[data-r="sol"]>div{height:630px !important}}
-    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="herocard-m"]{display:flex !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{height:auto !important;flex-grow:0 !important;background:var(--surface-card) !important}[data-panel]{position:static !important;width:auto !important;opacity:1 !important;transform:none !important;pointer-events:auto !important;padding-top:22px}[data-grid]{grid-template-columns:1fr !important;height:auto !important}[data-grid]>*{min-width:0}[data-grid]>*:nth-child(2){padding:18px !important}[data-sign]{display:none !important}[data-vert]{display:none !important}}
+    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"],[data-r="row2"],[data-r="pgrid"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="herocard-m"]{display:flex !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{height:auto !important;flex-grow:0 !important;background:var(--surface-card) !important}[data-panel]{position:static !important;width:auto !important;opacity:1 !important;transform:none !important;pointer-events:auto !important;padding-top:22px}[data-grid]{grid-template-columns:1fr !important;height:auto !important}[data-grid]>*{min-width:0}[data-grid]>*:nth-child(2){padding:18px !important}[data-sign]{display:none !important}[data-vert]{display:none !important}}
   </style>
 </helmet>
 
@@ -796,6 +796,92 @@
   </div>
 </section>
 
+<section id="battery" style="background:var(--surface-dark)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:96px 28px;display:grid;grid-template-columns:0.95fr 1.05fr;gap:64px;align-items:center">
+    <img loading="lazy" decoding="async" src="uploads/home2-1600.jpg" alt="Single-family home on a quiet street" style="width:100%;height:440px;object-fit:cover;border-radius:18px;display:block;animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:rgba(247,242,234,.6)">HOME BACKUP &amp; BATTERY</div>
+      <h2 style="margin-top:16px;font-size:clamp(32px,3.8vw,52px);line-height:1.07;letter-spacing:-.015em;color:var(--eos-bone);max-width:16ch">When the grid goes down, the house doesn't.</h2>
+      <p style="margin:20px 0 0;font-size:16.5px;line-height:1.65;color:rgba(247,242,234,.78);max-width:48ch">A battery system that takes over automatically &#8212; no fuel, no noise, no subscription. You own it.</p>
+      <div style="margin-top:28px;display:flex;gap:36px;flex-wrap:wrap">
+        <div><div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--eos-bone)">&lt;20 ms</div><div style="margin-top:4px;font-size:13px;color:rgba(247,242,234,.62)">Transfer time</div></div>
+        <div><div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--eos-bone)">&lt;25 dB</div><div style="margin-top:4px;font-size:13px;color:rgba(247,242,234,.62)">Silent</div></div>
+        <div><div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--eos-bone)">10 yr</div><div style="margin-top:4px;font-size:13px;color:rgba(247,242,234,.62)">Warranty</div></div>
+      </div>
+      <div style="margin-top:32px">
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="secondary" href="Battery.dc.html" hint-size="200px,48px">Explore home backup</x-import>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partners" style="background:var(--eos-white);border-top:1px solid var(--line)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:96px 28px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:start">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">For partners</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:17ch">Sell more. Carry none of the <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">credit risk</span>.</h2>
+      <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:52ch">Installers, contractors and resellers send their customers to Eos at the point of sale. We are the lender &#8212; we underwrite, fund and service the loan. You close the job with a clear monthly payment on the table.</p>
+      <div data-r="pgrid" style="margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:28px 32px">
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">01</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">No credit risk to you</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Your customer is the borrower. Eos carries the loan, not your business.</p>
+        </div>
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">02</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">Full margin, no dealer fee</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">We never deduct a fee from what we pass through to you.</p>
+        </div>
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">03</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">A decision in minutes</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">The customer applies from a digital form at the moment of sale, subject to approval.</p>
+        </div>
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">04</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">A dashboard, not a phone tree</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Track every application and reissue a link so the customer resumes where they stopped.</p>
+        </div>
+      </div>
+      <p style="margin:30px 0 0;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">Onboarding is an application, an approval and one training session.</p>
+    </div>
+
+    <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:18px;padding:36px;animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <sc-if value="{{ pnNotSent }}" hint-placeholder-val="{{ true }}">
+        <div>
+          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:22px">Become a partner</h3>
+          <p style="margin:8px 0 0;font-size:14.5px;line-height:1.6;color:var(--text-2)">Tell us what you sell and we will come back within one business day.</p>
+          <form onSubmit="{{ pnSubmit }}" style="margin-top:24px;display:flex;flex-direction:column;gap:16px">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Company" name="pcompany" required="{{ yes }}" placeholder="Your company name" value="{{ pnCompany }}" onChange="{{ pnSetCompany }}" hint-size="100%,72px"></x-import>
+            <div data-r="row2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Your name" name="pname" required="{{ yes }}" placeholder="Full name" value="{{ pnName }}" onChange="{{ pnSetName }}" hint-size="100%,72px"></x-import>
+              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Phone" type="tel" name="pphone" placeholder="(000) 000-0000" value="{{ pnPhone }}" onChange="{{ pnSetPhone }}" hint-size="100%,72px"></x-import>
+            </div>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Work email" type="email" name="pemail" required="{{ yes }}" placeholder="you@company.com" value="{{ pnEmail }}" onChange="{{ pnSetEmail }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="What you sell" options="{{ pnCategories }}" value="{{ pnCategory }}" onChange="{{ pnSetCategory }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="Monthly volume (optional)" options="{{ pnVolumes }}" value="{{ pnVolume }}" onChange="{{ pnSetVolume }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="100%,48px">Apply to partner</x-import>
+            <p style="margin:0;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">No cost to join &#183; no exclusivity &#183; no credit risk to you.</p>
+          </form>
+        </div>
+      </sc-if>
+      <sc-if value="{{ pnSent }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:18px;padding:12px 4px">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ pnSun }}" color="ember" hint-size="44px,44px"></x-import>
+          <h3 style="font-size:28px">Received.</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:44ch">Thanks{{ pnThanks }} &#8212; our partnerships team will reach out at <b>{{ pnEmail }}</b> within one business day about <b>{{ pnCategoryLabel }}</b>.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html?interest=partner" hint-size="150px,44px">Talk to us now</x-import>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
 <section style="{{ ctaSectionStyle }}">
   <div style="max-width:1240px;margin:0 auto;padding:110px 28px;display:flex;justify-content:space-between;align-items:center;gap:56px;flex-wrap:wrap">
     <div style="max-width:640px">
@@ -887,7 +973,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Real estate showcase&quot;},&quot;ctaTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;ember&quot;,&quot;charcoal&quot;],&quot;default&quot;:&quot;ember&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact band&quot;}}">
 class Component extends DCLogic {
-  state = { reTab: null, sol: 0, videoOpen: false, holdPlaying: false, b2bPlaying: false };
+  state = { reTab: null, sol: 0, videoOpen: false, holdPlaying: false, b2bPlaying: false, pnSent: false, pnCompany: "", pnName: "", pnPhone: "", pnEmail: "", pnCategory: "Energy storage & backup", pnVolume: "Prefer not to say" };
   reBtn(on) {
     return (on
       ? "background:var(--eos-charcoal);border:1px solid var(--eos-charcoal);color:var(--eos-bone)"
@@ -991,6 +1077,26 @@ class Component extends DCLogic {
       ctaSectionStyle: ctaTheme === "charcoal" ? "background:var(--surface-dark)" : "background:var(--eos-ember)",
       ctaBtnVariant: ctaTheme === "charcoal" ? "primary" : "secondary",
       ctaSun: 170,
+      pnSent: this.state.pnSent,
+      pnNotSent: !this.state.pnSent,
+      pnCompany: this.state.pnCompany,
+      pnName: this.state.pnName,
+      pnPhone: this.state.pnPhone,
+      pnEmail: this.state.pnEmail,
+      pnCategory: this.state.pnCategory,
+      pnCategoryLabel: this.state.pnCategory.toLowerCase(),
+      pnVolume: this.state.pnVolume,
+      pnThanks: this.state.pnName ? ", " + this.state.pnName.split(" ")[0] : "",
+      pnCategories: ["Energy storage & backup", "Water filtration", "Roofing", "HVAC", "Home improvement & repair", "Energy efficiency", "Other"],
+      pnVolumes: ["Prefer not to say", "Under 10 jobs/month", "10 to 50 jobs/month", "Over 50 jobs/month"],
+      pnSetCompany: (e) => this.setState({ pnCompany: e.target.value }),
+      pnSetName: (e) => this.setState({ pnName: e.target.value }),
+      pnSetPhone: (e) => this.setState({ pnPhone: e.target.value }),
+      pnSetEmail: (e) => this.setState({ pnEmail: e.target.value }),
+      pnSetCategory: (v) => this.setState({ pnCategory: v && v.target ? v.target.value : v }),
+      pnSetVolume: (v) => this.setState({ pnVolume: v && v.target ? v.target.value : v }),
+      pnSubmit: (e) => { e.preventDefault(); this.setState({ pnSent: true }); },
+      pnSun: 44,
     };
   }
 }
