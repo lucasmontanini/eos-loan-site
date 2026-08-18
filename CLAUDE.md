@@ -1,6 +1,8 @@
 # Eos Loan — marketing site
 
-Pages (Design Components, same directory): `Home.dc.html`, `RealEstate.dc.html`, `Battery.dc.html`, `Contact.dc.html`, `GetStarted.dc.html`. Shared children: `SiteHeader.dc.html` (prop `active`), `SiteFooter.dc.html`. Planned: personal financing, business financing, partners (see `content/SITE-CONTENT-MAP.md`).
+Pages (Design Components, same directory): `Home.dc.html`, `Battery.dc.html`, `Partners.dc.html`, `Business.dc.html`, `Contact.dc.html`, `GetStarted.dc.html`. Shared children: `SiteHeader.dc.html` (prop `active`), `SiteFooter.dc.html`. `_archive/` holds retired pages — not linked, not deployed as navigation.
+
+**The site sells three things and only three**: personal financing (leads), home backup & battery, business financing (secondary). Real estate, payments, foreign exchange, working capital, receivables advance and vehicles were retired in Aug 2026 — do not reintroduce them without Lucas saying so.
 
 ## Content source
 
@@ -14,8 +16,6 @@ Pages (Design Components, same directory): `Home.dc.html`, `RealEstate.dc.html`,
 - ®Eos Loan NMLS #2744537 · DBA of Eos Solar Inc., licensed lender in Texas · applicants use SSN or ITIN.
 - Track record: $4B+ originated to date · 30k+ proposals processed.
 - Contact: +1 833-989-3737 (phone + WhatsApp) · contact@eosloan.com · 1401 Lake Plaza Drive, Spring, TX 77389 · Mon–Fri 8am–6pm CST.
-- Cross-border collateral countries (real estate): Brazil, Mexico, Colombia, Argentina, Peru, Ecuador, Paraguay, Chile.
-- Real estate strategies: Fix & Flip (buy-renovate-sell, ≤12 mo) · Fix & Keep (buy-renovate-rent, sell 12–60 mo) · Fix & Hold (buy-renovate-rent, financing 48–72 mo, wealth in dollars).
 - Battery (all of it lives on `Battery.dc.html`, one summary block on the Home): under 20 ms transfer · under 25 dB · no fuel, no CO, no maintenance · 10-year warranty at 70% minimum retention · residential 9–45 kWh (6–30 h on essential loads) · commercial to 135 kWh · 3–6 weeks contract to energization · financing from ~$87/mo. The customer OWNS the system — never a subscription.
 - Consumer credit is an **unsecured personal loan**: the home is never collateral. Eos does not do HEA, HELOC or home equity. APR around 10%, terms 6–240 months, no dealer fee, no prepayment penalty — all illustrative and varying by partner and product.
 - **Products** = Eos delivers credit directly (business: payments, FX, working capital, receivables advance, equipment; personal: real estate, vehicles, energy/water upgrades). **Solutions** = embedded finance, B2B2B/B2B2C (credit button, financing links, cross-border money).

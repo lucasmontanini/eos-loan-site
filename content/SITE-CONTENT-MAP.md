@@ -58,16 +58,21 @@ These come from the briefing and may be stated on the site as written.
 
 | Page | File | Status | Role |
 |---|---|---|---|
-| Home | `Home.dc.html` | exists — needs the partner section (done) + battery block + product realignment | Consumer financing leads; one battery block; partner signup |
-| Personal financing | `Financing.dc.html` | **to build** | The main product page: unsecured personal loan |
-| Battery & home backup | `Battery.dc.html` | **to build** | Everything battery, self-contained |
-| Business financing | `Business.dc.html` | **to build (short)** | Commercial credit, secondary weight |
-| For partners | `Partners.dc.html` | **to build** | Long-form version of the Home `#partners` section |
-| Real estate | `RealEstate.dc.html` | exists | See "open question" below |
-| Contact | `Contact.dc.html` | exists | Add an "interest" value per new product |
-| Get started | `GetStarted.dc.html` | exists | Application entry point |
+| Home | `Home.dc.html` | **rebuilt** | Personal financing leads; one battery block; partner signup at `#partners` |
+| Battery & home backup | `Battery.dc.html` | **built** | Everything battery, self-contained |
+| For partners | `Partners.dc.html` | **built** | The partner programme, with the long application form at `#apply` |
+| Business financing | `Business.dc.html` | **built** | Commercial credit, deliberately short |
+| Contact | `Contact.dc.html` | updated | Interest options now match the new products |
+| Get started | `GetStarted.dc.html` | updated | Application entry point; category list realigned |
+| Real estate | `_archive/RealEstate.dc.html` | **archived** | Retired with the vertical. Kept on disk, not linked from anywhere |
 
----
+Decision (Aug 2026): the old verticals — real estate cross-border, payments, foreign
+exchange, working capital, receivables advance and vehicles — were removed from the site.
+None of them appear in the briefing. Nav, footer, Home sections, FAQ, form option lists and
+meta descriptions were all realigned.
+
+A dedicated `Financing.dc.html` was **not** built: the Home `#products` section carries the
+personal-financing story for now. Build it when that section outgrows the Home.
 
 ## Page specs
 
@@ -171,12 +176,17 @@ source for that pass. Header and footer already carry the EN · ES · PT switche
 
 ## Open items
 
-1. **Header/nav does not match this positioning.** `SiteHeader.dc.html` still presents Payments,
-   Foreign exchange, Working capital, Receivables advance, Equipment financing, Real estate,
-   Vehicles. None of those appear in this briefing. Needs a decision — see the question raised
-   with Lucas.
-2. **Solar must come out** of the header's "Energy & water" description.
-3. The partner form has no backend; it currently hands off to Contact. Wire it to the real
-   destination (CRM / inbox) before launch.
-4. The 4.7-star rating needs a link to the live Google profile before it is published as a claim.
-5. `My Pure Filter` requires written consent to be named.
+1. **The partner forms have no backend.** Both `Home.dc.html#partners` and
+   `Partners.dc.html#apply` show an inline success state and nothing is sent anywhere.
+   Wire them to the real destination (CRM or inbox) before launch.
+2. **`og-image.jpg` is stale.** `og/og-source.html` has been updated to the new positioning,
+   but the rendered JPEG still shows the old one. Re-render it.
+3. **Two testimonial slots are empty.** The quotes from Ailton Fabri (cross-border real
+   estate) and Mateus Silva Brummel (truck financing) were removed with their verticals —
+   their words were not rewritten. Two on-briefing quotes are needed to refill the row.
+4. **The "Eos credit" card section on the Home is not covered by the briefing.** It shows a
+   card product ("Approved in minutes. Accepted everywhere."). Left in place deliberately —
+   confirm whether it stays.
+5. The 4.7-star rating needs a link to the live Google profile before it is published.
+6. `My Pure Filter` requires written consent to be named.
+7. Battery photography is generic stock. The page would carry better with real installs.

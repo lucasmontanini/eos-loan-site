@@ -111,9 +111,6 @@ class Component extends DCLogic {
   state = (() => {
     const q = new URLSearchParams(location.search);
     const map = {
-      realestate: "Real estate credit",
-      vehicle: "Vehicle credit",
-      equipment: "Equipment financing",
       partner: "Offer credit to my clients",
       business: "Business credit",
       battery: "Home backup & battery",
@@ -123,7 +120,7 @@ class Component extends DCLogic {
       fName: "",
       fCompany: "",
       fEmail: q.get("email") || "",
-      fInterest: map[q.get("interest")] || "Real estate credit",
+      fInterest: map[q.get("interest")] || "Personal financing",
     };
   })();
   renderVals() {
@@ -138,7 +135,7 @@ class Component extends DCLogic {
       fInterest: this.state.fInterest,
       fInterestLabel: this.state.fInterest.toLowerCase(),
       thanksName: this.state.fName ? ", " + this.state.fName.split(" ")[0] : "",
-      interestOptions: ["Real estate credit", "Vehicle credit", "Equipment financing", "Home backup & battery", "Offer credit to my clients", "Business credit"],
+      interestOptions: ["Personal financing", "Home backup & battery", "Business credit", "Offer credit to my clients"],
       setName: (e) => this.setState({ fName: e.target.value }),
       setCompany: (e) => this.setState({ fCompany: e.target.value }),
       setEmail: (e) => this.setState({ fEmail: e.target.value }),
