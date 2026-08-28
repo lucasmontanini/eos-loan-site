@@ -2,7 +2,18 @@
 
 Pages (Design Components, same directory): `Home.dc.html`, `Battery.dc.html`, `Partners.dc.html`, `Business.dc.html`, `Contact.dc.html`, `GetStarted.dc.html`. Shared children: `SiteHeader.dc.html` (prop `active`), `SiteFooter.dc.html`. `_archive/` holds retired pages — not linked, not deployed as navigation.
 
-**The site sells three things and only three**: personal financing (leads), home backup & battery, business financing (secondary). Real estate, payments, foreign exchange, working capital, receivables advance and vehicles were retired in Aug 2026 — do not reintroduce them without Lucas saying so.
+**Taxonomy (SITE-UPD-01, 26-aug-2026): the site has exactly 3 avenues** — Real estate (`RealEstate.dc.html`), Utilities (`Utilities.dc.html`, with `Battery.dc.html` as the flagship product page) and Mobility & fleet (`Mobility.dc.html`). No page, menu, breadcrumb or filter may create a fourth category; "home improvement" does not exist as a category anywhere. Roofing, HVAC, outdoor and interior are consumer programs INSIDE real estate. When the site and a program document diverge, the document wins — see `content/SITE-UPD-01.2026-08-26.md`.
+
+## Term table (the source for every heading, bullet, dropdown and mockup)
+Fix & Flip ≤12 mo · Fix & Keep 36–60 · Fix & Hold 36–60 · Roofing 36–72 · Outdoor 36–72 · HVAC 24–72 · Interior 24–72 · Residential battery 60–72 · Solar+battery 60–72 · Water filtration 36–72 · EV charger 24–60 · Auto 24–72 · Commercial storage 60–84 (business-purpose, outside the consumer cap) · Truck lease-to-own 48 (business) · Invoice trading 30–120 days per invoice (business). **No consumer term above 72 months, ever** (`TERM_CAP`).
+
+## Content rules (SITE-UPD-01 §4)
+- **No savings claims** on HVAC, solar or battery, in any variation. The §25D residential energy tax credit ended Dec 2025 and is never mentioned.
+- **No discretionary pricing language.** Where a rate appears, this sentence appears: "Rates shown are the rates we lend at. Your rate depends on your credit tier and the term you choose, and it is confirmed after the credit decision. This is not an offer of credit."
+- **License formula**: "Eos Loan · Licensed lender in Texas · NMLS #2744537", with the footprint in a separate clause ("Serving Texas and Florida today…"). Never "Texas & Florida" presented as license.
+- **HVAC never uses energy language** (no VPP, telemetry, dispatch, bill savings). Its home is the real estate avenue; the utilities page may cross-list it as marketing only.
+- **CTA rule**: `live` products get "Check my rate" (Flip, Keep, Hold, residential battery, water filtration); everything else gets "Talk to us".
+- Forms capture `contact_initiated_by` (consumer/merchant/unknown, default merchant — it decides the cancellation window, not the product).
 
 ## Content source
 

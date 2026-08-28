@@ -104,7 +104,7 @@
       <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
         <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">04</span>
         <h3 style="margin-top:10px;font-family:var(--font-ui);font-weight:800;font-size:18px">Their home stays out of it</h3>
-        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">An unsecured personal loan, not a HELOC. No lien on the property, and none of the timeline of a mortgage transaction.</p>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Home programs are consumer credit that does not touch the equity in the house &#8212; no HELOC, and none of the timeline of a mortgage transaction.</p>
       </div>
     </div>
   </div>
@@ -166,11 +166,11 @@
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="ember" hint-size="86px,26px">Approved</x-import>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;border:1px solid var(--line);border-radius:12px;padding:14px 16px">
-            <span><span style="display:block;font-weight:800;font-size:14px">Roof replacement</span><span style="display:block;margin-top:2px;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">$18,400 &#183; 120 mo</span></span>
+            <span><span style="display:block;font-weight:800;font-size:14px">Roof replacement</span><span style="display:block;margin-top:2px;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">$18,400 &#183; 72 mo</span></span>
             <span style="flex:none;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;border:1px solid var(--line-strong);border-radius:999px;padding:5px 11px;color:var(--text-2)">FUNDED</span>
           </div>
           <div style="display:flex;justify-content:space-between;align-items:center;gap:14px;border:1px solid var(--line);border-radius:12px;padding:14px 16px">
-            <span><span style="display:block;font-weight:800;font-size:14px">Battery &amp; backup</span><span style="display:block;margin-top:2px;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">$24,000 &#183; 180 mo</span></span>
+            <span><span style="display:block;font-weight:800;font-size:14px">Battery &amp; backup</span><span style="display:block;margin-top:2px;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">$24,000 &#183; 72 mo</span></span>
             <span style="flex:none;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;border:1px solid var(--line-strong);border-radius:999px;padding:5px 11px;color:var(--text-2)">RESUME LINK</span>
           </div>
         </div>
@@ -190,12 +190,13 @@
       <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">If you sell something the house needs, we can finance it.</h2>
     </div>
     <div style="margin-top:40px;display:flex;gap:10px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
-      <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Energy storage &amp; backup</span>
+      <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Residential battery &amp; backup</span>
+      <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Solar + battery</span>
       <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Water filtration</span>
       <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Roofing</span>
       <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">HVAC</span>
-      <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Home improvement &amp; repair</span>
-      <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Energy efficiency</span>
+      <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Outdoor living</span>
+      <span style="background:var(--surface-card);border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-weight:700;font-size:14.5px">Auto dealers</span>
     </div>
     <p style="margin:24px 0 0;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">Availability of each category depends on the partner and the enrolled product. Selling something else? Ask us.</p>
   </div>
@@ -343,7 +344,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900},&quot;showSuccess&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Preview&quot;}}">
 class Component extends DCLogic {
-  state = { sent: false, fCompany: "", fName: "", fPhone: "", fEmail: "", fState: "", fCategory: "Energy storage & backup", fVolume: "Prefer not to say" };
+  state = { sent: false, fCompany: "", fName: "", fPhone: "", fEmail: "", fState: "", fCategory: "Residential battery & backup", fVolume: "Prefer not to say" };
   renderVals() {
     const sent = this.state.sent || !!this.props.showSuccess;
     return {
@@ -361,7 +362,7 @@ class Component extends DCLogic {
       categoryLabel: this.state.fCategory.toLowerCase(),
       fVolume: this.state.fVolume,
       thanks: this.state.fName ? ", " + this.state.fName.split(" ")[0] : "",
-      categories: ["Energy storage & backup", "Water filtration", "Roofing", "HVAC", "Home improvement & repair", "Energy efficiency", "Other"],
+      categories: ["Residential battery & backup", "Solar + battery", "Water filtration", "Roofing", "HVAC", "Outdoor living", "Auto dealer", "Other"],
       volumes: ["Prefer not to say", "Under 10 jobs/month", "10 to 50 jobs/month", "Over 50 jobs/month"],
       setCompany: (e) => this.setState({ fCompany: e.target.value }),
       setName: (e) => this.setState({ fName: e.target.value }),
