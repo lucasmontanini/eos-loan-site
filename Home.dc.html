@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Eos Loan">
 <meta property="og:title" content="Eos Loan — Built to finance everything essential.">
 <meta property="og:description" content="Credit for what's essential — real estate, utilities and mobility & fleet. Eos Loan · Licensed lender in Texas · NMLS #2744537.">
-<meta property="og:url" content="https://eos-loan-site.vercel.app/Home.dc.html">
+<meta property="og:url" content="https://eos-loan-site.vercel.app/">
 <meta property="og:image" content="https://eos-loan-site.vercel.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -67,7 +67,7 @@
       </div>
       <h1 style="margin-top:22px;font-size:clamp(42px,4.9vw,72px);line-height:1.04;letter-spacing:-.015em;max-width:13ch">Built to finance everything <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">essential</span>.</h1>
       <p style="margin:22px 0 0;font-size:17.5px;line-height:1.6;color:var(--text-2);max-width:52ch">Real estate, utilities, mobility &#8212; credit from the lender itself, decided in minutes and funded in about 48 hours. Apply with your SSN or ITIN.</p>
-      <form action="GetStarted.dc.html" method="get" style="margin-top:30px;display:flex;gap:10px;max-width:520px;flex-wrap:wrap">
+      <form action="/get-started" method="get" style="margin-top:30px;display:flex;gap:10px;max-width:520px;flex-wrap:wrap">
         <div style="flex:1;min-width:240px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" type="email" name="email" required="{{ yes }}" placeholder="Work or personal email" hint-size="100%,48px"></x-import>
         </div>
@@ -190,7 +190,7 @@
         <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:20ch">We are the lender, not a marketplace.</h2>
         <p style="margin:14px 0 0;font-size:16px;line-height:1.65;color:var(--text-2);max-width:58ch">Eos originates, approves and funds with its own capital under NMLS #2744537. One team from the application to the money &#8212; across three avenues of essential credit.</p>
       </div>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html" hint-size="170px,48px">Check your rate</x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/get-started" hint-size="170px,48px">Check your rate</x-import>
     </div>
 
     <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
@@ -208,8 +208,8 @@
             <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--eos-bone)">KEEP &#183; HOLD 36&#8211;60 MO</span>
           </div>
           <div style="margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap">
-            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="RealEstate.dc.html" hint-size="160px,44px">Explore real estate</x-import>
-            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" on-dark="{{ yes }}" href="GetStarted.dc.html?interest=realestate" hint-size="140px,44px">Check my rate</x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="/real-estate" hint-size="160px,44px">Explore real estate</x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" on-dark="{{ yes }}" href="/get-started?interest=realestate" hint-size="140px,44px">Check my rate</x-import>
           </div>
         </div>
       </div>
@@ -226,8 +226,8 @@
           <span style="border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--text-2)">WATER 36&#8211;72 MO</span>
         </div>
         <div style="margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap">
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="Utilities.dc.html" hint-size="150px,44px">Explore utilities</x-import>
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="GetStarted.dc.html?interest=battery" hint-size="140px,44px">Check my rate</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="/utilities" hint-size="150px,44px">Explore utilities</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="/get-started?interest=battery" hint-size="140px,44px">Check my rate</x-import>
         </div>
       </div>
 
@@ -243,8 +243,8 @@
           <span style="border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--text-2)">TRUCK 48 MO</span>
         </div>
         <div style="margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap">
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="Mobility.dc.html" hint-size="170px,44px">Explore mobility</x-import>
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html?interest=mobility" hint-size="120px,44px">Talk to us</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="/mobility" hint-size="170px,44px">Explore mobility</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="/contact?interest=mobility" hint-size="120px,44px">Talk to us</x-import>
         </div>
       </div>
     </div>
@@ -278,7 +278,7 @@
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Eos underwrites and pays the installer upfront</span></div>
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Decision in minutes — SSN or ITIN</span></div>
               </div>
-              <a href="Contact.dc.html?interest=partner" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">Talk about this case &#8594;</a>
+              <a href="/contact?interest=partner" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">Talk about this case &#8594;</a>
             </div>
             <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column;justify-content:center">
               <div style="display:flex;gap:6px">
@@ -334,7 +334,7 @@
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Customer splits it into installments</span></div>
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>You receive the full amount at once</span></div>
               </div>
-              <a href="Contact.dc.html?interest=partner" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">Talk about this case &#8594;</a>
+              <a href="/contact?interest=partner" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">Talk about this case &#8594;</a>
             </div>
             <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column;justify-content:center">
               <div style="display:flex;gap:6px">
@@ -384,7 +384,7 @@
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Resume links recover stalled deals</span></div>
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Onboarding: apply, approve, one training session</span></div>
               </div>
-              <a href="Partners.dc.html" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">See the partner programme &#8594;</a>
+              <a href="/partners" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">See the partner programme &#8594;</a>
             </div>
             <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column;justify-content:center">
               <div style="display:flex;gap:6px">
@@ -420,7 +420,7 @@
       <span style="display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:var(--text-2-inverse)"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember)"></span>Approval data flows back to you</span>
     </div>
     <div style="margin-top:32px">
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="Contact.dc.html?interest=partner" hint-size="180px,48px">Partner with Eos</x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/contact?interest=partner" hint-size="180px,48px">Partner with Eos</x-import>
     </div>
   </div>
 </section>
@@ -436,7 +436,7 @@
         <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:20ch">Financing at your point of sale.</h2>
         <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:56ch">Offer Eos financing where the decision happens &mdash; in your store, your quote or your checkout. The customer pays over time; you receive the full amount upfront.</p>
       </div>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="Partners.dc.html" hint-size="180px,48px">Partner with Eos</x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/partners" hint-size="180px,48px">Partner with Eos</x-import>
     </div>
     <div style="position:relative;margin-top:44px;max-width:820px;border-radius:18px;overflow:hidden;border:1px solid var(--line);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
       <video id="film-b2b" src="uploads/film-b2b2c.mp4" poster="uploads/film-b2b2c-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
@@ -578,8 +578,8 @@
       <h2 style="margin-top:20px;font-size:clamp(36px,4.2vw,58px);line-height:1.06;letter-spacing:-.015em;max-width:17ch">Credit for the projects a household depends on.</h2>
       <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:48ch">Backup power when the grid fails. A roof replaced in the week it leaks. The vehicle a family or a business depends on. Eos finances essential projects — with clear terms, a fast decision and a single team from application to funding.</p>
       <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html" hint-size="170px,48px">Check your rate</x-import>
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" href="Contact.dc.html" hint-size="150px,48px">Talk to us</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/get-started" hint-size="170px,48px">Check your rate</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" href="/contact" hint-size="150px,48px">Talk to us</x-import>
       </div>
       <p style="margin:18px 0 0;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">Soft credit pull — no score impact</p>
     </div>
@@ -600,8 +600,8 @@
         <div><div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--eos-bone)">10 yr</div><div style="margin-top:4px;font-size:13px;color:rgba(247,242,234,.62)">Warranty on the main components</div></div>
       </div>
       <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="secondary" href="GetStarted.dc.html?interest=battery" hint-size="160px,48px">Check my rate</x-import>
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="Battery.dc.html" hint-size="200px,48px">Explore home backup</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="secondary" href="/get-started?interest=battery" hint-size="160px,48px">Check my rate</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="/battery" hint-size="200px,48px">Explore home backup</x-import>
       </div>
     </div>
   </div>
@@ -666,7 +666,7 @@
           <h3 style="font-size:28px">Received.</h3>
           <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:44ch">Thanks{{ pnThanks }} &#8212; our partnerships team will reach out at <b>{{ pnEmail }}</b> within one business day about <b>{{ pnCategoryLabel }}</b>.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
-            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html?interest=partner" hint-size="150px,44px">Talk to us now</x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="/contact?interest=partner" hint-size="150px,44px">Talk to us now</x-import>
           </div>
         </div>
       </sc-if>
@@ -679,7 +679,7 @@
     <div style="max-width:640px">
       <h2 style="font-size:clamp(38px,4.4vw,62px);line-height:1.05;color:var(--eos-bone);max-width:16ch">Talk to our team.</h2>
       <p style="margin:18px 0 0;font-size:16.5px;line-height:1.6;color:rgba(247,242,234,.78)">Send us the project — our team replies within one business day.</p>
-      <form action="Contact.dc.html" method="get" style="margin-top:28px;display:flex;gap:10px;flex-wrap:wrap">
+      <form action="/contact" method="get" style="margin-top:28px;display:flex;gap:10px;flex-wrap:wrap">
         <div style="flex:1;min-width:240px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" type="email" name="email" required="{{ yes }}" placeholder="you@example.com" hint-size="100%,48px"></x-import>
         </div>
@@ -699,7 +699,7 @@
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">FAQ</span>
       </div>
       <h2 style="margin-top:18px;font-size:var(--fs-display)">Frequently asked questions.</h2>
-      <p style="margin:16px 0 0;font-size:15px;color:var(--text-2)">Something else on your mind? <a href="Contact.dc.html">Talk to our team &#8594;</a></p>
+      <p style="margin:16px 0 0;font-size:15px;color:var(--text-2)">Something else on your mind? <a href="/contact">Talk to our team &#8594;</a></p>
     </div>
     <div>
       <details style="border-bottom:1px solid var(--line);padding:20px 0">
@@ -749,7 +749,7 @@
           <span style="font-weight:700;font-size:16.5px">Can my company offer Eos financing to its customers?</span>
           <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
         </summary>
-        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Yes. Installers, contractors and resellers send their customers to Eos at the point of sale. You take no credit risk and keep the full margin &#8212; there is no dealer fee. <a href="Partners.dc.html">See the partner programme &#8594;</a></p>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Yes. Installers, contractors and resellers send their customers to Eos at the point of sale. You take no credit risk and keep the full margin &#8212; there is no dealer fee. <a href="/partners">See the partner programme &#8594;</a></p>
       </details>
     </div>
   </div>
