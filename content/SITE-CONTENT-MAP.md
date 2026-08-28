@@ -1,3 +1,10 @@
+# ⚠️ Superseded on taxonomy and terms (27-aug-2026)
+
+`SITE-UPD-01.2026-08-26.md` (in this folder) now governs taxonomy (3 avenues: real estate,
+utilities, mobility & fleet), every published term, CTAs and the compliance rules. Where this
+map and that brief diverge, **the brief wins**. This map remains the source for the battery
+facts and the internal-vs-public fact triage from the products briefing.
+
 # Site content map — what goes live, where
 
 Source: `eos-produtos-e-ofertas.PT.md` (record) · `eos-products-and-offerings.EN.md` (formal translation).
