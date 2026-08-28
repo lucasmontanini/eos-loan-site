@@ -9,17 +9,18 @@
 <meta name="theme-color" content="#FFFFFF">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eos Loan — Financing for everything essential</title>
-<meta name="description" content="Real estate, vehicles, equipment and working capital — fully digital credit for businesses and homeowners in Texas & Florida. Apply with SSN or ITIN.">
+<meta name="description" content="Real estate, utilities and mobility & fleet — credit from the lender itself, decided in minutes and funded in about 48 hours. Licensed lender in Texas · NMLS #2744537.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Eos Loan">
 <meta property="og:title" content="Eos Loan — Built to finance everything essential.">
-<meta property="og:description" content="Real estate, vehicles, equipment and working capital — credit for businesses and homeowners in Texas & Florida. SSN or ITIN accepted. NMLS #2744537.">
+<meta property="og:description" content="Credit for what's essential — real estate, utilities and mobility & fleet. Eos Loan · Licensed lender in Texas · NMLS #2744537.">
 <meta property="og:url" content="https://eos-loan-site.vercel.app/Home.dc.html">
 <meta property="og:image" content="https://eos-loan-site.vercel.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <script src="./support.js"></script>
+<script src="./i18n.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -50,7 +51,7 @@
     section{scroll-margin-top:72px}
     @media (max-width:1199px){[data-r="sol"]>div{height:570px !important}}
     @media (max-width:1023px){[data-r="sol"]>div{height:630px !important}}
-    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="herocard-m"]{display:flex !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{height:auto !important;flex-grow:0 !important;background:var(--surface-card) !important}[data-panel]{position:static !important;width:auto !important;opacity:1 !important;transform:none !important;pointer-events:auto !important;padding-top:22px}[data-grid]{grid-template-columns:1fr !important;height:auto !important}[data-grid]>*{min-width:0}[data-grid]>*:nth-child(2){padding:18px !important}[data-sign]{display:none !important}[data-vert]{display:none !important}}
+    @media (max-width:920px){[data-r="hero"],[data-r="cols2"],[data-r="recard"],[data-r="retabs"],[data-r="bento"],[data-r="row2"],[data-r="pgrid"]{grid-template-columns:1fr !important}[data-r="hero"]{gap:40px !important;padding-top:56px !important}[data-r="herovis"]{display:none !important}[data-r="herocard-m"]{display:flex !important}[data-r="span"]{grid-column:auto !important}[data-r="sol"]{flex-direction:column !important}[data-r="sol"]>div{height:auto !important;flex-grow:0 !important;background:var(--surface-card) !important}[data-panel]{position:static !important;width:auto !important;opacity:1 !important;transform:none !important;pointer-events:auto !important;padding-top:22px}[data-grid]{grid-template-columns:1fr !important;height:auto !important}[data-grid]>*{min-width:0}[data-grid]>*:nth-child(2){padding:18px !important}[data-sign]{display:none !important}[data-vert]{display:none !important}}
   </style>
 </helmet>
 
@@ -62,10 +63,10 @@
     <div style="animation:rev .8s ease both">
       <div style="display:flex;align-items:center;gap:10px">
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Credit for businesses and people</span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Credit for what&#39;s essential</span>
       </div>
       <h1 style="margin-top:22px;font-size:clamp(42px,4.9vw,72px);line-height:1.04;letter-spacing:-.015em;max-width:13ch">Built to finance everything <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">essential</span>.</h1>
-      <p style="margin:22px 0 0;font-size:17.5px;line-height:1.6;color:var(--text-2);max-width:52ch">Real estate, vehicles, equipment and working capital — fully digital credit for businesses and homeowners, with decisions in minutes. Apply with your SSN or ITIN.</p>
+      <p style="margin:22px 0 0;font-size:17.5px;line-height:1.6;color:var(--text-2);max-width:52ch">Real estate, utilities, mobility &#8212; credit from the lender itself, decided in minutes and funded in about 48 hours. Apply with your SSN or ITIN.</p>
       <form action="GetStarted.dc.html" method="get" style="margin-top:30px;display:flex;gap:10px;max-width:520px;flex-wrap:wrap">
         <div style="flex:1;min-width:240px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" type="email" name="email" required="{{ yes }}" placeholder="Work or personal email" hint-size="100%,48px"></x-import>
@@ -74,8 +75,7 @@
       </form>
       <div style="margin-top:18px;display:flex;gap:22px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">
         <span>Soft credit pull — no score impact</span>
-        <span>Licensed lender · NMLS #2744537</span>
-        <span>Texas &amp; Florida</span>
+        <span>Licensed lender in Texas &#183; NMLS #2744537</span>
       </div>
       <div data-r="herocard-m" style="display:none;margin-top:40px;justify-content:center">
         <div style="width:min(340px,100%);height:214px;background:var(--eos-charcoal);border-radius:18px;padding:22px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-2deg);animation:float 7s ease-in-out infinite alternate">
@@ -120,14 +120,14 @@
       <div style="position:absolute;left:0;top:0;z-index:2;width:224px;background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:20px;animation:floatB 6s ease-in-out infinite alternate">
         <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--text-2)">PRE-APPROVED</div>
         <div style="margin-top:10px;font-family:var(--font-display);font-weight:700;font-size:32px;letter-spacing:-.01em">$48,000</div>
-        <div style="margin-top:6px;font-family:var(--font-mono);font-size:12px;color:var(--text-2)">9.90% APR &#183; 60 mo</div>
+        <div style="margin-top:6px;font-family:var(--font-mono);font-size:12px;color:var(--text-2)">Fixed installments &#183; 60 mo</div>
         <div style="margin-top:14px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="ember" hint-size="110px,26px">Funded in 48h</x-import>
         </div>
       </div>
       <div style="position:absolute;left:0;bottom:0;z-index:3;background:var(--eos-ember-tint);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:12px">
         <span style="width:8px;height:8px;border-radius:999px;background:var(--eos-ember)"></span>
-        <span style="font-family:var(--font-mono);font-size:12.5px;color:var(--text-1)">Rent advance &#183; $12,400 &#183; <b>Paid</b></span>
+        <span style="font-family:var(--font-mono);font-size:12.5px;color:var(--text-1)">Water filtration &#183; $6,800 &#183; <b>Funded</b></span>
       </div>
       <div style="position:absolute;right:0;top:100%;margin-top:8px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-3)">Illustrative terms</div>
     </div>
@@ -170,7 +170,7 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Proven track record</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:18ch">Numbers that show what Eos Loan has built.</h2>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:18ch">Our track record.</h2>
     </div>
     <div style="display:flex;gap:72px;flex-wrap:wrap">
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Stat" value="$4B+" label="Originated to date" size="lg" hint-size="220px,120px"></x-import>
@@ -179,131 +179,87 @@
   </div>
 </section>
 
-<section id="products" style="background:var(--eos-bone);border-top:1px solid var(--line)">
+<section id="avenues" style="background:var(--eos-bone);border-top:1px solid var(--line)">
   <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
     <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div>
         <div style="display:flex;align-items:center;gap:10px">
           <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Products</span>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Three avenues</span>
         </div>
-        <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:20ch">Credit, delivered directly.</h2>
-        <p style="margin:14px 0 0;font-size:16px;color:var(--text-2);max-width:56ch">Products are Eos lending to you — financing we originate, underwrite and service ourselves.</p>
+        <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:20ch">We are the lender, not a marketplace.</h2>
+        <p style="margin:14px 0 0;font-size:16px;line-height:1.65;color:var(--text-2);max-width:58ch">Eos originates, approves and funds with its own capital under NMLS #2744537. One team from the application to the money &#8212; across three avenues of essential credit.</p>
       </div>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html" hint-size="120px,44px">Talk to sales</x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html" hint-size="170px,48px">Check your rate</x-import>
     </div>
 
-    <div style="margin-top:40px;font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-3)">FOR YOU</div>
-    <div data-r="bento" style="margin-top:14px;display:grid;grid-template-columns:repeat(12,1fr);gap:16px">
-      <div data-r="span" style="grid-column:span 8;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
-        <div style="background:var(--surface-dark);border-radius:18px;padding:36px;height:100%;box-sizing:border-box;min-height:320px;display:flex;position:relative;overflow:hidden;transition:transform .25s ease" style-hover="transform:translateY(-3px)">
-          <svg width="300" height="300" viewBox="0 0 48 48" fill="none" stroke="var(--eos-bone)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;right:-30px;bottom:-36px;opacity:.08;z-index:0" aria-hidden="true"><path d="M8 23 L24 10 L40 23"></path><path d="M12 20.7 V38 H36 V20.7"></path><path d="M20.5 38 V28 H27.5 V38"></path></svg>
-          <div style="display:flex;flex-direction:column;width:100%;position:relative;z-index:1">
-            <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
-              <span style="display:flex;align-items:center;gap:10px">
-                <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-                <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-2-inverse)">REAL ESTATE</span>
-              </span>
-              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="ember" hint-size="160px,26px">Cross-border collateral</x-import>
-            </div>
-            <h3 style="margin-top:16px;font-family:var(--font-ui);font-weight:800;font-size:clamp(24px,2.3vw,30px);line-height:1.15;color:var(--eos-bone);max-width:17ch">The investor's product. Buy, renovate, choose your exit.</h3>
-            <p style="margin:12px 0 0;font-size:14.5px;line-height:1.6;color:var(--text-2-inverse);max-width:42ch">Purchase and renovation in one loan, draws released as you build — and property in your home country can count as collateral.</p>
-            <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
-              <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--eos-bone)">FLIP &#8804; 12 MO</span>
-              <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--eos-bone)">KEEP 12–60 MO</span>
-              <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--eos-bone)">HOLD 48–72 MO</span>
-            </div>
-            <div style="margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap">
-              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="RealEstate.dc.html" hint-size="170px,44px">Explore real estate</x-import>
-              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" on-dark="{{ yes }}" href="GetStarted.dc.html?interest=realestate" hint-size="150px,44px">Check my rate</x-import>
-            </div>
+    <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <div style="background:var(--surface-dark);border-radius:18px;padding:34px;display:flex;flex-direction:column;min-height:380px;position:relative;overflow:hidden">
+        <svg width="240" height="240" viewBox="0 0 48 48" fill="none" stroke="var(--eos-bone)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;right:-30px;bottom:-32px;opacity:.07;z-index:0" aria-hidden="true"><path d="M8 23 L24 10 L40 23"></path><path d="M12 20.7 V38 H36 V20.7"></path><path d="M20.5 38 V28 H27.5 V38"></path></svg>
+        <div style="position:relative;z-index:1;display:flex;flex-direction:column;height:100%">
+          <span style="display:flex;align-items:center;gap:10px">
+            <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+            <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-2-inverse)">REAL ESTATE</span>
+          </span>
+          <h3 style="margin-top:16px;font-family:var(--font-ui);font-weight:800;font-size:24px;line-height:1.2;color:var(--eos-bone);max-width:16ch">Purchase and renovation, with three exit strategies.</h3>
+          <p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:var(--text-2-inverse);max-width:40ch">Fix &amp; Flip, Keep and Hold for investors &#8212; and roofing, HVAC, outdoor and interior programs for the home you already have.</p>
+          <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+            <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--eos-bone)">FLIP &#8804; 12 MO</span>
+            <span style="border:1px solid var(--line-inverse);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--eos-bone)">KEEP &#183; HOLD 36&#8211;60 MO</span>
+          </div>
+          <div style="margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="RealEstate.dc.html" hint-size="160px,44px">Explore real estate</x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" on-dark="{{ yes }}" href="GetStarted.dc.html?interest=realestate" hint-size="140px,44px">Check my rate</x-import>
           </div>
         </div>
       </div>
-      <div data-r="span" style="grid-column:span 4;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 4% entry 44%">
-        <div style="background:var(--surface-tint);border-radius:18px;padding:32px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .25s ease" style-hover="transform:translateY(-4px)">
-          <svg width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="var(--eos-charcoal)" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;right:-28px;bottom:-24px;opacity:.08;z-index:0" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
-          <div style="position:relative;z-index:1;display:flex;flex-direction:column;flex:1">
-            <div style="display:flex;align-items:center;gap:10px">
-              <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-              <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-2)">VEHICLES</span>
-            </div>
-            <h3 style="margin-top:16px;font-family:var(--font-ui);font-weight:800;font-size:24px;line-height:1.2;max-width:15ch">From the family car to the work fleet.</h3>
-            <p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Digital application, fast decisions, and funding that keeps pace with the business.</p>
-            <div style="margin-top:auto;padding-top:20px">
-              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="secondary" href="Contact.dc.html?interest=vehicle" hint-size="110px,44px">Talk to us</x-import>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div style="margin-top:36px;font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-3)">FOR YOUR BUSINESS</div>
-    <div style="margin-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(216px,1fr));gap:14px">
-      <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
-        <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:24px;min-height:188px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:var(--line-strong)">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--eos-charcoal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"></rect><path d="M3 10h18"></path><path d="M7 15h4"></path></svg>
-            <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">01</span>
-          </div>
-          <h3 style="margin-top:14px;font-family:var(--font-ui);font-weight:800;font-size:17px">Payments</h3>
-          <p style="margin:8px 0 0;font-size:13px;line-height:1.55;color:var(--text-2)">Move and control money — accounts, cards and transfers in one place.</p>
+      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:34px;display:flex;flex-direction:column;min-height:380px;transition:transform .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:var(--line-strong)">
+        <span style="display:flex;align-items:center;gap:10px">
+          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-3)">UTILITIES</span>
+        </span>
+        <h3 style="margin-top:16px;font-family:var(--font-ui);font-weight:800;font-size:24px;line-height:1.2;max-width:16ch">Power that stays on, financed by the month.</h3>
+        <p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:var(--text-2);max-width:40ch">The residential battery leads: backup that takes the house over in under 20 milliseconds, owned outright. Solar ownership, water filtration and commercial storage complete the avenue.</p>
+        <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+          <span style="border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--text-2)">BATTERY 60&#8211;72 MO</span>
+          <span style="border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--text-2)">WATER 36&#8211;72 MO</span>
+        </div>
+        <div style="margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="Utilities.dc.html" hint-size="150px,44px">Explore utilities</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="GetStarted.dc.html?interest=battery" hint-size="140px,44px">Check my rate</x-import>
         </div>
       </div>
-      <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 3% entry 43%">
-        <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:24px;min-height:188px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:var(--line-strong)">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--eos-charcoal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3 4 7l4 4"></path><path d="M4 7h16"></path><path d="m16 21 4-4-4-4"></path><path d="M20 17H4"></path></svg>
-            <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">02</span>
-          </div>
-          <h3 style="margin-top:14px;font-family:var(--font-ui);font-weight:800;font-size:17px">Foreign exchange</h3>
-          <p style="margin:8px 0 0;font-size:13px;line-height:1.55;color:var(--text-2)">Send and receive between the US and Latin America at fair rates.</p>
+
+      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:34px;display:flex;flex-direction:column;min-height:380px;transition:transform .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:var(--line-strong)">
+        <span style="display:flex;align-items:center;gap:10px">
+          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:var(--text-3)">MOBILITY &amp; FLEET</span>
+        </span>
+        <h3 style="margin-top:16px;font-family:var(--font-ui);font-weight:800;font-size:24px;line-height:1.2;max-width:16ch">Financing for vehicles and fleets.</h3>
+        <p style="margin:12px 0 0;font-size:14px;line-height:1.6;color:var(--text-2);max-width:40ch">Auto financing at the dealer, lease-to-own for trucks, and invoice trading that turns receivables into cash.</p>
+        <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
+          <span style="border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--text-2)">AUTO 24&#8211;72 MO</span>
+          <span style="border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;color:var(--text-2)">TRUCK 48 MO</span>
         </div>
-      </div>
-      <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 6% entry 46%">
-        <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:24px;min-height:188px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:var(--line-strong)">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--eos-charcoal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01"></path><path d="M18 12h.01"></path></svg>
-            <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">03</span>
-          </div>
-          <h3 style="margin-top:14px;font-family:var(--font-ui);font-weight:800;font-size:17px">Working capital</h3>
-          <p style="margin:8px 0 0;font-size:13px;line-height:1.55;color:var(--text-2)">Cash-flow credit sized to your revenue, funded in days.</p>
-        </div>
-      </div>
-      <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 9% entry 49%">
-        <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:24px;min-height:188px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:var(--line-strong)">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--eos-charcoal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path><path d="M8 8h8"></path><path d="M8 12h8"></path><path d="M8 16h5"></path></svg>
-            <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">04</span>
-          </div>
-          <h3 style="margin-top:14px;font-family:var(--font-ui);font-weight:800;font-size:17px">Receivables advance</h3>
-          <p style="margin:8px 0 0;font-size:13px;line-height:1.55;color:var(--text-2)">Turn open invoices and card sales into same-week cash.</p>
-        </div>
-      </div>
-      <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 12% entry 52%">
-        <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:24px;min-height:188px;height:100%;box-sizing:border-box;display:flex;flex-direction:column;transition:transform .25s ease,border-color .25s ease" style-hover="transform:translateY(-4px);border-color:var(--line-strong)">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--eos-charcoal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-            <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">05</span>
-          </div>
-          <h3 style="margin-top:14px;font-family:var(--font-ui);font-weight:800;font-size:17px">Equipment financing</h3>
-          <p style="margin:8px 0 0;font-size:13px;line-height:1.55;color:var(--text-2)">Finance the machines and fleets that keep your business running.</p>
+        <div style="margin-top:auto;padding-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="Mobility.dc.html" hint-size="170px,44px">Explore mobility</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html?interest=mobility" hint-size="120px,44px">Talk to us</x-import>
         </div>
       </div>
     </div>
-
+    <p style="margin:24px 0 0;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">Consumer terms never exceed 72 months. Business-purpose programs are structured per operation. All financing subject to credit approval.</p>
   </div>
 </section>
-
-<section id="solutions" style="background:var(--surface-dark)">
+<section id="embedded" style="background:var(--surface-dark)">
   <div style="max-width:1240px;margin:0 auto;padding:104px 28px">
     <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div style="display:flex;align-items:center;gap:10px">
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">Solutions &#183; Embedded finance</span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">For partners &#183; Embedded financing</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:22ch">Your brand. Our credit rails.</h2>
-      <p style="margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:62ch">Solutions put Eos inside your product — B2B2B or B2B2C. Offer financing at your point of sale while we handle underwriting, compliance and servicing. You close more sales.</p>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:22ch">Embedded financing, under your brand.</h2>
+      <p style="margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:62ch">Put Eos inside your product. Offer financing at your point of sale while we handle underwriting, compliance and servicing &#8212; you close more sales.</p>
     </div>
     <div data-r="sol" style="margin-top:44px;display:flex;gap:14px;align-items:stretch;container-type:inline-size;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
       <div style="{{ solCard0 }}" onClick="{{ setSol0 }}">
@@ -372,7 +328,7 @@
           <div data-grid="1" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;height:100%;box-sizing:border-box">
             <div style="display:flex;flex-direction:column">
               <h3 style="font-family:var(--font-ui);font-weight:800;font-size:26px;line-height:1.15;max-width:16ch">Financing links, zero code</h3>
-              <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:38ch">A furniture store drops a link at checkout — the customer finances the purchase, the store gets paid in full.</p>
+              <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:38ch">An HVAC contractor sends a link with the quote — the customer finances the job, the contractor gets paid in full.</p>
               <div style="margin-top:22px;display:flex;flex-direction:column;gap:12px">
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>No code — send a link, close the sale</span></div>
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Customer splits it into installments</span></div>
@@ -388,25 +344,26 @@
               </div>
               <div style="margin-top:16px;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--text-3)">1 &#183; THE STORE SENDS A LINK</div>
               <div style="margin-top:8px;background:var(--surface-card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;max-width:88%">
-                <div style="font-size:12.5px;line-height:1.5">Hi Ana! Finish your sofa purchase here:</div>
+                <div style="font-size:12.5px;line-height:1.5">Hi Ana! Finish your AC replacement here:</div>
                 <div style="margin-top:6px;font-family:var(--font-mono);font-size:11.5px;font-weight:700;color:var(--eos-ember);text-decoration:underline">eos.loan/pay/order-2214</div>
               </div>
               <div style="margin-top:14px;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--text-3)">2 &#183; THE CUSTOMER PICKS A PLAN</div>
               <div style="margin-top:8px;background:var(--surface-card);border:1px solid var(--line);border-radius:12px;padding:14px">
                 <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
-                  <span style="font-size:12.5px;font-weight:700">Living room set</span>
-                  <span style="font-family:var(--font-mono);font-size:12.5px">$2,568</span>
+                  <span style="font-size:12.5px;font-weight:700">AC replacement</span>
+                  <span style="font-family:var(--font-mono);font-size:12.5px">$5,136</span>
                 </div>
                 <div style="margin-top:10px;border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px">
-                  <span style="font-family:var(--font-mono);font-size:16px;font-weight:700">12 &#215; $214/mo</span>
+                  <span style="font-family:var(--font-mono);font-size:16px;font-weight:700">24 &#215; $214/mo</span>
                   <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="ember" hint-size="80px,24px">Approved</x-import>
                 </div>
               </div>
               <div style="margin-top:14px;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--text-3)">3 &#183; THE STORE IS PAID IN FULL</div>
               <div style="margin-top:8px;background:var(--eos-ember-tint);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px">
-                <span style="font-size:12.5px;font-weight:700">Casa Moderna receives</span>
-                <span style="font-family:var(--font-mono);font-size:15px;font-weight:700">$2,568 today</span>
+                <span style="font-size:12.5px;font-weight:700">CoolFlow HVAC receives</span>
+                <span style="font-family:var(--font-mono);font-size:15px;font-weight:700">$5,136 today</span>
               </div>
+              <div style="margin-top:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-3);text-align:center">Illustrative terms</div>
             </div>
           </div>
         </div>
@@ -416,18 +373,18 @@
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">03</span>
           <span data-sign="1" style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign2 }}</span>
         </div>
-        <span data-vert="1" style="{{ solVert2 }}">Cross-border money</span>
+        <span data-vert="1" style="{{ solVert2 }}">Partner dashboard</span>
         <div data-panel="1" style="{{ solOpen2 }}">
           <div data-grid="1" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;height:100%;box-sizing:border-box">
             <div style="display:flex;flex-direction:column">
-              <h3 style="font-family:var(--font-ui);font-weight:800;font-size:26px;line-height:1.15;max-width:16ch">Cross-border money, embedded</h3>
-              <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:38ch">Your customers send and receive between their home country and the US — without leaving your product.</p>
+              <h3 style="font-family:var(--font-ui);font-weight:800;font-size:26px;line-height:1.15;max-width:16ch">One dashboard for every application</h3>
+              <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:var(--text-2);max-width:38ch">Track each customer's application in real time &#8212; and when someone stops halfway, reissue a link that resumes exactly where they left off.</p>
               <div style="margin-top:22px;display:flex;flex-direction:column;gap:12px">
-                <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>A currency button under your brand</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>US &#8646; Brazil, Mexico, Colombia and more</span></div>
-                <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Fair rates — compliance handled by Eos</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Every application and its status, live</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Resume links recover stalled deals</span></div>
+                <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Onboarding: apply, approve, one training session</span></div>
               </div>
-              <a href="Contact.dc.html?interest=partner" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">Talk about this case &#8594;</a>
+              <a href="Partners.dc.html" style="display:inline-block;margin-top:auto;padding-top:18px;font-size:14px">See the partner programme &#8594;</a>
             </div>
             <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column;justify-content:center">
               <div style="display:flex;gap:6px">
@@ -435,36 +392,22 @@
                 <span style="width:8px;height:8px;border-radius:999px;background:var(--line-strong)"></span>
                 <span style="width:8px;height:8px;border-radius:999px;background:var(--line-strong)"></span>
               </div>
-              <div style="margin-top:16px;display:flex;gap:6px">
-                <span style="background:var(--eos-charcoal);color:var(--eos-bone);border-radius:999px;padding:6px 14px;font-size:11.5px;font-weight:800">Send</span>
-                <span style="border:1px solid var(--line-strong);border-radius:999px;padding:6px 14px;font-size:11.5px;font-weight:700;color:var(--text-2)">Receive</span>
+              <div style="margin-top:16px;font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--text-3)">APPLICATIONS &#183; TODAY</div>
+              <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
+                <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px">
+                  <span style="display:flex;flex-direction:column"><span style="font-size:12.5px;font-weight:700">Whole-home filtration</span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-3)">$6,800 &#183; 60 mo</span></span>
+                  <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="ember" hint-size="80px,24px">Approved</x-import>
+                </div>
+                <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px">
+                  <span style="display:flex;flex-direction:column"><span style="font-size:12.5px;font-weight:700">Roof replacement</span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-3)">$18,400 &#183; 72 mo</span></span>
+                  <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 10px;color:var(--text-2)">FUNDED</span>
+                </div>
+                <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px">
+                  <span style="display:flex;flex-direction:column"><span style="font-size:12.5px;font-weight:700">Battery &amp; backup</span><span style="font-family:var(--font-mono);font-size:10px;color:var(--text-3)">$24,000 &#183; 72 mo</span></span>
+                  <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;border:1px solid var(--eos-ember);border-radius:999px;padding:4px 10px;color:var(--eos-ember)">RESUME LINK</span>
+                </div>
               </div>
-              <div style="margin-top:14px;background:var(--surface-card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px">
-                <span style="display:flex;flex-direction:column;flex:1">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--text-3)">YOU SEND</span>
-                  <span style="margin-top:3px;font-family:var(--font-mono);font-size:17px;font-weight:700">2,000.00</span>
-                </span>
-                <span style="border:1px solid var(--line-strong);border-radius:999px;padding:5px 12px;font-family:var(--font-mono);font-size:11px;font-weight:700">USD</span>
-              </div>
-              <div style="display:flex;justify-content:center;margin:-9px 0;position:relative;z-index:1">
-                <span style="width:30px;height:30px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--eos-bone)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"></path><path d="m8 17 4 4 4-4"></path></svg>
-                </span>
-              </div>
-              <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px">
-                <span style="display:flex;flex-direction:column;flex:1">
-                  <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;color:var(--text-3)">THEY RECEIVE</span>
-                  <span style="margin-top:3px;font-family:var(--font-mono);font-size:17px;font-weight:700">10,940.00</span>
-                </span>
-                <span style="border:1px solid var(--line-strong);border-radius:999px;padding:5px 12px;font-family:var(--font-mono);font-size:11px;font-weight:700">BRL</span>
-              </div>
-              <div style="margin-top:12px;display:flex;justify-content:space-between;gap:10px;font-family:var(--font-mono);font-size:10px;color:var(--text-3)">
-                <span>1 USD = 5.47 BRL &#183; illustrative</span>
-                <span>Arrives in minutes</span>
-              </div>
-              <div style="margin-top:14px">
-                <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="secondary" hint-size="100%,44px">Send money</x-import>
-              </div>
+              <div style="margin-top:12px;font-family:var(--font-mono);font-size:10px;color:var(--text-3);text-align:center">Illustrative</div>
             </div>
           </div>
         </div>
@@ -490,12 +433,12 @@
           <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
           <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Embedded finance &#183; B2B2C &#183; The film</span>
         </div>
-        <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:18ch">Let your customers say <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">yes</span>.</h2>
-        <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:56ch">Offer Eos financing where the decision happens &mdash; in your store, your quote, your checkout. The customer pays over time, you get paid upfront, and the sale closes today.</p>
+        <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:20ch">Financing at your point of sale.</h2>
+        <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:56ch">Offer Eos financing where the decision happens &mdash; in your store, your quote or your checkout. The customer pays over time; you receive the full amount upfront.</p>
       </div>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="Contact.dc.html?interest=partner" hint-size="180px,48px">Partner with Eos</x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="Partners.dc.html" hint-size="180px,48px">Partner with Eos</x-import>
     </div>
-    <div style="position:relative;margin-top:44px;border-radius:18px;overflow:hidden;border:1px solid var(--line);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
+    <div style="position:relative;margin-top:44px;max-width:820px;border-radius:18px;overflow:hidden;border:1px solid var(--line);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
       <video id="film-b2b" src="uploads/film-b2b2c.mp4" poster="uploads/film-b2b2c-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
       <sc-if value="{{ b2bIdle }}" hint-placeholder-val="{{ true }}">
         <button type="button" onClick="{{ playB2b }}" aria-label="Play the embedded finance film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
@@ -535,138 +478,8 @@
   </div>
 </section>
 
-<section style="background:var(--eos-white)">
-  <div style="max-width:1240px;margin:0 auto;padding:104px 28px">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Real estate</span>
-        </div>
-        <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:22ch">Buy. Renovate. Choose your exit.</h2>
-      </div>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="RealEstate.dc.html" hint-size="180px,44px">Explore real estate &#8594;</x-import>
-    </div>
-    <div data-r="retabs" style="margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
-      <button type="button" onClick="{{ setReFlip }}" style="{{ reTabBtn0 }}" style-hover="transform:translateY(-2px)">
-        <span style="display:flex;align-items:center;gap:10px"><span style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--eos-ember)">01</span><span style="font-family:var(--font-ui);font-weight:800;font-size:17px">Fix &amp; Flip</span></span>
-        <span style="{{ reTabSub0 }}">BUY &#183; RENOVATE &#183; SELL &#8804; 12 MO</span>
-      </button>
-      <button type="button" onClick="{{ setReKeep }}" style="{{ reTabBtn1 }}" style-hover="transform:translateY(-2px)">
-        <span style="display:flex;align-items:center;gap:10px"><span style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--eos-ember)">02</span><span style="font-family:var(--font-ui);font-weight:800;font-size:17px">Fix &amp; Keep</span></span>
-        <span style="{{ reTabSub1 }}">RENT &#183; SELL BETWEEN 12&#8211;60 MO</span>
-      </button>
-      <button type="button" onClick="{{ setReHold }}" style="{{ reTabBtn2 }}" style-hover="transform:translateY(-2px)">
-        <span style="display:flex;align-items:center;gap:10px"><span style="font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--eos-ember)">03</span><span style="font-family:var(--font-ui);font-weight:800;font-size:17px">Fix &amp; Hold</span></span>
-        <span style="{{ reTabSub2 }}">RENT LONG-TERM &#183; 48&#8211;72 MO</span>
-      </button>
-    </div>
-    <div data-r="recard" style="margin-top:20px;background:var(--surface-card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:1.05fr 0.95fr;min-height:440px">
-      <div key="{{ reTab }}" style="padding:44px;display:flex;flex-direction:column;animation:revL .5s ease both">
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Badge" variant="tint" hint-size="90px,24px">{{ reBadge }}</x-import>
-          <span style="font-family:var(--font-mono);font-size:12px;color:var(--text-3)">{{ reIndex }} / 03</span>
-        </div>
-        <h3 style="margin-top:18px;font-family:var(--font-ui);font-weight:800;font-size:clamp(28px,2.7vw,34px);line-height:1.12;max-width:18ch">{{ reTitle }}</h3>
-        <p style="margin:14px 0 0;font-size:16px;line-height:1.65;color:var(--text-2);max-width:48ch">{{ reDesc }}</p>
-        <div style="margin-top:20px;display:flex;flex-direction:column;gap:11px">
-          <sc-for list="{{ rePoints }}" as="pt" hint-placeholder-count="3">
-            <div style="display:flex;align-items:baseline;gap:10px;font-size:15.5px;font-weight:600">
-              <span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span>
-              <span>{{ pt }}</span>
-            </div>
-          </sc-for>
-        </div>
-        <div style="margin-top:auto;padding-top:26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-          <span style="border:1px solid var(--line-strong);border-radius:999px;padding:9px 16px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em">{{ reTerm }}</span>
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="GetStarted.dc.html" hint-size="150px,44px">Check my rate</x-import>
-        </div>
-      </div>
-      <div style="position:relative;min-height:360px;height:100%;overflow:hidden">
-        <div key="{{ reTab }}" role="img" aria-label="{{ reBadge }}" style="position:absolute;inset:0;background-color:var(--eos-bone);background-image:url({{ reImg }});background-size:cover;background-position:center;animation:imgIn .65s ease both"></div>
-        <span style="position:absolute;inset:0;background:rgba(23,18,14,.34);pointer-events:none"></span>
-        <sc-if value="{{ isFlip }}" hint-placeholder-val="{{ true }}">
-          <button type="button" onClick="{{ openVideo }}" aria-label="Watch the Fix &amp; Flip film" style="position:absolute;inset:0;width:100%;height:100%;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
-            <span style="width:84px;height:84px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
-              <svg width="26" height="30" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
-            </span>
-            <span style="background:rgba(23,18,14,.72);border-radius:999px;padding:9px 18px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--eos-bone)">WATCH THE FIX &amp; FLIP FILM &#183; 30S</span>
-          </button>
-        </sc-if>
-        <span style="position:absolute;left:20px;bottom:20px;background:rgba(247,242,234,.94);border-radius:999px;padding:8px 16px;font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;color:var(--text-1);pointer-events:none">{{ reBadge }} &#183; {{ reTerm }}</span>
-      </div>
-    </div>
-    <p style="margin:16px 0 0;font-family:var(--font-mono);font-size:12px;color:var(--text-3)">Eos can accept real estate in Brazil, Mexico, Colombia, Argentina, Peru, Ecuador, Paraguay or Chile as collateral. <a href="RealEstate.dc.html" style="font-size:12px">Learn how &#8594;</a></p>
-  </div>
-</section>
 
-<section style="background:var(--surface-dark)">
-  <div style="max-width:1240px;margin:0 auto;padding:104px 28px">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
-      <div>
-        <div style="display:flex;align-items:center;gap:10px">
-          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">Fix &amp; Hold &#183; The film</span>
-        </div>
-        <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;color:var(--eos-bone);max-width:16ch">Build wealth in dollars. Live on the rent.</h2>
-        <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:54ch">Buy, renovate and lease long-term with financing of 48 to 72 months — a US rental portfolio that pays you every month. Thirty seconds tell the story better than we can.</p>
-      </div>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html?interest=realestate" hint-size="170px,48px">Check my rate</x-import>
-    </div>
-    <div style="position:relative;margin-top:44px;border-radius:18px;overflow:hidden;border:1px solid var(--line-inverse);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
-      <video id="film-hold" src="uploads/film-fixhold.mp4" poster="uploads/film-fixhold-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
-      <sc-if value="{{ holdIdle }}" hint-placeholder-val="{{ true }}">
-        <button type="button" onClick="{{ playHold }}" aria-label="Play the Fix &amp; Hold film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px">
-          <span style="width:92px;height:92px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
-            <svg width="28" height="32" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
-          </span>
-          <span style="background:rgba(23,18,14,.72);border-radius:999px;padding:9px 18px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--eos-bone)">WATCH &#183; 30S</span>
-        </button>
-      </sc-if>
-    </div>
-    <div style="margin-top:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:rgba(247,242,234,.45)">
-      <span>FIX &amp; HOLD &#183; RENT LONG-TERM &#183; 48&#8211;72 MO</span>
-      <span>Property in your home country can be collateral</span>
-    </div>
-  </div>
-</section>
 
-<section style="background:var(--eos-white)">
-  <div style="max-width:1240px;margin:0 auto;padding:104px 28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
-    <a href="Contact.dc.html?interest=equipment" style="position:relative;border-radius:18px;overflow:hidden;min-height:420px;display:flex;text-decoration:none;background:var(--eos-charcoal)">
-      <img loading="lazy" decoding="async" src="uploads/battery-commercial-2.webp" alt="Commercial battery storage in a modern showroom" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease" style-hover="transform:scale(1.05)">
-      <span style="position:absolute;inset:0;background:rgba(23,18,14,.52);pointer-events:none"></span>
-      <span style="position:relative;z-index:1;margin-top:auto;padding:30px;display:flex;flex-direction:column;gap:9px;pointer-events:none;width:100%;box-sizing:border-box">
-        <span style="display:flex;align-items:center;gap:10px">
-          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:rgba(247,242,234,.75)">ENERGY &amp; WATER</span>
-        </span>
-        <span style="font-family:var(--font-ui);font-weight:800;font-size:clamp(21px,2vw,25px);line-height:1.2;color:var(--eos-bone);max-width:20ch">Essential upgrades, financed at the point of sale.</span>
-        <span style="font-size:14px;line-height:1.6;color:rgba(247,242,234,.72);max-width:44ch">Batteries, solar, EV chargers, HVAC and water filtration — for homes and businesses.</span>
-        <span style="margin-top:8px;display:flex;align-items:center;gap:10px">
-          <span style="font-size:14px;font-weight:800;color:var(--eos-bone)">Talk to us</span>
-          <span style="width:30px;height:30px;border:1px solid rgba(247,242,234,.4);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">&#8594;</span>
-        </span>
-      </span>
-    </a>
-    <a href="Contact.dc.html?interest=vehicle" style="position:relative;border-radius:18px;overflow:hidden;min-height:420px;display:flex;text-decoration:none;background:var(--eos-charcoal)">
-      <img loading="lazy" decoding="async" src="uploads/car3.jpg" alt="Customer receiving car keys at a dealership" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform .7s ease" style-hover="transform:scale(1.05)">
-      <span style="position:absolute;inset:0;background:rgba(23,18,14,.52);pointer-events:none"></span>
-      <span style="position:relative;z-index:1;margin-top:auto;padding:30px;display:flex;flex-direction:column;gap:9px;pointer-events:none;width:100%;box-sizing:border-box">
-        <span style="display:flex;align-items:center;gap:10px">
-          <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-          <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:rgba(247,242,234,.75)">VEHICLES</span>
-        </span>
-        <span style="font-family:var(--font-ui);font-weight:800;font-size:clamp(21px,2vw,25px);line-height:1.2;color:var(--eos-bone);max-width:20ch">From the family car to the work fleet.</span>
-        <span style="font-size:14px;line-height:1.6;color:rgba(247,242,234,.72);max-width:44ch">Digital application, fast decisions, and financing that keeps pace with the business.</span>
-        <span style="margin-top:8px;display:flex;align-items:center;gap:10px">
-          <span style="font-size:14px;font-weight:800;color:var(--eos-bone)">Talk to us</span>
-          <span style="width:30px;height:30px;border:1px solid rgba(247,242,234,.4);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:13px;color:var(--eos-bone)">&#8594;</span>
-        </span>
-      </span>
-    </a>
-  </div>
-</section>
 
 <section style="background:var(--eos-bone);border-top:1px solid var(--line)">
   <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
@@ -675,39 +488,17 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Customers &amp; partners</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:22ch">Financing that closes deals.</h2>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:22ch">What our partners say.</h2>
     </div>
     <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:14px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
       <div style="background:var(--surface-dark);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:16px">
         <span style="font-family:var(--font-display);font-weight:700;font-size:34px;line-height:1;color:var(--eos-ember)">&#8220;</span>
-        <p style="margin:0;font-size:15px;line-height:1.65;color:var(--eos-bone)">I bought and renovated in Florida with my apartment in S&#227;o Paulo as part of the collateral. Eos understood both sides of the border.</p>
-        <div style="margin-top:auto;display:flex;align-items:center;gap:12px">
-          <image-slot id="av-ailton" src="avatars/av-ailton.png" shape="circle" style="width:44px;height:44px;flex:none" placeholder="Photo"></image-slot>
-          <div>
-            <div style="font-weight:800;font-size:14px;color:var(--eos-bone)">Ailton Fabri</div>
-            <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-2-inverse)">Real estate investment financing</div>
-          </div>
-        </div>
-      </div>
-      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:16px">
-        <span style="font-family:var(--font-display);font-weight:700;font-size:34px;line-height:1;color:var(--eos-ember)">&#8220;</span>
-        <p style="margin:0;font-size:15px;line-height:1.65">Approved in days. The trucks went to work the same month — the financing kept pace with the business.</p>
-        <div style="margin-top:auto;display:flex;align-items:center;gap:12px">
-          <image-slot id="av-mateus" src="avatars/av-mateus.png" shape="circle" style="width:44px;height:44px;flex:none" placeholder="Photo"></image-slot>
-          <div>
-            <div style="font-weight:800;font-size:14px">Mateus Silva Brummel</div>
-            <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-2)">Truck financing</div>
-          </div>
-        </div>
-      </div>
-      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:16px">
-        <span style="font-family:var(--font-display);font-weight:700;font-size:34px;line-height:1;color:var(--eos-ember)">&#8220;</span>
-        <p style="margin:0;font-size:15px;line-height:1.65">We put an Eos financing button in our sales flow. Approvals happen at the kitchen table, and our close rate jumped.</p>
+        <p style="margin:0;font-size:15px;line-height:1.65;color:var(--eos-bone)">We put an Eos financing button in our sales flow. Approvals happen at the kitchen table, and our close rate jumped.</p>
         <div style="margin-top:auto;display:flex;align-items:center;gap:12px">
           <image-slot id="av-bruno" src="avatars/av-bruno.png" shape="circle" style="width:44px;height:44px;flex:none" placeholder="Photo"></image-slot>
           <div>
-            <div style="font-weight:800;font-size:14px">Bruno</div>
-            <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-2)">Filter Pure &#183; water filtration</div>
+            <div style="font-weight:800;font-size:14px;color:var(--eos-bone)">Bruno</div>
+            <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-2-inverse)">Filter Pure &#183; water filtration</div>
           </div>
         </div>
       </div>
@@ -733,7 +524,7 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Eos credit</span>
       </div>
-      <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:19ch">Approved in minutes. <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">Accepted everywhere.</span></h2>
+      <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:22ch">Eos credit, issued directly to approved borrowers.</h2>
     </div>
     <img loading="lazy" decoding="async" src="uploads/creditcard3_john_marz.jpg" alt="Eos credit card being used on a payment terminal" style="margin-top:40px;width:100%;height:clamp(320px,44vw,560px);object-fit:cover;object-position:center 18%;border-radius:18px;border:1px solid var(--line);display:block;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
     <div style="margin-top:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">
@@ -782,10 +573,10 @@
     <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div style="display:flex;align-items:center;gap:10px">
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">More than money</span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Our focus</span>
       </div>
-      <h2 style="margin-top:20px;font-size:clamp(36px,4.2vw,58px);line-height:1.06;letter-spacing:-.015em;max-width:14ch">Credit, done right, is <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">freedom</span>.</h2>
-      <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:48ch">Freedom to own the house instead of renting it. To drive to work in your own truck. To grow the business without waiting another year. That's what we finance — one essential project at a time.</p>
+      <h2 style="margin-top:20px;font-size:clamp(36px,4.2vw,58px);line-height:1.06;letter-spacing:-.015em;max-width:17ch">Credit for the projects a household depends on.</h2>
+      <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:48ch">Backup power when the grid fails. A roof replaced in the week it leaks. The vehicle a family or a business depends on. Eos finances essential projects — with clear terms, a fast decision and a single team from application to funding.</p>
       <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html" hint-size="170px,48px">Check your rate</x-import>
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" href="Contact.dc.html" hint-size="150px,48px">Talk to us</x-import>
@@ -796,11 +587,98 @@
   </div>
 </section>
 
+<section id="battery" style="background:var(--surface-dark)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:96px 28px;display:grid;grid-template-columns:0.95fr 1.05fr;gap:64px;align-items:center">
+    <img loading="lazy" decoding="async" src="uploads/home2-1600.jpg" alt="Single-family home on a quiet street" style="width:100%;height:440px;object-fit:cover;border-radius:18px;display:block;animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;color:rgba(247,242,234,.6)">HOME BACKUP &amp; BATTERY</div>
+      <h2 style="margin-top:16px;font-size:clamp(32px,3.8vw,52px);line-height:1.07;letter-spacing:-.015em;color:var(--eos-bone);max-width:16ch">Home backup, financed by the month.</h2>
+      <p style="margin:20px 0 0;font-size:16.5px;line-height:1.65;color:rgba(247,242,234,.78);max-width:48ch">A battery system that takes over automatically &#8212; no fuel, no noise, no subscription. You own it.</p>
+      <div style="margin-top:28px;display:flex;gap:36px;flex-wrap:wrap">
+        <div><div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--eos-bone)">&lt;20 ms</div><div style="margin-top:4px;font-size:13px;color:rgba(247,242,234,.62)">Takes over when the grid drops</div></div>
+        <div><div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--eos-bone)">&lt;25 dB</div><div style="margin-top:4px;font-size:13px;color:rgba(247,242,234,.62)">Quieter than a conversation</div></div>
+        <div><div style="font-family:var(--font-mono);font-size:22px;font-weight:700;color:var(--eos-bone)">10 yr</div><div style="margin-top:4px;font-size:13px;color:rgba(247,242,234,.62)">Warranty on the main components</div></div>
+      </div>
+      <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="secondary" href="GetStarted.dc.html?interest=battery" hint-size="160px,48px">Check my rate</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="Battery.dc.html" hint-size="200px,48px">Explore home backup</x-import>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partners" style="background:var(--eos-white);border-top:1px solid var(--line)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:96px 28px;display:grid;grid-template-columns:1.05fr 0.95fr;gap:64px;align-items:start">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">For partners</span>
+      </div>
+      <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:20ch">Offer Eos financing to your customers.</h2>
+      <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:52ch">Installers, contractors and resellers send their customers to Eos at the point of sale. We are the lender &#8212; we underwrite, fund and service the loan, and the partner takes no credit risk.</p>
+      <div data-r="pgrid" style="margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:28px 32px">
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">01</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">No credit risk to you</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Your customer is the borrower. Eos carries the loan, not your business.</p>
+        </div>
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">02</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">Full margin, no dealer fee</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">We never deduct a fee from what we pass through to you.</p>
+        </div>
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">03</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">A decision in minutes</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">The customer applies from a digital form at the moment of sale, subject to approval.</p>
+        </div>
+        <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
+          <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">04</span>
+          <h3 style="margin-top:8px;font-family:var(--font-ui);font-weight:800;font-size:17px">A dashboard for every application</h3>
+          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:var(--text-2)">Track every application and reissue a link so the customer resumes where they stopped.</p>
+        </div>
+      </div>
+      <p style="margin:30px 0 0;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">Onboarding is an application, an approval and one training session.</p>
+    </div>
+
+    <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:18px;padding:36px;animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <sc-if value="{{ pnNotSent }}" hint-placeholder-val="{{ true }}">
+        <div>
+          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:22px">Become a partner</h3>
+          <p style="margin:8px 0 0;font-size:14.5px;line-height:1.6;color:var(--text-2)">Tell us what you sell and we will come back within one business day.</p>
+          <form onSubmit="{{ pnSubmit }}" style="margin-top:24px;display:flex;flex-direction:column;gap:16px">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Company" name="pcompany" required="{{ yes }}" placeholder="Your company name" value="{{ pnCompany }}" onChange="{{ pnSetCompany }}" hint-size="100%,72px"></x-import>
+            <div data-r="row2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Your name" name="pname" required="{{ yes }}" placeholder="Full name" value="{{ pnName }}" onChange="{{ pnSetName }}" hint-size="100%,72px"></x-import>
+              <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Phone" type="tel" name="pphone" placeholder="(000) 000-0000" value="{{ pnPhone }}" onChange="{{ pnSetPhone }}" hint-size="100%,72px"></x-import>
+            </div>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Work email" type="email" name="pemail" required="{{ yes }}" placeholder="you@company.com" value="{{ pnEmail }}" onChange="{{ pnSetEmail }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="What you sell" options="{{ pnCategories }}" value="{{ pnCategory }}" onChange="{{ pnSetCategory }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="Monthly volume (optional)" options="{{ pnVolumes }}" value="{{ pnVolume }}" onChange="{{ pnSetVolume }}" hint-size="100%,72px"></x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="100%,48px">Apply to partner</x-import>
+            <p style="margin:0;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">No cost to join &#183; no exclusivity &#183; no credit risk to you.</p>
+          </form>
+        </div>
+      </sc-if>
+      <sc-if value="{{ pnSent }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;gap:18px;padding:12px 4px">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ pnSun }}" color="ember" hint-size="44px,44px"></x-import>
+          <h3 style="font-size:28px">Received.</h3>
+          <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:44ch">Thanks{{ pnThanks }} &#8212; our partnerships team will reach out at <b>{{ pnEmail }}</b> within one business day about <b>{{ pnCategoryLabel }}</b>.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html?interest=partner" hint-size="150px,44px">Talk to us now</x-import>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
 <section style="{{ ctaSectionStyle }}">
   <div style="max-width:1240px;margin:0 auto;padding:110px 28px;display:flex;justify-content:space-between;align-items:center;gap:56px;flex-wrap:wrap">
     <div style="max-width:640px">
-      <h2 style="font-size:clamp(38px,4.4vw,62px);line-height:1.05;color:var(--eos-bone);max-width:16ch">Tell us what you're building.</h2>
-      <p style="margin:18px 0 0;font-size:16.5px;line-height:1.6;color:rgba(247,242,234,.78)">From a kitchen renovation to a fleet of trucks — get a human answer within one business day.</p>
+      <h2 style="font-size:clamp(38px,4.4vw,62px);line-height:1.05;color:var(--eos-bone);max-width:16ch">Talk to our team.</h2>
+      <p style="margin:18px 0 0;font-size:16.5px;line-height:1.6;color:rgba(247,242,234,.78)">Send us the project — our team replies within one business day.</p>
       <form action="Contact.dc.html" method="get" style="margin-top:28px;display:flex;gap:10px;flex-wrap:wrap">
         <div style="flex:1;min-width:240px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" type="email" name="email" required="{{ yes }}" placeholder="you@example.com" hint-size="100%,48px"></x-import>
@@ -826,17 +704,24 @@
     <div>
       <details style="border-bottom:1px solid var(--line);padding:20px 0">
         <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
-          <span style="font-weight:700;font-size:16.5px">What does Eos Loan finance?</span>
+          <span style="font-weight:700;font-size:16.5px">What does Eos finance?</span>
           <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
         </summary>
-        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Essential projects for businesses and people: real estate purchase and renovation, vehicles, equipment, working capital, receivables advance, and home upgrades like roofing, HVAC, windows, water filtration, batteries and solar.</p>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Three avenues of essential credit: real estate (investment strategies plus roofing, HVAC, outdoor and interior programs), utilities (residential battery, solar, water filtration and commercial storage) and mobility &amp; fleet (auto, trucks and invoice trading).</p>
+      </details>
+      <details style="border-bottom:1px solid var(--line);padding:20px 0">
+        <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
+          <span style="font-weight:700;font-size:16.5px">What secures the loan?</span>
+          <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
+        </summary>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">It depends on the program. Real estate strategies are secured by the property in the project, and solar is secured by the panels and the system &#8212; a real asset, not a lien on your whole life. Home programs like roofing, HVAC and water filtration are consumer credit that does not touch the equity in your house.</p>
       </details>
       <details style="border-bottom:1px solid var(--line);padding:20px 0">
         <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
           <span style="font-weight:700;font-size:16.5px">Who can apply?</span>
           <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
         </summary>
-        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">US businesses and individuals. You can apply with a Social Security Number or an ITIN — we built our underwriting for both.</p>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">US businesses and individuals. You can apply with a Social Security Number or an ITIN &#8212; we built our underwriting for both.</p>
       </details>
       <details style="border-bottom:1px solid var(--line);padding:20px 0">
         <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
@@ -847,24 +732,24 @@
       </details>
       <details style="border-bottom:1px solid var(--line);padding:20px 0">
         <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
-          <span style="font-weight:700;font-size:16.5px">Can I use property outside the US as collateral?</span>
-          <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
-        </summary>
-        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Yes — for real estate credit, Eos can accept property in Brazil, Mexico, Colombia, Argentina, Peru, Ecuador, Paraguay and Chile as collateral, subject to valuation and credit approval.</p>
-      </details>
-      <details style="border-bottom:1px solid var(--line);padding:20px 0">
-        <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
           <span style="font-weight:700;font-size:16.5px">How fast is funding?</span>
           <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
         </summary>
         <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Decisions typically take minutes. After approval, average funding turnaround is 48 hours.</p>
+      </details>
+      <details style="border-bottom:1px solid var(--line);padding:20px 0">
+        <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
+          <span style="font-weight:700;font-size:16.5px">Is there a penalty for paying early?</span>
+          <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
+        </summary>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">None. There is no prepayment penalty, no dealer fee and no hidden fees on the loan.</p>
       </details>
       <details style="padding:20px 0">
         <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer">
           <span style="font-weight:700;font-size:16.5px">Can my company offer Eos financing to its customers?</span>
           <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
         </summary>
-        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Yes — that's our Solutions line. Add a credit button to your platform, send financing links, or embed cross-border payments, with your brand in front and Eos underwriting behind. <a href="Contact.dc.html?interest=partner">Partner with Eos &#8594;</a></p>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Yes. Installers, contractors and resellers send their customers to Eos at the point of sale. You take no credit risk and keep the full margin &#8212; there is no dealer fee. <a href="Partners.dc.html">See the partner programme &#8594;</a></p>
       </details>
     </div>
   </div>
@@ -872,31 +757,10 @@
 
 <dc-import name="SiteFooter" hint-size="100%,720px"></dc-import>
 
-<sc-if value="{{ videoOpen }}" hint-placeholder-val="{{ false }}">
-  <div onClick="{{ closeVideo }}" style="position:fixed;inset:0;z-index:700;background:rgba(23,18,14,.78);display:flex;align-items:center;justify-content:center;padding:28px;animation:scrimIn .3s ease both">
-    <div onClick="{{ stopClick }}" style="position:relative;width:min(960px,100%);animation:videoIn .42s cubic-bezier(.22,.8,.3,1) both">
-      <video id="film-flip-modal" src="uploads/film-fixflip.mp4" poster="uploads/film-fixflip-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;border-radius:18px;background:var(--eos-charcoal);box-shadow:var(--shadow-overlay)"></video>
-      <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-        <span style="font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:rgba(247,242,234,.62)">FIX &amp; FLIP &#183; BUY, RENOVATE, SELL &#8804; 12 MO</span>
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="sm" href="GetStarted.dc.html?interest=realestate" hint-size="150px,38px">Check my rate</x-import>
-      </div>
-      <button type="button" onClick="{{ closeVideo }}" aria-label="Close video" style="position:absolute;top:-16px;right:-16px;width:42px;height:42px;border-radius:999px;background:var(--eos-bone);border:none;cursor:pointer;font-size:21px;line-height:1;color:var(--eos-charcoal);display:flex;align-items:center;justify-content:center;font-family:var(--font-ui);transition:transform .15s ease" style-hover="transform:scale(1.08)">&#215;</button>
-    </div>
-  </div>
-</sc-if>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Real estate showcase&quot;},&quot;ctaTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;ember&quot;,&quot;charcoal&quot;],&quot;default&quot;:&quot;ember&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact band&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;ctaTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;ember&quot;,&quot;charcoal&quot;],&quot;default&quot;:&quot;ember&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact band&quot;}}">
 class Component extends DCLogic {
-  state = { reTab: null, sol: 0, videoOpen: false, holdPlaying: false, b2bPlaying: false };
-  reBtn(on) {
-    return (on
-      ? "background:var(--eos-charcoal);border:1px solid var(--eos-charcoal);color:var(--eos-bone)"
-      : "background:var(--surface-card);border:1px solid var(--line);color:var(--text-1)") +
-      ";display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:18px 20px;border-radius:12px;cursor:pointer;text-align:left;transition:background .3s ease,color .3s ease,border-color .3s ease,transform .2s ease";
-  }
-  reSub(on) {
-    return "font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;" + (on ? "color:rgba(247,242,234,.6)" : "color:var(--text-3)");
-  }
+  state = { sol: 0, b2bPlaying: false, pnSent: false, pnCompany: "", pnName: "", pnPhone: "", pnEmail: "", pnCategory: "Residential battery & backup", pnVolume: "Prefer not to say" };
   solCard(on) {
     return (on ? "flex-grow:3.2;background:var(--surface-card)" : "flex-grow:.55;background:var(--eos-bone)") + ";flex-shrink:1;flex-basis:0%;border-radius:18px;padding:26px 24px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;min-width:72px;height:510px;box-sizing:border-box;position:relative;transition:flex-grow .55s cubic-bezier(.4,0,.2,1),background .4s ease";
   }
@@ -906,38 +770,11 @@ class Component extends DCLogic {
   solVert(on) {
     return "position:absolute;left:50%;bottom:30px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font-weight:800;font-size:15px;white-space:nowrap;color:var(--text-1);" + (on ? "opacity:0;transition:opacity .15s ease" : "opacity:1;transition:opacity .4s ease .25s");
   }
-  RE = {
-    flip: {
-      badge: "FIX & FLIP",
-      title: "Buy, renovate, sell — inside 12 months.",
-      desc: "For investors recycling capital fast: acquire below market, renovate with staged draws, and exit at the sale.",
-      points: ["Purchase and renovation in one loan", "Draws released as work completes", "Exit at sale, up to 12 months"],
-      term: "UP TO 12 MONTHS",
-      img: "uploads/fix1.jpg",
-    },
-    keep: {
-      badge: "FIX & KEEP",
-      title: "Rent it out. Sell when the market says so.",
-      desc: "Buy and renovate, lease the property, and hold 12 to 60 months for a stronger exit — rent covers the ride while the market improves.",
-      points: ["Rental income while you wait", "Sell any time from 12 to 60 months", "Positioned for a stronger appreciation window"],
-      term: "12–60 MONTHS",
-      img: "uploads/furniture2.jpg",
-    },
-    hold: {
-      badge: "FIX & HOLD",
-      title: "Build wealth in dollars. Live on the rent.",
-      desc: "For investors building a US portfolio: buy, renovate and lease long-term, with financing terms of 48 to 72 months.",
-      points: ["Long-term rental portfolio in USD", "Financing terms of 48–72 months", "Real estate in your home country can be collateral"],
-      term: "48–72 MONTHS",
-      img: "uploads/home_florida.jpg",
-    },
-  };
   renderVals() {
-    const tab = this.state.reTab || this.props.defaultStrategy || "flip";
-    const re = this.RE[tab] || this.RE.flip;
-    const ctaTheme = this.props.ctaTheme ?? "ember";
     const sol = this.state.sol ?? 0;
+    const ctaTheme = this.props.ctaTheme ?? "ember";
     return {
+      yes: true,
       solCard0: this.solCard(sol === 0),
       solCard1: this.solCard(sol === 1),
       solCard2: this.solCard(sol === 2),
@@ -953,44 +790,32 @@ class Component extends DCLogic {
       setSol0: () => this.setState({ sol: 0 }),
       setSol1: () => this.setState({ sol: 1 }),
       setSol2: () => this.setState({ sol: 2 }),
-      yes: true,
-      reTab: tab,
-      reTabItems: [
-        { value: "flip", label: "Fix & Flip" },
-        { value: "keep", label: "Fix & Keep" },
-        { value: "hold", label: "Fix & Hold" },
-      ],
-      setReTab: (v) => this.setState({ reTab: v }),
-      setReFlip: () => this.setState({ reTab: "flip" }),
-      setReKeep: () => this.setState({ reTab: "keep" }),
-      setReHold: () => this.setState({ reTab: "hold" }),
-      reTabBtn0: this.reBtn(tab === "flip"),
-      reTabBtn1: this.reBtn(tab === "keep"),
-      reTabBtn2: this.reBtn(tab === "hold"),
-      reTabSub0: this.reSub(tab === "flip"),
-      reTabSub1: this.reSub(tab === "keep"),
-      reTabSub2: this.reSub(tab === "hold"),
-      reIndex: tab === "flip" ? "01" : tab === "keep" ? "02" : "03",
-      reBadge: re.badge,
-      reTitle: re.title,
-      reDesc: re.desc,
-      rePoints: re.points,
-      reTerm: re.term,
-      reImg: re.img,
-      isFlip: tab === "flip",
-      videoOpen: this.state.videoOpen,
-      openVideo: () => { this.setState({ videoOpen: true }); setTimeout(() => { const v = document.getElementById("film-flip-modal"); if (v) v.play(); }, 0); },
-      closeVideo: () => this.setState({ videoOpen: false }),
-      stopClick: (e) => e.stopPropagation(),
-      holdIdle: !this.state.holdPlaying,
-      holdPlaying: this.state.holdPlaying,
-      playHold: () => { this.setState({ holdPlaying: true }); const v = document.getElementById("film-hold"); if (v) v.play(); },
       b2bIdle: !this.state.b2bPlaying,
       b2bPlaying: this.state.b2bPlaying,
       playB2b: () => { this.setState({ b2bPlaying: true }); const v = document.getElementById("film-b2b"); if (v) v.play(); },
       ctaSectionStyle: ctaTheme === "charcoal" ? "background:var(--surface-dark)" : "background:var(--eos-ember)",
       ctaBtnVariant: ctaTheme === "charcoal" ? "primary" : "secondary",
       ctaSun: 170,
+      pnSent: this.state.pnSent,
+      pnNotSent: !this.state.pnSent,
+      pnCompany: this.state.pnCompany,
+      pnName: this.state.pnName,
+      pnPhone: this.state.pnPhone,
+      pnEmail: this.state.pnEmail,
+      pnCategory: this.state.pnCategory,
+      pnCategoryLabel: this.state.pnCategory.toLowerCase(),
+      pnVolume: this.state.pnVolume,
+      pnThanks: this.state.pnName ? ", " + this.state.pnName.split(" ")[0] : "",
+      pnCategories: ["Residential battery & backup", "Solar + battery", "Water filtration", "Roofing", "HVAC", "Outdoor living", "Auto dealer", "Other"],
+      pnVolumes: ["Prefer not to say", "Under 10 jobs/month", "10 to 50 jobs/month", "Over 50 jobs/month"],
+      pnSetCompany: (e) => this.setState({ pnCompany: e.target.value }),
+      pnSetName: (e) => this.setState({ pnName: e.target.value }),
+      pnSetPhone: (e) => this.setState({ pnPhone: e.target.value }),
+      pnSetEmail: (e) => this.setState({ pnEmail: e.target.value }),
+      pnSetCategory: (v) => this.setState({ pnCategory: v && v.target ? v.target.value : v }),
+      pnSetVolume: (v) => this.setState({ pnVolume: v && v.target ? v.target.value : v }),
+      pnSubmit: (e) => { e.preventDefault(); this.setState({ pnSent: true }); },
+      pnSun: 44,
     };
   }
 }

@@ -9,17 +9,18 @@
 <meta name="theme-color" content="#FFFFFF">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Check your rate — Eos Loan</title>
-<meta name="description" content="Two minutes, soft credit pull — your score is not affected. See your rate for real estate, vehicles, equipment or working capital. SSN or ITIN accepted.">
+<meta name="description" content="Two minutes, soft credit pull — your score is not affected. See your rate for energy storage, water filtration, roofing, HVAC or home improvement. SSN or ITIN accepted.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Eos Loan">
 <meta property="og:title" content="Eos Loan — Check your rate in two minutes.">
-<meta property="og:description" content="Soft credit pull, no score impact. Real estate, vehicles, equipment and working capital in Texas & Florida. SSN or ITIN. NMLS #2744537.">
+<meta property="og:description" content="Soft credit pull, no score impact. Energy storage, water filtration, roofing, HVAC and home improvement. SSN or ITIN. NMLS #2744537.">
 <meta property="og:url" content="https://eos-loan-site.vercel.app/GetStarted.dc.html">
 <meta property="og:image" content="https://eos-loan-site.vercel.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <script src="./support.js"></script>
+<script src="./i18n.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -63,6 +64,7 @@
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="Financing for" options="{{ finOptions }}" value="{{ fFin }}" onChange="{{ setFin }}" hint-size="100%,72px"></x-import>
           </div>
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="How much do you need?" name="amount" inputMode="numeric" placeholder="$25,000" hint="An estimate is fine — you can adjust later." hint-size="100%,92px"></x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="How did this project start?" options="{{ contactOptions }}" value="{{ fContact }}" onChange="{{ setContact }}" hint="This affects your cancellation rights under state law." hint-size="100%,92px"></x-import>
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="100%,48px">See my rate</x-import>
           <p style="margin:0;font-family:var(--font-mono);font-size:11px;line-height:1.7;color:var(--text-3)">Checking your rate uses a soft credit inquiry and does not affect your credit score. SSN or ITIN accepted. Eos Loan &#183; NMLS #2744537.</p>
         </form>
@@ -75,6 +77,7 @@
         </div>
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Stat" value="9.90%" label="Your APR from" detail="Illustrative — final terms confirmed by a specialist" size="lg" accent="{{ yes }}" hint-size="240px,130px"></x-import>
         <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:46ch">Based on a soft pull — your score wasn't touched. We sent next steps to <b>{{ fEmailShown }}</b>. A loan specialist confirms final terms; no obligation.</p>
+        <p style="margin:0;font-family:var(--font-mono);font-size:11px;line-height:1.7;color:var(--text-3)">Rates shown are the rates we lend at. Your rate depends on your credit tier and the term you choose, and it is confirmed after the credit decision. This is not an offer of credit.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="Home.dc.html" hint-size="140px,44px">Back to home</x-import>
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="Contact.dc.html" hint-size="150px,44px">Talk to our team</x-import>
@@ -96,16 +99,15 @@ class Component extends DCLogic {
   state = (() => {
     const q = new URLSearchParams(location.search);
     const map = {
-      realestate: "Real estate investment",
-      vehicle: "Vehicle",
-      equipment: "Equipment",
-      business: "Working capital",
-      partner: "Working capital",
+      battery: "Residential battery & backup",
+      water: "Water filtration",
+      realestate: "Real estate — Fix & Flip",
     };
     return {
       submitted: false,
       fEmail: q.get("email") || "",
-      fFin: map[q.get("interest")] || "Real estate investment",
+      fFin: map[q.get("interest")] || "Residential battery & backup",
+      fContact: "A salesperson or installer reached out to me",
     };
   })();
   renderVals() {
@@ -118,9 +120,13 @@ class Component extends DCLogic {
       fEmailShown: this.state.fEmail || "your email",
       fFin: this.state.fFin,
       stateOptions: ["Texas", "Florida"],
-      finOptions: ["Real estate investment", "Home renovation", "Vehicle", "Equipment", "Working capital", "Energy & water upgrade"],
+      finOptions: ["Real estate — Fix & Flip", "Real estate — Fix & Keep", "Real estate — Fix & Hold", "Residential battery & backup", "Water filtration"],
+      contactOptions: ["A salesperson or installer reached out to me", "I reached out myself", "Not sure"],
       setEmail: (e) => this.setState({ fEmail: e.target.value }),
       setFin: (v) => this.setState({ fFin: v && v.target ? v.target.value : v }),
+      fContact: this.state.fContact,
+      // contact_initiated_by: "merchant" | "consumer" | "unknown" — defaults to merchant (grants the cancellation window; granting too much is never the costly mistake)
+      setContact: (v) => this.setState({ fContact: v && v.target ? v.target.value : v }),
       submit: (e) => { e.preventDefault(); this.setState({ submitted: true }); },
       no: false,
       szLogo: 22,

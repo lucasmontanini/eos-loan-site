@@ -32,24 +32,19 @@
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ logoSize }}" hint-size="118px,26px"></x-import>
     </a>
     <nav data-r="desknav" style="flex:1;min-width:0;display:flex;justify-content:center;gap:2px;flex-wrap:nowrap;white-space:nowrap">
-      <a href="Home.dc.html#products" onMouseEnter="{{ openProducts }}" style="{{ sNavA }}" style-hover="color:var(--eos-ember)">Products
-        <svg width="9" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      </a>
-      <a href="Home.dc.html#solutions" onMouseEnter="{{ openSolutions }}" style="{{ sNavB }}" style-hover="color:var(--eos-ember)">Solutions
-        <svg width="9" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      </a>
-      <a href="RealEstate.dc.html" onMouseEnter="{{ openRe }}" style="{{ sRe }}" style-hover="color:var(--eos-ember)">Real estate
-        <svg width="9" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      </a>
-      <a href="Contact.dc.html" onMouseEnter="{{ closeMenus }}" style="{{ sContact }}" style-hover="color:var(--eos-ember)">Contact</a>
+      <a href="RealEstate.dc.html" style="{{ sRe }}" style-hover="color:var(--eos-ember)">Real estate</a>
+      <a href="Utilities.dc.html" style="{{ sUt }}" style-hover="color:var(--eos-ember)">Utilities</a>
+      <a href="Mobility.dc.html" style="{{ sMf }}" style-hover="color:var(--eos-ember)">Mobility &amp; fleet</a>
+      <a href="Partners.dc.html" style="{{ sPartners }}" style-hover="color:var(--eos-ember)">Partners</a>
+      <a href="Contact.dc.html" style="{{ sContact }}" style-hover="color:var(--eos-ember)">Contact</a>
     </nav>
     <div data-r="deskctl" style="flex:none;display:flex;align-items:center;gap:10px;margin-left:auto" onMouseEnter="{{ closeMenus }}">
       <div style="display:flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em" aria-label="Language">
-        <span style="color:var(--text-1);font-weight:700">EN</span>
+        <span data-eos-lang="en" style="color:var(--text-1)">EN</span>
         <span style="color:var(--text-3)">·</span>
-        <span style="color:var(--text-3);cursor:default" title="Español — coming soon">ES</span>
+        <span data-eos-lang="es" style="color:var(--text-3)">ES</span>
         <span style="color:var(--text-3)">·</span>
-        <span style="color:var(--text-3);cursor:default" title="Português — coming soon">PT</span>
+        <span data-eos-lang="pt" style="color:var(--text-3)">PT</span>
       </div>
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" size="sm" href="#" hint-size="72px,36px">Sign in</x-import>
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="primary" size="sm" href="GetStarted.dc.html" hint-size="140px,36px">Check your rate</x-import>
@@ -59,113 +54,6 @@
       <span style="width:16px;height:2px;background:var(--eos-charcoal);border-radius:2px"></span>
     </button>
   </div>
-
-  <sc-if value="{{ showProducts }}" hint-placeholder-val="{{ false }}">
-    <div style="position:absolute;left:0;right:0;top:100%;display:flex;justify-content:center;padding:10px 24px 0;z-index:130">
-      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px rgba(23,18,14,.16);padding:24px;width:min(880px,100%);animation:menuIn .18s ease both">
-        <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:28px">
-          <div>
-            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--text-3);padding:0 14px">FOR YOUR BUSINESS</div>
-            <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:2px">
-              <a href="Home.dc.html#products" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Payments</span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Accounts, cards and transfers in one place.</span>
-              </a>
-              <a href="Home.dc.html#products" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Foreign exchange</span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">US &#8596; Latin America at fair rates.</span>
-              </a>
-              <a href="Home.dc.html#products" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Working capital</span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Cash-flow credit sized to your revenue.</span>
-              </a>
-              <a href="Home.dc.html#products" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Receivables advance</span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Invoices and card sales into same-week cash.</span>
-              </a>
-              <a href="Home.dc.html#products" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Equipment financing</span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">The machines that keep you running.</span>
-              </a>
-            </div>
-          </div>
-          <div style="border-left:1px solid var(--line);padding-left:28px">
-            <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--text-3);padding:0 14px">FOR YOU</div>
-            <div style="margin-top:8px;display:flex;flex-direction:column;gap:2px">
-              <a href="RealEstate.dc.html" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px;color:var(--text-1)">Real estate <span style="background:var(--eos-ember-tint);border-radius:999px;padding:2px 8px;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.08em">CROSS-BORDER</span></span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Fix &amp; Flip, Keep or Hold — purchase + renovation.</span>
-              </a>
-              <a href="Contact.dc.html?interest=vehicle" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Vehicles</span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Family cars, work trucks and fleets.</span>
-              </a>
-              <a href="Contact.dc.html?interest=equipment" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-                <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Energy &amp; water</span>
-                <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Solar, batteries, HVAC and filtration.</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-          <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-3)">Products are credit Eos originates directly.</span>
-          <a href="Contact.dc.html" style="font-size:13.5px">Talk to sales &#8594;</a>
-        </div>
-      </div>
-    </div>
-  </sc-if>
-
-  <sc-if value="{{ showSolutions }}" hint-placeholder-val="{{ false }}">
-    <div style="position:absolute;left:0;right:0;top:100%;display:flex;justify-content:center;padding:10px 24px 0;z-index:130">
-      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px rgba(23,18,14,.16);padding:24px;width:min(760px,100%);animation:menuIn .18s ease both">
-        <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--text-3);padding:0 14px">EMBEDDED FINANCE &#183; B2B2B / B2B2C</div>
-        <div style="margin-top:8px;display:grid;grid-template-columns:repeat(3,1fr);gap:2px">
-          <a href="Home.dc.html#solutions" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-            <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Credit button</span>
-            <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Financing inside your platform or quote flow.</span>
-          </a>
-          <a href="Home.dc.html#solutions" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-            <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Financing links</span>
-            <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Send a link; customers pay in installments.</span>
-          </a>
-          <a href="Home.dc.html#solutions" style="display:block;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-            <span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Cross-border money</span>
-            <span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">A currency button between the US and home.</span>
-          </a>
-        </div>
-        <div style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-          <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-3)">Your brand in front. Eos underwrites, services and stays compliant behind it.</span>
-          <a href="Contact.dc.html?interest=partner" style="font-size:13.5px">Partner with Eos &#8594;</a>
-        </div>
-      </div>
-    </div>
-  </sc-if>
-
-  <sc-if value="{{ showRe }}" hint-placeholder-val="{{ false }}">
-    <div style="position:absolute;left:0;right:0;top:100%;display:flex;justify-content:center;padding:10px 24px 0;z-index:130">
-      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px rgba(23,18,14,.16);padding:24px;width:min(760px,100%);animation:menuIn .18s ease both">
-        <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;color:var(--text-3);padding:0 14px">INVESTMENT STRATEGIES</div>
-        <div style="margin-top:8px;display:flex;flex-direction:column;gap:2px">
-          <a href="RealEstate.dc.html" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-            <span><span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Fix &amp; Flip</span><span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Buy, renovate, sell — capital recycles fast.</span></span>
-            <span style="flex:none;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:5px 10px;color:var(--text-2)">&#8804; 12 MO</span>
-          </a>
-          <a href="RealEstate.dc.html" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-            <span><span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Fix &amp; Keep</span><span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Rent it out, sell into a stronger market.</span></span>
-            <span style="flex:none;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:5px 10px;color:var(--text-2)">12–60 MO</span>
-          </a>
-          <a href="RealEstate.dc.html" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:11px 14px;border-radius:12px;text-decoration:none" style-hover="background:var(--eos-bone)">
-            <span><span style="display:block;font-weight:800;font-size:14px;color:var(--text-1)">Fix &amp; Hold</span><span style="display:block;margin-top:3px;font-size:12.5px;line-height:1.45;color:var(--text-2);font-weight:500">Build wealth in dollars, live on the rent.</span></span>
-            <span style="flex:none;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:5px 10px;color:var(--text-2)">48–72 MO</span>
-          </a>
-        </div>
-        <div style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-          <span style="font-family:var(--font-mono);font-size:11px;color:var(--text-3)">Also: rent advance, renovations, roofing, HVAC, water &amp; energy upgrades.</span>
-          <a href="RealEstate.dc.html" style="font-size:13.5px">Explore real estate &#8594;</a>
-        </div>
-      </div>
-    </div>
-  </sc-if>
 
   <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
     <div style="position:fixed;inset:0;z-index:600;background:var(--eos-bone);display:flex;flex-direction:column;padding:0 24px 24px;overflow:auto;animation:overlayIn .25s ease both">
@@ -177,27 +65,33 @@
         <button type="button" onClick="{{ closeMobile }}" aria-label="Close menu" style="width:42px;height:42px;border:1px solid var(--line-strong);border-radius:999px;background:none;cursor:pointer;font-size:22px;line-height:1;color:var(--text-1);display:flex;align-items:center;justify-content:center;font-family:var(--font-ui)">&#215;</button>
       </div>
       <nav style="margin-top:24px;display:flex;flex-direction:column">
-        <a href="Home.dc.html#products" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
-          <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">01</span>
-          <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Products</span>
-        </a>
-        <a href="Home.dc.html#solutions" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
-          <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">02</span>
-          <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Solutions</span>
-        </a>
         <a href="RealEstate.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
-          <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">03</span>
+          <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">01</span>
           <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Real estate</span>
         </a>
-        <a href="Contact.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+        <a href="Utilities.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+          <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">02</span>
+          <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Utilities</span>
+        </a>
+        <a href="Mobility.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+          <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">03</span>
+          <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Mobility &amp; fleet</span>
+        </a>
+        <a href="Partners.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">04</span>
+          <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Partners</span>
+        </a>
+        <a href="Contact.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+          <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">05</span>
           <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Contact</span>
         </a>
       </nav>
-      <div style="margin-top:22px;font-family:var(--font-mono);font-size:12px;letter-spacing:.08em">
-        <span style="color:var(--text-1);font-weight:700">EN</span>
-        <span style="color:var(--text-3)"> &#183; ES &#183; PT</span>
-        <span style="color:var(--text-3);font-size:10.5px"> (soon)</span>
+      <div style="margin-top:22px;display:flex;gap:10px;font-family:var(--font-mono);font-size:12px;letter-spacing:.08em">
+        <span data-eos-lang="en" style="color:var(--text-1)">EN</span>
+        <span style="color:var(--text-3)">&#183;</span>
+        <span data-eos-lang="es" style="color:var(--text-3)">ES</span>
+        <span style="color:var(--text-3)">&#183;</span>
+        <span data-eos-lang="pt" style="color:var(--text-3)">PT</span>
       </div>
       <div style="margin-top:auto;padding-top:28px;display:flex;flex-direction:column;gap:10px">
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html" hint-size="100%,48px">Check your rate</x-import>
@@ -208,30 +102,23 @@
   </sc-if>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:420},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;realestate&quot;,&quot;contact&quot;,&quot;getstarted&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Header&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:420},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;realestate&quot;,&quot;utilities&quot;,&quot;mobility&quot;,&quot;partners&quot;,&quot;contact&quot;,&quot;getstarted&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Header&quot;}}">
 class Component extends DCLogic {
   state = { menu: null, mobile: false };
   renderVals() {
     const a = this.props.active ?? "home";
-    const m = this.state.menu;
     const base = { fontFamily: "var(--font-ui)", fontWeight: 700, fontSize: "13.5px", textDecoration: "none", color: "var(--text-1)", padding: "7px 9px", display: "inline-flex", alignItems: "center", gap: "5px", borderRadius: "999px", whiteSpace: "nowrap" };
     const on = { ...base, color: "var(--eos-ember)" };
-    const open = { ...base, background: "var(--eos-bone)", color: "var(--eos-ember)" };
     return {
       no: false,
       logoSize: 22,
       szIcon: 17,
-      sNavA: m === "products" ? open : base,
-      sNavB: m === "solutions" ? open : base,
-      sRe: m === "re" ? open : a === "realestate" ? on : base,
+      sRe: a === "realestate" ? on : base,
+      sUt: a === "utilities" || a === "battery" ? on : base,
+      sMf: a === "mobility" ? on : base,
+      sPartners: a === "partners" ? on : base,
       sContact: a === "contact" ? on : base,
-      showProducts: m === "products",
-      showSolutions: m === "solutions",
-      showRe: m === "re",
-      openProducts: () => this.setState({ menu: "products" }),
-      openSolutions: () => this.setState({ menu: "solutions" }),
-      openRe: () => this.setState({ menu: "re" }),
-      closeMenus: () => this.setState({ menu: null }),
+      closeMenus: () => {},
       mobileOpen: this.state.mobile,
       openMobile: () => this.setState({ mobile: true }),
       closeMobile: () => this.setState({ mobile: false }),

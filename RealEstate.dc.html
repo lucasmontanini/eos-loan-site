@@ -20,6 +20,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <script src="./support.js"></script>
+<script src="./i18n.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -57,7 +58,7 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Real estate &#183; Texas &amp; Florida</span>
       </div>
-      <h1 style="margin-top:22px;font-size:clamp(40px,4.6vw,66px);line-height:1.05;letter-spacing:-.015em;max-width:15ch">Build wealth in <span style="background:var(--eos-ember-tint);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone">dollars</span>, one property at a time.</h1>
+      <h1 style="margin-top:22px;font-size:clamp(40px,4.6vw,66px);line-height:1.05;letter-spacing:-.015em;max-width:16ch">Purchase and renovation financing, in one loan.</h1>
       <p style="margin:22px 0 0;font-size:17px;line-height:1.6;color:var(--text-2);max-width:52ch">Purchase and renovation in one loan, with draws released as the work gets done. For investors and homeowners — apply with your SSN or ITIN.</p>
       <form action="GetStarted.dc.html" method="get" style="margin-top:30px;display:flex;gap:10px;max-width:520px;flex-wrap:wrap">
         <input type="hidden" name="interest" value="realestate">
@@ -94,7 +95,7 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Strategies</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">Three ways to play the same asset.</h2>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">Three investment strategies.</h2>
       <p style="margin:14px 0 0;font-size:16px;color:var(--text-2);max-width:58ch">Same property, different horizons. Pick the exit first — the financing follows.</p>
     </div>
     <div style="margin-top:32px">
@@ -147,9 +148,9 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">The films</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">Two strategies. Thirty seconds each.</h2>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">A thirty-second overview of Fix &amp; Flip.</h2>
     </div>
-    <div data-r="cols2" style="margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:16px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
+    <div style="margin-top:36px;max-width:820px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
       <div>
         <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
           <video id="film-re-flip" src="uploads/film-fixflip.mp4" poster="uploads/film-fixflip-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
@@ -166,22 +167,6 @@
           <a href="GetStarted.dc.html?interest=realestate" style="font-size:13.5px">Check my rate &#8594;</a>
         </div>
       </div>
-      <div>
-        <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--eos-charcoal)">
-          <video id="film-re-hold" src="uploads/film-fixhold.mp4" poster="uploads/film-fixhold-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover"></video>
-          <sc-if value="{{ vHoldIdle }}" hint-placeholder-val="{{ true }}">
-            <button type="button" onClick="{{ playVHold }}" aria-label="Play the Fix &amp; Hold film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.30);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center">
-              <span style="width:72px;height:72px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
-                <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
-              </span>
-            </button>
-          </sc-if>
-        </div>
-        <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-          <span style="font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--text-2)">FIX &amp; HOLD &#183; RENT LONG-TERM &#183; 48&#8211;72 MO</span>
-          <a href="GetStarted.dc.html?interest=realestate" style="font-size:13.5px">Check my rate &#8594;</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -193,7 +178,7 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">The Eos difference</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:20ch">Your property back home counts here.</h2>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:20ch">Cross-border collateral.</h2>
       <p style="margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:56ch">Built for international investors: Eos can accept real estate you own in your home country as collateral for your US investment — unlocking terms without selling what you already built.</p>
       <div style="margin-top:26px">
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="Contact.dc.html?interest=realestate" hint-size="270px,48px">Ask about cross-border collateral</x-import>
@@ -219,35 +204,42 @@
       <div>
         <div style="display:flex;align-items:center;gap:10px">
           <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Also under real estate</span>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Consumer programs &#183; same avenue</span>
         </div>
-        <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">For the home you already have.</h2>
+        <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:24ch">Consumer programs for homeowners.</h2>
       </div>
     </div>
     <div style="margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
       <div style="background:var(--surface-tint);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
-        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Rent advance</h3>
-        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Turn future rent payments into cash today.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Roofing</h3>
+          <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">36&#8211;72 MO</span>
+        </div>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Replacement and repair &#8212; the upgrade that protects everything else.</p>
         <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
       <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
-        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Renovations</h3>
-        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Kitchens, bathrooms, additions — staged draws as work completes.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">HVAC</h3>
+          <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">24&#8211;72 MO</span>
+        </div>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Heating and cooling replaced in the week it breaks, not the year after.</p>
         <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
       <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
-        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Windows &amp; roofing</h3>
-        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">The upgrades that protect everything else.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Outdoor living</h3>
+          <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">36&#8211;72 MO</span>
+        </div>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Decks, patios, fencing and the yard the house deserves.</p>
         <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
       <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
-        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">HVAC &amp; water</h3>
-        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Heating, cooling and whole-home water filtration.</p>
-        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
-      </div>
-      <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
-        <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Solar, battery &amp; landscaping</h3>
-        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Energy independence and curb appeal, financed together.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:16.5px">Interior &amp; general repair</h3>
+          <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">24&#8211;72 MO</span>
+        </div>
+        <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Kitchens, bathrooms and the work the house needs now.</p>
         <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
     </div>
@@ -261,7 +253,7 @@
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
         <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">How it works</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display)">From rate check to keys.</h2>
+      <h2 style="margin-top:18px;font-size:var(--fs-display)">How the process works.</h2>
     </div>
     <div style="margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:32px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
       <div style="border-top:2px solid var(--eos-charcoal);padding-top:18px">
@@ -349,7 +341,7 @@
 <section style="background:var(--surface-dark)">
   <div style="max-width:1240px;margin:0 auto;padding:96px 28px;display:flex;justify-content:space-between;align-items:center;gap:48px;flex-wrap:wrap">
     <div>
-      <h2 style="font-size:clamp(34px,3.8vw,52px);color:var(--eos-bone);max-width:18ch">Ready to run the numbers?</h2>
+      <h2 style="font-size:clamp(34px,3.8vw,52px);color:var(--eos-bone);max-width:18ch">Check your rate.</h2>
       <p style="margin:14px 0 0;font-size:16px;color:var(--text-2-inverse);max-width:48ch">Two minutes, soft credit pull. See your terms before anyone calls you.</p>
       <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html?interest=realestate" hint-size="170px,48px">Check my rate</x-import>
@@ -364,7 +356,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;defaultStrategy&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flip&quot;,&quot;keep&quot;,&quot;hold&quot;],&quot;default&quot;:&quot;flip&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Strategies&quot;}}">
 class Component extends DCLogic {
-  state = { reTab: null, vFlip: false, vHold: false };
+  state = { reTab: null, vFlip: false };
   segStyle(w, kind) {
     const base = `flex:0 0 ${w}%;display:flex;align-items:center;padding:0 10px;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;white-space:nowrap;overflow:hidden;`;
     if (kind === "buy") return base + "background:var(--eos-charcoal);color:var(--eos-bone)";
@@ -375,7 +367,7 @@ class Component extends DCLogic {
   RE = {
     flip: {
       badge: "FIX & FLIP",
-      title: "Buy, renovate, sell — inside 12 months.",
+      title: "Buy, renovate and sell, within 12 months.",
       desc: "The investor buys below market, renovates with staged draws, and sells within a short window of up to 12 months. Capital comes back fast and goes again.",
       points: ["Purchase and renovation in one loan", "Draws released as work completes", "Short horizon: capital recycles quickly"],
       term: "UP TO 12 MONTHS",
@@ -389,10 +381,10 @@ class Component extends DCLogic {
     },
     keep: {
       badge: "FIX & KEEP",
-      title: "Rent it out. Sell when the market says so.",
-      desc: "Buy and renovate, lease the property, and sell between 12 and 60 months — rent carries the loan while you wait for a stronger appreciation window.",
-      points: ["Rental income while you hold", "Exit any time from 12 to 60 months", "Positioned for market recovery and upside"],
-      term: "12–60 MONTHS",
+      title: "Buy, renovate and lease. Sell between 36 and 60 months.",
+      desc: "Buy and renovate, lease the property, and sell between 36 and 60 months — rent carries the loan while you wait for a stronger appreciation window.",
+      points: ["Rental income while you hold", "Term sized to the strategy (36–60 months), longer than a flip without locking you into a decade", "Positioned for market recovery and upside"],
+      term: "36–60 MONTHS",
       best: "Investors who can wait for the market and want rent covering the ride.",
       scale: "MO 60",
       phases: [
@@ -404,12 +396,12 @@ class Component extends DCLogic {
     },
     hold: {
       badge: "FIX & HOLD",
-      title: "Build wealth in dollars. Live on the rent.",
-      desc: "Buy, renovate and lease long-term with financing of 48 to 72 months. For investors building a US portfolio and living off rental yield.",
-      points: ["Long-term rental portfolio in USD", "Financing terms of 48–72 months", "Property in your home country can be collateral"],
-      term: "48–72 MONTHS",
+      title: "Buy, renovate and hold as a long-term rental.",
+      desc: "Buy, renovate and lease long-term with financing of 36 to 60 months. For investors building a US portfolio and living off rental yield.",
+      points: ["A US rental that pays you every month, financed over 36–60 months so the rent can carry the loan", "Long-term rental portfolio in USD", "Property in your home country can be collateral"],
+      term: "36–60 MONTHS",
       best: "Investors building patrimony in dollars and living on rental yield.",
-      scale: "MO 72",
+      scale: "MO 60",
       phases: [
         { label: "BUY", w: 10, kind: "buy" },
         { label: "RENOVATE", w: 18, kind: "work" },
@@ -425,9 +417,6 @@ class Component extends DCLogic {
       vFlipIdle: !this.state.vFlip,
       vFlipPlaying: this.state.vFlip,
       playVFlip: () => { this.setState({ vFlip: true }); const v = document.getElementById("film-re-flip"); if (v) v.play(); },
-      vHoldIdle: !this.state.vHold,
-      vHoldPlaying: this.state.vHold,
-      playVHold: () => { this.setState({ vHold: true }); const v = document.getElementById("film-re-hold"); if (v) v.play(); },
       reTab: tab,
       reTabItems: [
         { value: "flip", label: "Fix & Flip" },
