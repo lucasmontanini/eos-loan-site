@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Eos Loan">
 <meta property="og:title" content="Eos Loan — Build wealth in dollars, one property at a time.">
 <meta property="og:description" content="Purchase and renovation in one loan. Fix & Flip, Keep or Hold in Texas & Florida — collateral accepted from 8 countries. SSN or ITIN. NMLS #2744537.">
-<meta property="og:url" content="https://eos-loan-site.vercel.app/RealEstate.dc.html">
+<meta property="og:url" content="https://eos-loan-site.vercel.app/real-estate">
 <meta property="og:image" content="https://eos-loan-site.vercel.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -60,7 +60,7 @@
       </div>
       <h1 style="margin-top:22px;font-size:clamp(40px,4.6vw,66px);line-height:1.05;letter-spacing:-.015em;max-width:16ch">Purchase and renovation financing, in one loan.</h1>
       <p style="margin:22px 0 0;font-size:17px;line-height:1.6;color:var(--text-2);max-width:52ch">Purchase and renovation in one loan, with draws released as the work gets done. For investors and homeowners — apply with your SSN or ITIN.</p>
-      <form action="GetStarted.dc.html" method="get" style="margin-top:30px;display:flex;gap:10px;max-width:520px;flex-wrap:wrap">
+      <form action="/get-started" method="get" style="margin-top:30px;display:flex;gap:10px;max-width:520px;flex-wrap:wrap">
         <input type="hidden" name="interest" value="realestate">
         <div style="flex:1;min-width:240px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" type="email" name="email" required="{{ yes }}" placeholder="Your email" hint-size="100%,48px"></x-import>
@@ -133,7 +133,7 @@
           </div>
           <div style="margin-top:22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
             <span style="border:1px solid var(--line-strong);border-radius:999px;padding:9px 16px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em">{{ reTerm }}</span>
-            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="GetStarted.dc.html?interest=realestate" hint-size="150px,44px">Check my rate</x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" href="/get-started?interest=realestate" hint-size="150px,44px">Check my rate</x-import>
           </div>
         </div>
       </div>
@@ -164,7 +164,7 @@
         </div>
         <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
           <span style="font-family:var(--font-mono);font-size:11.5px;letter-spacing:.14em;color:var(--text-2)">FIX &amp; FLIP &#183; BUY, RENOVATE, SELL &#8804; 12 MO</span>
-          <a href="GetStarted.dc.html?interest=realestate" style="font-size:13.5px">Check my rate &#8594;</a>
+          <a href="/get-started?interest=realestate" style="font-size:13.5px">Check my rate &#8594;</a>
         </div>
       </div>
     </div>
@@ -181,7 +181,7 @@
       <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:20ch">Cross-border collateral.</h2>
       <p style="margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:56ch">Built for international investors: Eos can accept real estate you own in your home country as collateral for your US investment — unlocking terms without selling what you already built.</p>
       <div style="margin-top:26px">
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="Contact.dc.html?interest=realestate" hint-size="270px,48px">Ask about cross-border collateral</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="/contact?interest=realestate" hint-size="270px,48px">Ask about cross-border collateral</x-import>
       </div>
       <p style="margin:18px 0 0;font-family:var(--font-mono);font-size:11px;color:rgba(247,242,234,.45)">Subject to valuation and credit approval.</p>
     </div>
@@ -216,7 +216,7 @@
           <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">36&#8211;72 MO</span>
         </div>
         <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Replacement and repair &#8212; the upgrade that protects everything else.</p>
-        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+        <a href="/contact?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
       <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
@@ -224,7 +224,7 @@
           <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">24&#8211;72 MO</span>
         </div>
         <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Heating and cooling replaced in the week it breaks, not the year after.</p>
-        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+        <a href="/contact?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
       <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
@@ -232,7 +232,7 @@
           <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">36&#8211;72 MO</span>
         </div>
         <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Decks, patios, fencing and the yard the house deserves.</p>
-        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+        <a href="/contact?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
       <div style="background:var(--surface-card);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:8px">
         <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
@@ -240,7 +240,7 @@
           <span style="flex:none;font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;border:1px solid var(--line-strong);border-radius:999px;padding:4px 9px;color:var(--text-2)">24&#8211;72 MO</span>
         </div>
         <p style="margin:0;font-size:13.5px;line-height:1.55;color:var(--text-2)">Kitchens, bathrooms and the work the house needs now.</p>
-        <a href="Contact.dc.html?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
+        <a href="/contact?interest=realestate" style="margin-top:auto;font-size:13px">Talk to us &#8594;</a>
       </div>
     </div>
   </div>
@@ -344,8 +344,8 @@
       <h2 style="font-size:clamp(34px,3.8vw,52px);color:var(--eos-bone);max-width:18ch">Check your rate.</h2>
       <p style="margin:14px 0 0;font-size:16px;color:var(--text-2-inverse);max-width:48ch">Two minutes, soft credit pull. See your terms before anyone calls you.</p>
       <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html?interest=realestate" hint-size="170px,48px">Check my rate</x-import>
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="Contact.dc.html?interest=realestate" hint-size="170px,48px">Talk to our team</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/get-started?interest=realestate" hint-size="170px,48px">Check my rate</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" on-dark="{{ yes }}" href="/contact?interest=realestate" hint-size="170px,48px">Talk to our team</x-import>
       </div>
     </div>
     <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ ctaSun }}" color="bone" hint-size="150px,150px"></x-import>

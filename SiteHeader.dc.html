@@ -32,11 +32,11 @@
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.EosLogo" variant="lockup" size="{{ logoSize }}" hint-size="118px,26px"></x-import>
     </a>
     <nav data-r="desknav" style="flex:1;min-width:0;display:flex;justify-content:center;gap:2px;flex-wrap:nowrap;white-space:nowrap">
-      <a href="RealEstate.dc.html" style="{{ sRe }}" style-hover="color:var(--eos-ember)">Real estate</a>
-      <a href="Utilities.dc.html" style="{{ sUt }}" style-hover="color:var(--eos-ember)">Utilities</a>
-      <a href="Mobility.dc.html" style="{{ sMf }}" style-hover="color:var(--eos-ember)">Mobility &amp; fleet</a>
-      <a href="Partners.dc.html" style="{{ sPartners }}" style-hover="color:var(--eos-ember)">Partners</a>
-      <a href="Contact.dc.html" style="{{ sContact }}" style-hover="color:var(--eos-ember)">Contact</a>
+      <a href="/real-estate" style="{{ sRe }}" style-hover="color:var(--eos-ember)">Real estate</a>
+      <a href="/utilities" style="{{ sUt }}" style-hover="color:var(--eos-ember)">Utilities</a>
+      <a href="/mobility" style="{{ sMf }}" style-hover="color:var(--eos-ember)">Mobility &amp; fleet</a>
+      <a href="/partners" style="{{ sPartners }}" style-hover="color:var(--eos-ember)">Partners</a>
+      <a href="/contact" style="{{ sContact }}" style-hover="color:var(--eos-ember)">Contact</a>
     </nav>
     <div data-r="deskctl" style="flex:none;display:flex;align-items:center;gap:10px;margin-left:auto" onMouseEnter="{{ closeMenus }}">
       <div style="display:flex;align-items:center;gap:5px;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em" aria-label="Language">
@@ -47,7 +47,7 @@
         <span data-eos-lang="pt" style="color:var(--text-3)">PT</span>
       </div>
       <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" size="sm" href="#" hint-size="72px,36px">Sign in</x-import>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="primary" size="sm" href="GetStarted.dc.html" hint-size="140px,36px">Check your rate</x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="primary" size="sm" href="/get-started" hint-size="140px,36px">Check your rate</x-import>
     </div>
     <button type="button" data-r="burger" onClick="{{ openMobile }}" aria-label="Open menu" style="display:none;margin-left:auto;width:42px;height:42px;border:1px solid var(--line-strong);border-radius:999px;background:none;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px">
       <span style="width:16px;height:2px;background:var(--eos-charcoal);border-radius:2px"></span>
@@ -65,23 +65,23 @@
         <button type="button" onClick="{{ closeMobile }}" aria-label="Close menu" style="width:42px;height:42px;border:1px solid var(--line-strong);border-radius:999px;background:none;cursor:pointer;font-size:22px;line-height:1;color:var(--text-1);display:flex;align-items:center;justify-content:center;font-family:var(--font-ui)">&#215;</button>
       </div>
       <nav style="margin-top:24px;display:flex;flex-direction:column">
-        <a href="RealEstate.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+        <a href="/real-estate" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">01</span>
           <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Real estate</span>
         </a>
-        <a href="Utilities.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+        <a href="/utilities" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">02</span>
           <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Utilities</span>
         </a>
-        <a href="Mobility.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+        <a href="/mobility" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">03</span>
           <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Mobility &amp; fleet</span>
         </a>
-        <a href="Partners.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+        <a href="/partners" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">04</span>
           <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Partners</span>
         </a>
-        <a href="Contact.dc.html" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
+        <a href="/contact" onClick="{{ closeMobile }}" style="display:flex;align-items:baseline;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none">
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">05</span>
           <span style="font-family:var(--font-ui);font-weight:800;font-size:27px;color:var(--text-1)">Contact</span>
         </a>
@@ -94,7 +94,7 @@
         <span data-eos-lang="pt" style="color:var(--text-3)">PT</span>
       </div>
       <div style="margin-top:auto;padding-top:28px;display:flex;flex-direction:column;gap:10px">
-        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="GetStarted.dc.html" hint-size="100%,48px">Check your rate</x-import>
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/get-started" hint-size="100%,48px">Check your rate</x-import>
         <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" href="#" hint-size="100%,48px">Sign in</x-import>
       </div>
       <div style="margin-top:18px;font-family:var(--font-mono);font-size:10.5px;color:var(--text-3)">Eos Loan &#183; NMLS #2744537</div>
