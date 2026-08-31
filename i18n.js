@@ -679,6 +679,7 @@
     "Home programs are consumer credit that does not touch the equity in the house — no HELOC, and none of the timeline of a mortgage transaction.":
       ["Programas residenciais são crédito consumer que não toca o patrimônio da casa — sem HELOC e sem os prazos de uma operação hipotecária.",
        "Los programas del hogar son crédito consumer que no toca el patrimonio de la casa — sin HELOC y sin los tiempos de una operación hipotecaria."],
+    "How it works": ["Como funciona", "Cómo funciona"],
     "How it runs": ["Como funciona", "Cómo funciona"],
     "How the program works.": ["Como o programa funciona.", "Cómo funciona el programa."],
     "You send the link": ["Você envia o link", "Tú envías el enlace"],
