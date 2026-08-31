@@ -18,7 +18,7 @@
     "Real estate": ["Imóveis", "Bienes raíces"],
     "Utilities": ["Utilities", "Utilities"],
     "Mobility & fleet": ["Mobilidade e frota", "Movilidad y flota"],
-    "Partners": ["Parceiros", "Socios"],
+    "Partners": ["Canal", "Canal"],
     "Contact": ["Contato", "Contacto"],
     "Sign in": ["Entrar", "Iniciar sesión"],
     "Check your rate": ["Consulte sua taxa", "Consulta tu tasa"],
@@ -63,11 +63,13 @@
     "More approvals. More sales. More growth. Eos Loan turns your leads into customers with intelligent financing for essential projects.":
       ["Mais aprovações. Mais vendas. Mais crescimento. A Eos Loan transforma seus leads em clientes com financiamento inteligente para projetos essenciais.",
        "Más aprobaciones. Más ventas. Más crecimiento. Eos Loan convierte tus leads en clientes con financiamiento inteligente para proyectos esenciales."],
-    "Accelerated by Ripple’s UDAX program at UC Berkeley.": ["Acelerada pelo programa UDAX da Ripple na UC Berkeley.", "Acelerada por el programa UDAX de Ripple en UC Berkeley."],
+    "Accelerated by Ripple UDAX (UC Berkeley), Microsoft for Startups, Google Cloud for Startups, NVIDIA Inception, Greentown Labs, ANVC (Chicago Booth) and LBAN (Stanford GSB).": ["Acelerada por Ripple UDAX (UC Berkeley), Microsoft for Startups, Google Cloud for Startups, NVIDIA Inception, Greentown Labs, ANVC (Chicago Booth) e LBAN (Stanford GSB).", "Acelerada por Ripple UDAX (UC Berkeley), Microsoft for Startups, Google Cloud for Startups, NVIDIA Inception, Greentown Labs, ANVC (Chicago Booth) y LBAN (Stanford GSB)."],
     "Home backup & battery": ["Backup residencial e bateria", "Respaldo residencial y batería"],
-    "Partner programme": ["Programa de parceiros", "Programa de socios"],
-    "Apply to partner": ["Aplicar como parceiro", "Aplicar como socio"],
-    "Partner with Eos": ["Seja parceiro da Eos", "Asóciate con Eos"],
+    "Partner programme": ["Programa de canal", "Programa de canal"],
+    "Apply to partner": ["Cadastre-se no canal", "Registrarse en el canal"],
+    "Partner with Eos": ["Seja canal da Eos", "Sé canal de Eos"],
+    "Acceleration programs": ["Programas de aceleração", "Programas de aceleración"],
+    "The programs that accelerated Eos.": ["Os programas que aceleraram a Eos.", "Los programas que aceleraron a Eos."],
     "Trusted by": ["Confiam na Eos", "Confían en Eos"],
     "Proven track record": ["Histórico comprovado", "Trayectoria comprobada"],
     "Our track record.": ["Nosso histórico.", "Nuestra trayectoria."],
@@ -78,9 +80,9 @@
     "Credit for what's essential": ["Crédito para o essencial", "Crédito para lo esencial"],
     "Built to finance everything": ["Feita para financiar tudo que é", "Hecha para financiar todo lo"],
     "essential": ["essencial", "esencial"],
-    "Real estate, utilities, mobility — credit from the lender itself, decided in minutes and funded in about 48 hours. Apply with your SSN or ITIN.":
-      ["Imóveis, utilities e mobilidade — crédito direto da credora, com decisão em minutos e liberação em cerca de 48 horas. Aplique com SSN ou ITIN.",
-       "Bienes raíces, utilities y movilidad — crédito del propio prestamista, con decisión en minutos y fondos en unas 48 horas. Aplica con SSN o ITIN."],
+    "Direct credit for essential projects across real estate, utilities and mobility & fleet — originated, underwritten and funded by Eos. Apply with your SSN or ITIN.":
+      ["Crédito direto para projetos essenciais em imóveis, utilities e mobilidade e frota — originado, analisado e liberado pela Eos. Aplique com SSN ou ITIN.",
+       "Crédito directo para proyectos esenciales en bienes raíces, utilities y movilidad y flota — originado, evaluado y fondeado por Eos. Aplica con SSN o ITIN."],
     "Soft credit pull — no score impact": ["Consulta suave — sem impacto no score", "Consulta blanda — sin impacto en el puntaje"],
     "PRE-QUALIFIED": ["PRÉ-QUALIFICADO", "PRECALIFICADO"],
     "Fixed installments · 60 mo": ["Parcelas fixas · 60 meses", "Cuotas fijas · 60 meses"],
@@ -124,14 +126,14 @@
        "Los plazos consumer nunca superan 72 meses. Los programas con fines comerciales se estructuran por operación. Todo financiamiento sujeto a aprobación de crédito."],
 
     /* ---------- Home embedded accordion ---------- */
-    "For partners · Embedded financing": ["Para parceiros · Financiamento embarcado", "Para socios · Financiamiento integrado"],
+    "For partners · Embedded financing": ["Canal · Financiamento embarcado", "Canal · Financiamiento integrado"],
     "Embedded financing, under your brand.": ["Financiamento embarcado, com a sua marca.", "Financiamiento integrado, bajo tu marca."],
     "Put Eos inside your product. Offer financing at your point of sale while we handle underwriting, compliance and servicing — you close more sales.":
       ["Coloque a Eos dentro do seu produto. Ofereça financiamento no seu ponto de venda enquanto cuidamos de underwriting, compliance e servicing — você fecha mais vendas.",
        "Integra Eos en tu producto. Ofrece financiamiento en tu punto de venta mientras nosotros manejamos underwriting, compliance y servicing — tú cierras más ventas."],
     "Credit button": ["Botão de crédito", "Botón de crédito"],
     "Financing links": ["Links de financiamento", "Enlaces de financiamiento"],
-    "Partner dashboard": ["Dashboard do parceiro", "Panel del socio"],
+    "Partner dashboard": ["Dashboard do canal", "Panel del canal"],
     "A credit button in your platform": ["Um botão de crédito na sua plataforma", "Un botón de crédito en tu plataforma"],
     "A water-filtration company adds one button to its quote flow — the customer gets an Eos decision without leaving the page.":
       ["Uma empresa de filtração de água adiciona um botão ao orçamento — o cliente recebe a decisão da Eos sem sair da página.",
@@ -149,9 +151,9 @@
     "No code — send a link, close the sale": ["Sem código — envie um link, feche a venda", "Sin código — envía un enlace, cierra la venta"],
     "Customer splits it into installments": ["O cliente parcela o valor", "El cliente lo paga en cuotas"],
     "You receive the full amount at once": ["Você recebe o valor integral de uma vez", "Tú recibes el monto completo de una vez"],
-    "1 · THE STORE SENDS A LINK": ["1 · O PARCEIRO ENVIA O LINK", "1 · EL COMERCIO ENVÍA EL ENLACE"],
+    "1 · THE STORE SENDS A LINK": ["1 · O CANAL ENVIA O LINK", "1 · EL COMERCIO ENVÍA EL ENLACE"],
     "2 · THE CUSTOMER PICKS A PLAN": ["2 · O CLIENTE ESCOLHE O PLANO", "2 · EL CLIENTE ELIGE EL PLAN"],
-    "3 · THE STORE IS PAID IN FULL": ["3 · O PARCEIRO RECEBE INTEGRAL", "3 · EL COMERCIO RECIBE EL TOTAL"],
+    "3 · THE STORE IS PAID IN FULL": ["3 · O CANAL RECEBE INTEGRAL", "3 · EL COMERCIO RECIBE EL TOTAL"],
     "Hi Ana! Finish your AC replacement here:": ["Oi, Ana! Conclua a troca do seu ar-condicionado aqui:", "¡Hola, Ana! Termina el reemplazo de tu aire acondicionado aquí:"],
     "AC replacement": ["Troca de ar-condicionado", "Reemplazo de aire acondicionado"],
     "24 × $228/mo": ["24 × US$ 228/mês", "24 × US$ 228/mes"],
@@ -165,7 +167,7 @@
     "Every application and its status, live": ["Cada aplicação e seu status, ao vivo", "Cada solicitud y su estado, en vivo"],
     "Resume links recover stalled deals": ["Links de retomada recuperam negócios parados", "Los enlaces de reanudación recuperan ventas detenidas"],
     "Onboarding: apply, approve, one training session": ["Onboarding: aplicação, aprovação e um treinamento", "Onboarding: solicitud, aprobación y una capacitación"],
-    "See the partner programme →": ["Ver o programa de parceiros →", "Ver el programa de socios →"],
+    "See the partner programme →": ["Ver o programa de canal →", "Ver el programa de canal →"],
     "APPLICATIONS · TODAY": ["APLICAÇÕES · HOJE", "SOLICITUDES · HOY"],
     "Whole-home filtration": ["Filtração para a casa toda", "Filtración para toda la casa"],
     "$6,800 · 60 mo": ["US$ 6.800 · 60 meses", "US$ 6,800 · 60 meses"],
@@ -201,8 +203,8 @@
     "Send a financing link or add a button. API optional, no code required.": ["Envie um link de financiamento ou adicione um botão. API opcional, sem código obrigatório.", "Envía un enlace de financiamiento o agrega un botón. API opcional, sin código obligatorio."],
 
     /* ---------- Home testimonials / credit / why ---------- */
-    "Customers & partners": ["Clientes e parceiros", "Clientes y socios"],
-    "What our partners say.": ["O que dizem nossos parceiros.", "Lo que dicen nuestros socios."],
+    "Customers & partners": ["Clientes e canais", "Clientes y canales"],
+    "What our partners say.": ["O que dizem nossos canais.", "Lo que dicen nuestros canales."],
     "We put an Eos financing button in our sales flow. Approvals happen at the kitchen table, and our close rate jumped.":
       ["Colocamos um botão de financiamento da Eos no nosso fluxo de vendas. As aprovações acontecem na mesa da cozinha, e nossa taxa de fechamento saltou.",
        "Pusimos un botón de financiamiento de Eos en nuestro flujo de ventas. Las aprobaciones ocurren en la mesa de la cocina, y nuestra tasa de cierre subió."],
@@ -240,11 +242,11 @@
     "Silent": ["Silencioso", "Silencioso"],
     "Warranty": ["Garantia", "Garantía"],
     "Explore home backup": ["Explorar backup residencial", "Explorar respaldo residencial"],
-    "For partners": ["Para parceiros", "Para socios"],
+    "For partners": ["Para o canal", "Para el canal"],
     "Offer Eos financing to your customers.": ["Ofereça o financiamento da Eos aos seus clientes.", "Ofrece el financiamiento de Eos a tus clientes."],
     "Installers, contractors and resellers send their customers to Eos at the point of sale. We are the lender — we underwrite, fund and service the loan, and the partner takes no credit risk.":
-      ["Instaladores, contractors e revendedores encaminham seus clientes à Eos no ponto de venda. Somos a credora — analisamos, liberamos e fazemos o servicing, e o parceiro não assume risco de crédito.",
-       "Instaladores, contratistas y revendedores envían a sus clientes a Eos en el punto de venta. Somos el prestamista — evaluamos, fondeamos y hacemos el servicing, y el socio no asume riesgo de crédito."],
+      ["Instaladores, contractors e revendedores encaminham seus clientes à Eos no ponto de venda. Somos a credora — analisamos, liberamos e fazemos o servicing, e o canal não assume risco de crédito.",
+       "Instaladores, contratistas y revendedores envían a sus clientes a Eos en el punto de venta. Somos el prestamista — evaluamos, fondeamos y hacemos el servicing, y el canal no asume riesgo de crédito."],
     "No credit risk to you": ["Sem risco de crédito para você", "Sin riesgo de crédito para ti"],
     "Your customer is the borrower. Eos carries the loan, not your business.": ["Seu cliente é o tomador. A Eos carrega o empréstimo, não o seu negócio.", "Tu cliente es el deudor. Eos carga el préstamo, no tu negocio."],
     "Full margin, no dealer fee": ["Margem integral, sem dealer fee", "Margen completo, sin dealer fee"],
@@ -254,7 +256,7 @@
     "A dashboard for every application": ["Um dashboard para cada aplicação", "Un panel para cada solicitud"],
     "Track every application and reissue a link so the customer resumes where they stopped.": ["Acompanhe cada aplicação e gere um novo link para o cliente retomar de onde parou.", "Sigue cada solicitud y reemite un enlace para que el cliente retome donde quedó."],
     "Onboarding is an application, an approval and one training session.": ["O onboarding é uma aplicação, uma aprovação e um treinamento.", "El onboarding es una solicitud, una aprobación y una capacitación."],
-    "Become a partner": ["Torne-se parceiro", "Conviértete en socio"],
+    "Become a partner": ["Torne-se um canal", "Conviértete en canal"],
     "Tell us what you sell and we will come back within one business day.": ["Conte o que você vende e retornamos em até um dia útil.", "Cuéntanos qué vendes y te respondemos dentro de un día hábil."],
     "Company": ["Empresa", "Empresa"],
     "Your name": ["Seu nome", "Tu nombre"],
@@ -394,7 +396,6 @@
     "Real estate investment financing": ["Financiamento de investimento imobiliário", "Financiamiento de inversión inmobiliaria"],
     "Fix & Hold investor": ["Investidor Fix & Hold", "Inversionista Fix & Hold"],
     "Real estate FAQ": ["FAQ de imóveis", "FAQ de bienes raíces"],
-    "The fine print, out loud.": ["As letras miúdas, em voz alta.", "La letra chica, en voz alta."],
     "How does cross-border collateral work?": ["Como funciona a garantia cross-border?", "¿Cómo funciona la garantía transfronteriza?"],
     "You pledge real estate you own in Brazil, Mexico, Colombia, Argentina, Peru, Ecuador, Paraguay or Chile. We run a valuation with local counsel and count it toward your collateral package — subject to credit approval.":
       ["Você dá em garantia um imóvel seu no Brasil, México, Colômbia, Argentina, Peru, Equador, Paraguai ou Chile. Fazemos a avaliação com assessoria local e o contamos no seu pacote de garantias — sujeito a aprovação de crédito.",
@@ -650,9 +651,9 @@
     /* ---------- Partners page ---------- */
     "Offer Eos financing at your point of sale.": ["Ofereça o financiamento da Eos no seu ponto de venda.", "Ofrece el financiamiento de Eos en tu punto de venta."],
     "Installers, contractors and resellers send their customers to Eos at the moment of sale. We are the lender — we underwrite, fund and service the loan under NMLS #2744537. The partner takes no credit risk and keeps the full margin.":
-      ["Instaladores, contractors e revendedores encaminham seus clientes à Eos no momento da venda. Somos a credora — analisamos, liberamos e fazemos o servicing sob a licença NMLS #2744537. O parceiro não assume risco de crédito e mantém a margem integral.",
-       "Instaladores, contratistas y revendedores envían a sus clientes a Eos en el momento de la venta. Somos el prestamista — evaluamos, fondeamos y hacemos el servicing bajo la licencia NMLS #2744537. El socio no asume riesgo de crédito y conserva el margen completo."],
-    "WHAT THE PARTNER GETS": ["O QUE O PARCEIRO RECEBE", "QUÉ RECIBE EL SOCIO"],
+      ["Instaladores, contractors e revendedores encaminham seus clientes à Eos no momento da venda. Somos a credora — analisamos, liberamos e fazemos o servicing sob a licença NMLS #2744537. O canal não assume risco de crédito e mantém a margem integral.",
+       "Instaladores, contratistas y revendedores envían a sus clientes a Eos en el momento de la venta. Somos el prestamista — evaluamos, fondeamos y hacemos el servicing bajo la licencia NMLS #2744537. El canal no asume riesgo de crédito y conserva el margen completo."],
+    "WHAT THE PARTNER GETS": ["O QUE O CANAL RECEBE", "QUÉ RECIBE EL CANAL"],
     "Credit risk": ["Risco de crédito", "Riesgo de crédito"],
     "None — Eos carries it": ["Nenhum — a Eos carrega", "Ninguno — Eos lo carga"],
     "Dealer fee": ["Dealer fee", "Dealer fee"],
@@ -664,7 +665,7 @@
     "Apply, approve, train": ["Aplicar, aprovar, treinar", "Aplicar, aprobar, capacitar"],
     "All financing is subject to credit approval. Terms vary by product and applicant.": ["Todo financiamento está sujeito a aprovação de crédito. As condições variam por produto e por perfil.", "Todo financiamiento está sujeto a aprobación de crédito. Los términos varían por producto y solicitante."],
     "Why it works": ["Por que funciona", "Por qué funciona"],
-    "Why partners offer Eos financing.": ["Por que parceiros oferecem o financiamento da Eos.", "Por qué los socios ofrecen el financiamiento de Eos."],
+    "Why partners offer Eos financing.": ["Por que os canais oferecem o financiamento da Eos.", "Por qué los canales ofrecen el financiamiento de Eos."],
     "Your customer is the borrower. Eos underwrites and carries the loan — your business is never on the hook for it.":
       ["Seu cliente é o tomador. A Eos analisa e carrega o empréstimo — o seu negócio nunca fica responsável por ele.",
        "Tu cliente es el deudor. Eos evalúa y carga el préstamo — tu negocio nunca queda responsable por él."],
@@ -691,17 +692,17 @@
     "Eos funds": ["A Eos libera", "Eos fondea"],
     "Average funding turnaround is 48 hours after approval. The customer pays Eos over time.": ["O prazo médio de liberação é de 48 horas após a aprovação. O cliente paga a Eos a prazo.", "El plazo promedio de fondeo es de 48 horas tras la aprobación. El cliente paga a Eos a plazos."],
     "THE DASHBOARD": ["O DASHBOARD", "EL PANEL"],
-    "The partner dashboard.": ["O dashboard do parceiro.", "El panel del socio."],
+    "The partner dashboard.": ["O dashboard do canal.", "El panel del canal."],
     "Every application in one place, with its current status. When a customer stops halfway, you generate an updated link and they resume exactly where they left off — no re-typing, no lost deal.":
       ["Todas as aplicações em um só lugar, com o status atual. Quando um cliente para no meio, você gera um novo link e ele retoma exatamente de onde parou — sem redigitar, sem venda perdida.",
        "Todas las solicitudes en un solo lugar, con su estado actual. Cuando un cliente se detiene a la mitad, generas un nuevo enlace y retoma exactamente donde quedó — sin reescribir, sin venta perdida."],
     "APPLICATIONS": ["APLICAÇÕES", "SOLICITUDES"],
     "Amounts and terms shown for illustration only.": ["Valores e prazos exibidos apenas para ilustração.", "Montos y plazos mostrados solo como ilustración."],
-    "Who we partner with": ["Com quem fazemos parceria", "Con quiénes nos asociamos"],
+    "Who we partner with": ["Com quem trabalhamos", "Con quiénes trabajamos"],
     "The categories we finance.": ["As categorias que financiamos.", "Las categorías que financiamos."],
     "Availability of each category depends on the partner and the enrolled product. Selling something else? Ask us.":
-      ["A disponibilidade de cada categoria depende do parceiro e do produto cadastrado. Vende outra coisa? Pergunte para a gente.",
-       "La disponibilidad de cada categoría depende del socio y del producto registrado. ¿Vendes otra cosa? Pregúntanos."],
+      ["A disponibilidade de cada categoria depende do canal e do produto cadastrado. Vende outra coisa? Pergunte para a gente.",
+       "La disponibilidad de cada categoría depende del canal y del producto registrado. ¿Vendes otra cosa? Pregúntanos."],
     "Auto dealers": ["Concessionárias de auto", "Concesionarios de autos"],
     "Apply": ["Aplicação", "Solicitud"],
     "Onboarding in three steps.": ["Onboarding em três etapas.", "Onboarding en tres pasos."],
@@ -714,7 +715,7 @@
     "State": ["Estado", "Estado"],
     "Anything else": ["Algo mais", "Algo más"],
     "(optional)": ["(opcional)", "(opcional)"],
-    "Partner questions.": ["Dúvidas de parceiros.", "Preguntas de socios."],
+    "Partner questions.": ["Dúvidas do canal.", "Preguntas del canal."],
     "Does my business take on any credit risk?": ["Meu negócio assume algum risco de crédito?", "¿Mi negocio asume algún riesgo de crédito?"],
     "No. Your customer is the borrower. Eos underwrites, funds and services the loan — if it goes bad, that is our exposure, not yours.":
       ["Não. Seu cliente é o tomador. A Eos analisa, libera e faz o servicing — se der errado, a exposição é nossa, não sua.",
@@ -739,7 +740,7 @@
     "Ask us. Availability depends on the product being enrolled, and the list of categories is not closed.":
       ["Pergunte para a gente. A disponibilidade depende do cadastro do produto, e a lista de categorias não é fechada.",
        "Pregúntanos. La disponibilidad depende del registro del producto, y la lista de categorías no está cerrada."],
-    "Become an Eos partner.": ["Torne-se um parceiro Eos.", "Conviértete en socio de Eos."],
+    "Become an Eos partner.": ["Torne-se um canal Eos.", "Conviértete en canal de Eos."],
     "Apply below and our partnerships team will come back within one business day.": ["Aplique abaixo e nossa equipe de parcerias retorna em até um dia útil.", "Aplica abajo y nuestro equipo de alianzas responde dentro de un día hábil."],
 
     /* ---------- Contact / GetStarted ---------- */
@@ -987,6 +988,10 @@
   function boot() {
     var saved = "en";
     try { saved = localStorage.getItem("eos-lang") || "en"; } catch (e) {}
+    try {
+      var qs = new URLSearchParams(location.search).get("lang");
+      if (qs && LANGS[qs]) { saved = qs; try { localStorage.setItem("eos-lang", qs); } catch (e) {} }
+    } catch (e) {}
     current = LANGS[saved] ? saved : "en";
     document.documentElement.lang = LANGS[current];
     wireSwitchers(document);
