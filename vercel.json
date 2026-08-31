@@ -6,6 +6,7 @@
     { "source": "/mobility", "destination": "/Mobility.dc.html" },
     { "source": "/battery", "destination": "/Battery.dc.html" },
     { "source": "/partners", "destination": "/Partners.dc.html" },
+    { "source": "/channel", "destination": "/Partners.dc.html" },
     { "source": "/contact", "destination": "/Contact.dc.html" },
     { "source": "/get-started", "destination": "/GetStarted.dc.html" }
   ]

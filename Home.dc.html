@@ -21,6 +21,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <script src="./support.js"></script>
 <script src="./i18n.js?v=2" defer></script>
+<script src="./whatsapp.js" defer></script>
 </head>
 <body>
 <x-dc>
@@ -256,7 +257,7 @@
     <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div style="display:flex;align-items:center;gap:10px">
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">For partners &#183; Embedded financing</span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2-inverse)">Channel &#183; Embedded financing</span>
       </div>
       <h2 style="margin-top:18px;font-size:var(--fs-display);color:var(--eos-bone);max-width:22ch">Embedded financing, under your brand.</h2>
       <p style="margin:16px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2-inverse);max-width:62ch">Put Eos inside your product. Offer financing at your point of sale while we handle underwriting, compliance and servicing &#8212; you close more sales.</p>
@@ -373,7 +374,7 @@
           <span style="font-family:var(--font-mono);font-size:12px;font-weight:700;color:var(--eos-ember)">03</span>
           <span data-sign="1" style="width:28px;height:28px;border:1px solid var(--line-strong);border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);font-size:14px;flex:none">{{ solSign2 }}</span>
         </div>
-        <span data-vert="1" style="{{ solVert2 }}">Partner dashboard</span>
+        <span data-vert="1" style="{{ solVert2 }}">Channel dashboard</span>
         <div data-panel="1" style="{{ solOpen2 }}">
           <div data-grid="1" style="display:grid;grid-template-columns:1fr 1fr;gap:32px;height:100%;box-sizing:border-box">
             <div style="display:flex;flex-direction:column">
@@ -384,7 +385,7 @@
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Resume links recover stalled deals</span></div>
                 <div style="display:flex;align-items:baseline;gap:10px;font-size:14px;font-weight:600"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember);flex:none;transform:translateY(-2px)"></span><span>Onboarding: apply, approve, one training session</span></div>
               </div>
-              <a href="/partners" style="display:inline-block;margin-top:4px;padding-top:18px;font-size:14px">See the partner programme &#8594;</a>
+              <a href="/channel" style="display:inline-block;margin-top:4px;padding-top:18px;font-size:14px">See the channel program &#8594;</a>
             </div>
             <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column;justify-content:center">
               <div style="display:flex;gap:6px">
@@ -420,7 +421,7 @@
       <span style="display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:var(--text-2-inverse)"><span style="width:6px;height:6px;border-radius:999px;background:var(--eos-ember)"></span>Approval data flows back to you</span>
     </div>
     <div style="margin-top:32px">
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/contact?interest=partner" hint-size="180px,48px">Partner with Eos</x-import>
+      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/contact?interest=partner" hint-size="180px,48px">Join the Eos channel</x-import>
     </div>
   </div>
 </section>
@@ -436,7 +437,7 @@
         <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:20ch">Financing at your point of sale.</h2>
         <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:56ch">Offer Eos financing where the decision happens &mdash; in your store, your quote or your checkout. The customer pays over time; you receive the full amount upfront.</p>
         <div style="margin-top:26px">
-          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/partners" hint-size="180px,48px">Partner with Eos</x-import>
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/channel" hint-size="180px,48px">Join the Eos channel</x-import>
         </div>
       </div>
     </div>
@@ -488,9 +489,9 @@
     <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div style="display:flex;align-items:center;gap:10px">
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Customers &amp; partners</span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Customers &amp; originators</span>
       </div>
-      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:22ch">What our partners say.</h2>
+      <h2 style="margin-top:18px;font-size:var(--fs-display);max-width:22ch">What our originators say.</h2>
     </div>
     <div style="margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:14px;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 38%">
       <div style="background:var(--surface-dark);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:16px">
@@ -614,10 +615,10 @@
     <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div style="display:flex;align-items:center;gap:10px">
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">For partners</span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Channel</span>
       </div>
       <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:20ch">Offer Eos financing to your customers.</h2>
-      <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:52ch">Installers, contractors and resellers send their customers to Eos at the point of sale. We are the lender &#8212; we underwrite, fund and service the loan, and the partner takes no credit risk.</p>
+      <p style="margin:22px 0 0;font-size:17px;line-height:1.65;color:var(--text-2);max-width:52ch">Installers, contractors and resellers send their customers to Eos at the point of sale. We are the lender &#8212; we underwrite, fund and service the loan, and the originator takes no credit risk.</p>
       <div data-r="pgrid" style="margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:28px 32px">
         <div style="border-top:2px solid var(--eos-charcoal);padding-top:16px">
           <span style="font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--eos-ember)">01</span>
@@ -646,7 +647,7 @@
     <div style="background:var(--eos-bone);border:1px solid var(--line);border-radius:18px;padding:36px;animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
       <sc-if value="{{ pnNotSent }}" hint-placeholder-val="{{ true }}">
         <div>
-          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:22px">Become a partner</h3>
+          <h3 style="font-family:var(--font-ui);font-weight:800;font-size:22px">Join the channel</h3>
           <p style="margin:8px 0 0;font-size:14.5px;line-height:1.6;color:var(--text-2)">Tell us what you sell and we will come back within one business day.</p>
           <form onSubmit="{{ pnSubmit }}" style="margin-top:24px;display:flex;flex-direction:column;gap:16px">
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Input" label="Company" name="pcompany" required="{{ yes }}" placeholder="Your company name" value="{{ pnCompany }}" onChange="{{ pnSetCompany }}" hint-size="100%,72px"></x-import>
@@ -658,7 +659,7 @@
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="What you sell" options="{{ pnCategories }}" value="{{ pnCategory }}" onChange="{{ pnSetCategory }}" hint-size="100%,72px"></x-import>
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="Average deal size (optional)" options="{{ pnDeals }}" value="{{ pnDeal }}" onChange="{{ pnSetDeal }}" hint-size="100%,72px"></x-import>
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Select" label="Monthly volume (optional)" options="{{ pnVolumes }}" value="{{ pnVolume }}" onChange="{{ pnSetVolume }}" hint-size="100%,72px"></x-import>
-            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="100%,48px">Apply to partner</x-import>
+            <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" type="submit" hint-size="100%,48px">Join the channel</x-import>
             <p style="margin:0;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">No cost to join &#183; no exclusivity &#183; no credit risk to you.</p>
           </form>
         </div>
@@ -667,7 +668,7 @@
         <div style="display:flex;flex-direction:column;gap:18px;padding:12px 4px">
           <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.SolRasgado" size="{{ pnSun }}" color="ember" hint-size="44px,44px"></x-import>
           <h3 style="font-size:28px">Received.</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:44ch">Thanks{{ pnThanks }} &#8212; our partnerships team will reach out at <b>{{ pnEmail }}</b> within one business day about <b>{{ pnCategoryLabel }}</b>.</p>
+          <p style="margin:0;font-size:15.5px;line-height:1.65;color:var(--text-2);max-width:44ch">Thanks{{ pnThanks }} &#8212; our channel team will reach out at <b>{{ pnEmail }}</b> within one business day about <b>{{ pnCategoryLabel }}</b>.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
             <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" variant="ghost" href="/contact?interest=partner" hint-size="150px,44px">Talk to us now</x-import>
           </div>
@@ -752,7 +753,7 @@
           <span style="font-weight:700;font-size:16.5px">Can my company offer Eos financing to its customers?</span>
           <span style="font-family:var(--font-mono);font-size:18px;color:var(--eos-ember)">+</span>
         </summary>
-        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Yes. Installers, contractors and resellers send their customers to Eos at the point of sale. You take no credit risk and keep the full margin &#8212; there is no dealer fee. <a href="/partners">See the partner programme &#8594;</a></p>
+        <p style="margin:12px 0 0;font-size:14.5px;line-height:1.65;color:var(--text-2);max-width:62ch">Yes. Installers, contractors and resellers send their customers to Eos at the point of sale. You take no credit risk and keep the full margin &#8212; there is no dealer fee. <a href="/channel">See the channel program &#8594;</a></p>
       </details>
     </div>
   </div>
