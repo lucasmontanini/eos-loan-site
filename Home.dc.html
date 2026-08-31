@@ -427,7 +427,7 @@
 
 <section style="background:var(--eos-bone);border-top:1px solid var(--line)">
   <div style="max-width:1240px;margin:0 auto;padding:104px 28px">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
+    <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div>
         <div style="display:flex;align-items:center;gap:10px">
           <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
@@ -435,8 +435,10 @@
         </div>
         <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:20ch">Financing at your point of sale.</h2>
         <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:56ch">Offer Eos financing where the decision happens &mdash; in your store, your quote or your checkout. The customer pays over time; you receive the full amount upfront.</p>
+        <div style="margin-top:26px">
+          <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/partners" hint-size="180px,48px">Partner with Eos</x-import>
+        </div>
       </div>
-      <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" href="/partners" hint-size="180px,48px">Partner with Eos</x-import>
     </div>
     <div style="position:relative;margin-top:44px;max-width:820px;border-radius:18px;overflow:hidden;border:1px solid var(--line);animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
       <video id="film-b2b" src="uploads/film-b2b2c.mp4" poster="uploads/film-b2b2c-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
