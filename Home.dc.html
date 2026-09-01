@@ -520,19 +520,36 @@
   </div>
 </section>
 
-<section style="background:var(--eos-bone);border-top:1px solid var(--line)">
-  <div style="max-width:1240px;margin:0 auto;padding:96px 28px 88px">
+<section id="cash" style="background:var(--eos-bone);border-top:1px solid var(--line)">
+  <div data-r="cols2" style="max-width:1240px;margin:0 auto;padding:96px 28px 88px;display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center">
     <div style="animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 42%">
       <div style="display:flex;align-items:center;gap:10px">
         <span style="width:20px;height:3px;background:var(--eos-ember);border-radius:2px"></span>
-        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Eos credit</span>
+        <span style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--text-2)">Eos Cash</span>
       </div>
-      <h2 style="margin-top:18px;font-size:clamp(34px,4vw,56px);line-height:1.08;letter-spacing:-.015em;max-width:22ch">Eos credit, issued directly to approved borrowers.</h2>
+      <h2 style="margin-top:18px;font-size:clamp(32px,3.8vw,52px);line-height:1.08;letter-spacing:-.015em;max-width:18ch">Eos Cash: a dollar account with your credit built in.</h2>
+      <p style="margin:18px 0 0;font-size:16.5px;line-height:1.65;color:var(--text-2);max-width:52ch">The Eos app for everyday money: a dollar account with a physical and a virtual card, transfers between the US and Brazil, cashback at partner merchants, and your Eos credit managed in the same place.</p>
+      <div style="margin-top:26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+        <x-import component-from-global-scope="EosLoanDesignSystem_c354e9.Button" size="lg" variant="ghost" href="/contact?interest=cash" hint-size="140px,48px">Talk to us</x-import>
+        <span style="font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;border:1px solid var(--line-strong);border-radius:999px;padding:6px 12px;color:var(--text-2)">COMING SOON</span>
+      </div>
     </div>
-    <img loading="lazy" decoding="async" src="uploads/creditcard3_john_marz.jpg" alt="Eos credit card being used on a payment terminal" style="margin-top:40px;width:100%;height:clamp(320px,44vw,560px);object-fit:cover;object-position:center 18%;border-radius:18px;border:1px solid var(--line);display:block;animation:rev .8s ease both;animation-timeline:view();animation-range:entry 0% entry 35%">
-    <div style="margin-top:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">
-      <span>Eos credit &#183; issued to approved borrowers</span>
-      <span>Illustrative</span>
+    <div style="animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line)">
+        <video id="film-cash" src="uploads/film-qrcode.mp4" poster="uploads/film-qrcode-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+        <sc-if value="{{ cashIdle }}" hint-placeholder-val="{{ true }}">
+          <button type="button" onClick="{{ playCash }}" aria-label="Play the Eos Pay film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.18);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px">
+            <span style="width:76px;height:76px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
+              <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
+            </span>
+            <span style="background:rgba(23,18,14,.72);border-radius:999px;padding:8px 16px;font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;color:var(--eos-bone)">WATCH &#183; 30S</span>
+          </button>
+        </sc-if>
+      </div>
+      <div style="margin-top:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">
+        <span>EOS PAY &#183; QR PAYMENT AT PARTNER MERCHANTS</span>
+        <span>Illustrative</span>
+      </div>
     </div>
   </div>
 </section>
@@ -586,7 +603,20 @@
       </div>
       <p style="margin:18px 0 0;font-family:var(--font-mono);font-size:11.5px;color:var(--text-3)">Soft credit pull — no score impact</p>
     </div>
-    <img loading="lazy" decoding="async" src="uploads/personhappy7.jpg" alt="Woman smiling outdoors" style="width:100%;height:560px;object-fit:cover;object-position:center 25%;border-radius:18px;border:1px solid var(--line);display:block;animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+    <div style="animation:rev .9s ease both;animation-timeline:view();animation-range:entry 0% entry 40%">
+      <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line)">
+        <video id="film-brand" src="uploads/film-newbrand.mp4" poster="uploads/film-newbrand-poster.jpg" preload="none" controls="{{ yes }}" playsInline="{{ yes }}" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--eos-charcoal)"></video>
+        <sc-if value="{{ brandIdle }}" hint-placeholder-val="{{ true }}">
+          <button type="button" onClick="{{ playBrand }}" aria-label="Play the Eos brand film" style="position:absolute;inset:0;width:100%;height:100%;background:rgba(23,18,14,.14);border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px">
+            <span style="width:76px;height:76px;border-radius:999px;background:var(--eos-ember);display:flex;align-items:center;justify-content:center;animation:pulseRing 2.6s ease-out infinite;transition:transform .15s ease" style-hover="transform:scale(1.07)">
+              <svg width="24" height="28" viewBox="0 0 26 30" fill="none"><path d="M24.5 12.4c2 1.15 2 4.04 0 5.2L4.75 29.02c-2 1.15-4.5-.29-4.5-2.6V3.58c0-2.31 2.5-3.75 4.5-2.6L24.5 12.4z" fill="#F7F2EA"/></svg>
+            </span>
+            <span style="background:rgba(23,18,14,.72);border-radius:999px;padding:8px 16px;font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;color:var(--eos-bone)">THE BRAND FILM &#183; 30S</span>
+          </button>
+        </sc-if>
+      </div>
+      <div style="margin-top:12px;font-family:var(--font-mono);font-size:11px;color:var(--text-3)">EOS &#183; A NEW BRAND FOR THE SAME PURPOSE</div>
+    </div>
   </div>
 </section>
 
@@ -802,7 +832,7 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;ctaTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;ember&quot;,&quot;charcoal&quot;],&quot;default&quot;:&quot;ember&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact band&quot;}}">
 class Component extends DCLogic {
-  state = { sol: 0, b2bPlaying: false, pnSent: false, pnCompany: "", pnName: "", pnPhone: "", pnEmail: "", pnCategory: "Residential battery & backup", pnVolume: "Prefer not to say", pnDeal: "Prefer not to say" };
+  state = { sol: 0, b2bPlaying: false, cashPlaying: false, brandPlaying: false, pnSent: false, pnCompany: "", pnName: "", pnPhone: "", pnEmail: "", pnCategory: "Residential battery & backup", pnVolume: "Prefer not to say", pnDeal: "Prefer not to say" };
   solCard(on) {
     return (on ? "flex-grow:3.2;background:var(--surface-card)" : "flex-grow:.55;background:var(--eos-bone)") + ";flex-shrink:1;flex-basis:0%;border-radius:18px;padding:26px 24px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;min-width:72px;height:510px;box-sizing:border-box;position:relative;transition:flex-grow .55s cubic-bezier(.4,0,.2,1),background .4s ease";
   }
@@ -835,6 +865,10 @@ class Component extends DCLogic {
       b2bIdle: !this.state.b2bPlaying,
       b2bPlaying: this.state.b2bPlaying,
       playB2b: () => { this.setState({ b2bPlaying: true }); const v = document.getElementById("film-b2b"); if (v) v.play(); },
+      cashIdle: !this.state.cashPlaying,
+      playCash: () => { this.setState({ cashPlaying: true }); const v = document.getElementById("film-cash"); if (v) v.play(); },
+      brandIdle: !this.state.brandPlaying,
+      playBrand: () => { this.setState({ brandPlaying: true }); const v = document.getElementById("film-brand"); if (v) v.play(); },
       ctaSectionStyle: ctaTheme === "charcoal" ? "background:var(--surface-dark)" : "background:var(--eos-ember)",
       ctaBtnVariant: ctaTheme === "charcoal" ? "primary" : "secondary",
       ctaSun: 170,
