@@ -529,7 +529,6 @@
     "Get a free assessment": ["Solicitar avaliação gratuita", "Solicitar evaluación gratuita"],
     "See the system": ["Ver o sistema", "Ver el sistema"],
     "Free and no obligation · 2-minute planner · remote photo survey": ["Grátis e sem compromisso · planner de 2 minutos · vistoria remota por fotos", "Gratis y sin compromiso · planificador de 2 minutos · relevamiento remoto por fotos"],
-    "Takes over when the grid drops": ["Assume a casa quando a rede cai", "Asume la casa cuando cae la red"],
     "Transfer when the grid drops": ["Transferência quando a rede cai", "Transferencia cuando cae la red"],
     "Quieter than a conversation": ["Mais silencioso que uma conversa", "Más silencioso que una conversación"],
     "Warranty on the main components": ["Garantia dos componentes principais", "Garantía de los componentes principales"],
