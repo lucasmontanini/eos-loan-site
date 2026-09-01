@@ -71,10 +71,12 @@
     "Acceleration programs": ["Programas de aceleração", "Programas de aceleración"],
     "The programs that accelerated Eos.": ["Os programas que aceleraram a Eos.", "Los programas que aceleraron a Eos."],
     "Eos Cash": ["Eos Cash", "Eos Cash"],
-    "Eos Cash: a dollar account with your credit built in.": ["Eos Cash: uma conta em dólar com o seu crédito integrado.", "Eos Cash: una cuenta en dólares con tu crédito integrado."],
-    "The Eos app for everyday money: a dollar account with a physical and a virtual card, transfers between the US and Brazil, cashback at partner merchants, and your Eos credit managed in the same place.":
-      ["O app da Eos para o dia a dia: conta em dólar com cartão físico e virtual, transferências entre EUA e Brasil, cashback em parceiros e o seu crédito Eos administrado no mesmo lugar.",
-       "La app de Eos para el día a día: cuenta en dólares con tarjeta física y virtual, transferencias entre EE. UU. y Brasil, cashback en comercios aliados y tu crédito Eos administrado en el mismo lugar."],
+    "Eos Cash: payment by QR code, with rewards.": ["Eos Cash: pagamento por QR code, com rewards.", "Eos Cash: pago por código QR, con recompensas."],
+    "The customer scans a QR code and pays from the Eos app, at the counter or at the table.": ["O cliente escaneia um QR code e paga pelo app da Eos, no balcão ou na mesa.", "El cliente escanea un código QR y paga desde la app de Eos, en el mostrador o en la mesa."],
+    "Rewards for the customer on every payment": ["Rewards para o cliente em cada pagamento", "Recompensas para el cliente en cada pago"],
+    "Split payment for businesses": ["Split de pagamento para empresas", "Pago dividido (split) para empresas"],
+    "Tips that reach the team instantly": ["Gorjetas que chegam à equipe na hora", "Propinas que llegan al equipo al instante"],
+    "Lower acceptance cost than cards for the business": ["Custo de aceitação menor que o do cartão para a empresa", "Costo de aceptación menor que el de las tarjetas para el negocio"],
     "COMING SOON": ["EM BREVE", "PRÓXIMAMENTE"],
     "EOS PAY · QR PAYMENT AT PARTNER MERCHANTS": ["EOS PAY · PAGAMENTO POR QR EM PARCEIROS", "EOS PAY · PAGO POR QR EN COMERCIOS ALIADOS"],
     "THE BRAND FILM · 30S": ["O FILME DA MARCA · 30S", "LA PELÍCULA DE LA MARCA · 30S"],
@@ -251,6 +253,7 @@
     "Silent": ["Silencioso", "Silencioso"],
     "Warranty": ["Garantia", "Garantía"],
     "Explore home backup": ["Explorar backup residencial", "Explorar respaldo residencial"],
+    "Explore home backup →": ["Explorar backup residencial →", "Explorar respaldo residencial →"],
     
     "Offer Eos financing to your customers.": ["Ofereça o financiamento da Eos aos seus clientes.", "Ofrece el financiamiento de Eos a tus clientes."],
     "Installers, contractors and resellers send their customers to Eos at the point of sale. We are the lender — we underwrite, fund and service the loan, and the originator takes no credit risk.":
@@ -529,7 +532,6 @@
     "Get a free assessment": ["Solicitar avaliação gratuita", "Solicitar evaluación gratuita"],
     "See the system": ["Ver o sistema", "Ver el sistema"],
     "Free and no obligation · 2-minute planner · remote photo survey": ["Grátis e sem compromisso · planner de 2 minutos · vistoria remota por fotos", "Gratis y sin compromiso · planificador de 2 minutos · relevamiento remoto por fotos"],
-    "Takes over when the grid drops": ["Assume a casa quando a rede cai", "Asume la casa cuando cae la red"],
     "Transfer when the grid drops": ["Transferência quando a rede cai", "Transferencia cuando cae la red"],
     "Quieter than a conversation": ["Mais silencioso que uma conversa", "Más silencioso que una conversación"],
     "Warranty on the main components": ["Garantia dos componentes principais", "Garantía de los componentes principales"],
