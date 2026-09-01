@@ -253,6 +253,7 @@
     "Silent": ["Silencioso", "Silencioso"],
     "Warranty": ["Garantia", "Garantía"],
     "Explore home backup": ["Explorar backup residencial", "Explorar respaldo residencial"],
+    "Explore home backup →": ["Explorar backup residencial →", "Explorar respaldo residencial →"],
     
     "Offer Eos financing to your customers.": ["Ofereça o financiamento da Eos aos seus clientes.", "Ofrece el financiamiento de Eos a tus clientes."],
     "Installers, contractors and resellers send their customers to Eos at the point of sale. We are the lender — we underwrite, fund and service the loan, and the originator takes no credit risk.":

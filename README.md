@@ -43,13 +43,21 @@ npx serve . -l 8437
 ## Layout
 
 ```
-Home.dc.html  RealEstate.dc.html  Contact.dc.html  GetStarted.dc.html
+Home.dc.html  RealEstate.dc.html  Utilities.dc.html  Mobility.dc.html
+Battery.dc.html  Partners.dc.html  Contact.dc.html  GetStarted.dc.html
 SiteHeader.dc.html  SiteFooter.dc.html      shared, imported by the pages
-_ds/…                                       design system: tokens + component bundle
-uploads/                                    photos, films and their poster frames
-favicon.svg  favicon-32.png  apple-touch-icon.png  icon-192.png  icon-512.png
-vercel.json                                 rewrites / -> Home.dc.html
+_ds/…                design system: tokens + component bundle
+i18n.js              PT-BR/ES runtime dictionaries (EN inline is the source)
+whatsapp.js          floating WhatsApp CTA
+uploads/             photos, films (faststart) and their poster frames
+content/             business briefings that govern copy (read before editing)
+serve.json           local rewrites (mirror of vercel.json: /battery, /channel…)
+vercel.json          rewrites for clean URLs; / -> Home.dc.html
 ```
+
+Clean URLs: `/`, `/real-estate`, `/utilities`, `/mobility`, `/battery`,
+`/channel` (alias `/partners`), `/contact`, `/get-started`. `?lang=pt|es`
+opens the site in that language.
 
 ## Conventions that are not optional
 
