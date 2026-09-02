@@ -841,6 +841,7 @@
     "Woman smiling outdoors": ["Mulher sorrindo ao ar livre", "Mujer sonriendo al aire libre"],
     "Commercial battery installation": ["Instalação de bateria comercial", "Instalación de batería comercial"],
     "Commercial battery storage installation": ["Instalação de storage comercial de baterias", "Instalación de almacenamiento comercial de baterías"],
+    "Semi truck on the highway at dawn": ["Caminhão na rodovia ao amanhecer", "Camión en la carretera al amanecer"],
     "Customer receiving car keys at a dealership": ["Cliente recebendo as chaves do carro na concessionária", "Cliente recibiendo las llaves del auto en el concesionario"],
     "Eos credit card being used on a payment terminal": ["Cartão de crédito Eos usado em uma maquininha", "Tarjeta de crédito Eos usada en una terminal de pago"]
   };
